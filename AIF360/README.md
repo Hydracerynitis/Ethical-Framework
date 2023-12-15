@@ -27,3 +27,4 @@
     - Several tutorial of using the toolkits
 - Its methods and interfaces are well documented for the purpose of the parameter, and it has provided detail documentation on the website https://aif360.readthedocs.io/en/stable/index.html
 - It has provided mathematical definition of each supported bias metrics on the documentation website
+- It also provides example datasets for new partitioners to experiment with
