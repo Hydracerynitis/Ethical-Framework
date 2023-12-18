@@ -1,5 +1,12 @@
 # AI Fariness 360
 
+## Experiment
+
+Use Python 3.11
+
+
+
+## Comment
 
 ### Generality
 
@@ -14,7 +21,7 @@
 
 ### Stability/Reliability
 
-- Here I will record several bugs/problem I encountered during my prior research:
+- Here's several bugs/problems I encountered during my prior research:
     - The conversion method from **Dataframe** to **StandardDataset** can break when given a dataframe instances that have 130 columns.
     - The bias mitigation implementation of **Reweight** and **RejectOptionClassifier** have problems when running.
 
