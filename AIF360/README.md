@@ -2,9 +2,7 @@
 
 ## Experiment
 
-Use Python 3.11
-
-
+In my previous research, I use the toolkit to benchmark its bias mitgation implementations against three datasets I gathered in Kaggle. I use Python 3.11 through out the experiment.
 
 ## Comment
 
