@@ -33,3 +33,12 @@ In my previous research, I use the toolkit to benchmark its bias mitgation imple
 - Its methods and interfaces are well documented for the purpose of the parameter, and it has provided detail documentation on the website https://aif360.readthedocs.io/en/stable/index.html
 - It has provided mathematical definition of each supported bias metrics on the documentation website
 - It also provides example datasets for new partitioners to experiment with
+
+## Advantage and Limitation
+
+- The framework use **StandardDataset** class as its data struture provides convenience like automating basic data pre-process tasks like transforming categorical features and categorize privillege groups. 
+    - However, it is less flexible than panda's **Dataframe** class to query its content and perform various transformation operations, making it harder to debug if encountered problems when using the framework.
+    - And if encountered problems during conversion between **Dataframe** and **StandardDataset**, if may means that you can not perform bias evaluation and migitation with this framework
+- It provide evluations of plentiful bias metrics. However, most of them have definition based on predicted outcomes and actual outcomes or predicted probability and actual outcome, lacking those definition based on predicited outcome, similarity measures and casual reasoning 
+- It provides implementations of state-of-art bias mitigations methods, that can be very convenient for any machine learning workflow to improve their fairness. However, there is significantly more implementations of in-processing migitation methods than those of pre-processing and post-processing ones.
+    - Since implementations of in-processing migitation methods present a new machine learning training processs rather than modify an exisiting ones, they can not be able to integrated with exisitng workflows and have to actively compete with them

@@ -34,3 +34,8 @@ I have tried using Python 3.11 and 3.10 to set up the toolkit. During trouble sh
 - There is no external guidance for utilizing the toolkits.
 - The toolkit's modular structure is simplistic and straightforward, as available bias metric evaluation and bias mitigation implementation all grouped together under class **BiasDetectionMetrics** and **BiasMitigationMethods**.
 - The result of the evaluation methods consists of disconnected jargon. It is diffcult for new partitioner to understand and interpret the result.
+
+## Advantage and Limitation
+
+- Relying on past technology without any forwardcapability, it is very difficulty to integrate this framework into modern day language model workflow. It's incompatibility with Jupyter Notebook is more concerning, since it is the standard way of communication within the machine learning field.
+- However, it is the currently only framework that provide language model bias metrics like *WEAT*, and provide bias mitigation methods to fine tune their models.
