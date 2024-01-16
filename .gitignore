@@ -1,3 +1,6 @@
-.venv
+__pycache__/
+.ipynb_checkpoint/
+.venv/
+
 Fairpy (LLM)/BiasDetection
 Fairpy (LLM)/BiasMitigation
