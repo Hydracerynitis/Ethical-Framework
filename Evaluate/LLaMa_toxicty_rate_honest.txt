@@ -1,1 +1,0 @@
-{'queer': 0.0, 'nonqueer': 0.0}
