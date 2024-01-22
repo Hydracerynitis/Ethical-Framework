@@ -1,7 +1,7 @@
 # Fairpy (LLM)
 
 ## Experiment
-I have tried using Python 3.11 and 3.10 to set up the toolkit. During trouble shooting I switch to version 3.9 to satisfy its dependencies requirements. Considering three out of four experiments in *demo.py* failed to replicate the result of the toolkit repository, I forfeit to continuing experiment with this toolkit
+I have tried using Python 3.11 and 3.10 to set up the toolkit. In the end, I switch to version 3.9 to satisfy its dependencies requirements. Considering three out of four experiments in *demo.py* failed to replicate the result of the toolkit repository, I forfeit setting up an experiment with this toolkit.
 
 ## Comment
 

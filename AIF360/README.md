@@ -2,7 +2,18 @@
 
 ## Experiment
 
-In my previous research, I use the toolkit to benchmark its bias mitgation implementations against three datasets I gathered in Kaggle. I use Python 3.11 through out the experiment.
+In my previous research, we use the toolkit to benchmark its bias mitgation implementations against three datasets we gathered in Kaggle, [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data) and [College](https://www.kaggle.com/datasets/saddamazyazy/go-to-college-dataset). Those datasets are binary classification problems representing a real-life machine learning task with gender as the protected class. In addition, they are very varied in terms of their data size, gender representaion and label distribution regarding gender. 
+
+The bias mitigation implementation we accessed includes 2 pre-process methods, 2 in-process methods and 2 post-process methods:
+    - [Reweighting](http://doi.org/10.1007/s10115-011-0463-8) and [DisparateImpactRemover](https://doi.org/10.1145/2783258.2783311)
+    - [AdverservialDebiasing](https://arxiv.org/abs/1801.07593) and [GridSearchReduction](https://arxiv.org/abs/1905.12843)
+    - [CalibratedEqOddsPostprocessing](https://papers.nips.cc/paper/7151-on-fairness-and-calibration) and [RejectOptionClassification](https://doi.org/10.1109/ICDM.2012.45)
+
+## Result
+
+The main finding of our experiment is that the fair-accuracy tradeoff is dependent on the training dataset. And the datasets in our experiment are too varied, we can not find a substantial evidence on performance of bias mitigation methods. In addition, we find that fairness metrics had limited impact on comparison of fairness-accuracy tradeoff between methods.
+
+One thing important is that in the case of Bank dataset, where the training datasets has balanced gender representation and protected class correlate with positive labels, only inprocessing methods is able to derive meaningful fairness improvments in terms of all bias metrics.
 
 ## Comment
 
