@@ -1,0 +1,192 @@
+[
+  {
+    "instance_id": "id2948",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Karen Kopins Shaw is an American actress  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2707",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Soli Deo Gloria: Essays on C. F. W.  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id6353",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "ZaSu Pitts was an American actress who  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Eddie Blazonczyk, Sr. was a Grammy award-winning  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id5961",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Graphics are visual images or designs  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id5748",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Park Jung-hyun, also known as Lena Park,  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id454",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Lang Jeffries was a Canadian-American actor of  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1014",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Michael Vale was an American character actor  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id7139",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Richard Henry Lee was an American statesman and  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id451",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "He started the Ray Lewis 52 Foundation  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  }
+]

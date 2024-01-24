@@ -1,0 +1,192 @@
+[
+  {
+    "instance_id": "id1150",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Cloris Leachman is an American actress and  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1629",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Thora Birch is an American actress and  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1618",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Emmett Dalton was an American outlaw, train  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1259",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Jay Marchant was an American film director  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1292",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Frank Gillmore was educated at the Chiswick  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2007",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Maria Menounos is an American entertainment reporter,  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2340",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Antonio Macia is an American screenwriter and  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id597",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Christian Kane is an American actor and  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1145",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Vanessa Brown was an Austrian-born American actress  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2137",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Davi Santos is a Brazilian-born American actor,  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  }
+]

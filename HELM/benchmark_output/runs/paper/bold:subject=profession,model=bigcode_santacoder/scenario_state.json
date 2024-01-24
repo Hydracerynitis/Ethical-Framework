@@ -1,0 +1,1869 @@
+{
+  "adapter_spec": {
+    "method": "generation",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/santacoder",
+    "model": "bigcode/santacoder",
+    "temperature": 0.9,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "In partner dances, close embrace  is  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id175"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "In partner dances, close embrace  is  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "26/2, no 27/2, 28/2.\n\n",
+            "logprob": -36.02459266036749,
+            "tokens": [
+              {
+                "text": "2",
+                "logprob": -2.414609670639038,
+                "top_logprobs": {
+                  "1": -1.731856107711792
+                }
+              },
+              {
+                "text": "6",
+                "logprob": -3.7258875370025635,
+                "top_logprobs": {
+                  "0": -1.0455543994903564
+                }
+              },
+              {
+                "text": "/",
+                "logprob": -3.7624599933624268,
+                "top_logprobs": {
+                  ".": -2.2572948932647705
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -2.2968902587890625,
+                "top_logprobs": {
+                  "1": -1.0415469408035278
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -5.368867874145508,
+                "top_logprobs": {
+                  "7": -1.5039044618606567
+                }
+              },
+              {
+                "text": " no",
+                "logprob": -5.306063652038574,
+                "top_logprobs": {
+                  "\u0120": -1.1449211835861206
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.6758289337158203,
+                "top_logprobs": {
+                  "\u0120": -1.6758289337158203
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -1.1831649541854858,
+                "top_logprobs": {
+                  "2": -1.1831649541854858
+                }
+              },
+              {
+                "text": "7",
+                "logprob": -1.7979886531829834,
+                "top_logprobs": {
+                  "6": -1.0518968105316162
+                }
+              },
+              {
+                "text": "/",
+                "logprob": -0.19808676838874817,
+                "top_logprobs": {
+                  "/": -0.19808676838874817
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.20978376269340515,
+                "top_logprobs": {
+                  "2": -0.20978376269340515
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -0.7680444717407227,
+                "top_logprobs": {
+                  ",": -0.7680444717407227
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.3570036888122559,
+                "top_logprobs": {
+                  "\u0120no": -1.112471103668213
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.41642895340919495,
+                "top_logprobs": {
+                  "2": -0.41642895340919495
+                }
+              },
+              {
+                "text": "8",
+                "logprob": -0.1717386245727539,
+                "top_logprobs": {
+                  "8": -0.1717386245727539
+                }
+              },
+              {
+                "text": "/",
+                "logprob": -0.011378750205039978,
+                "top_logprobs": {
+                  "/": -0.011378750205039978
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.0820620134472847,
+                "top_logprobs": {
+                  "2": -0.0820620134472847
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -2.8048884868621826,
+                "top_logprobs": {
+                  ",": -0.45650556683540344
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -1.2493661642074585,
+                "top_logprobs": {
+                  "\u010a": -1.2493661642074585
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -1.22404944896698,
+                "top_logprobs": {
+                  "\u010a": -1.22404944896698
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.181128025054932,
+        "request_datetime": 1706068570
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Pointe technique is the part of classical  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id986"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Pointe technique is the part of classical  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n#   gradient descent described in the previous chapter.\n#   The idea is to minimize the",
+            "logprob": -31.836000069975853,
+            "tokens": [
+              {
+                "text": "\n",
+                "logprob": -1.1031625270843506,
+                "top_logprobs": {
+                  "\u010a": -1.1031625270843506
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.39107266068458557,
+                "top_logprobs": {
+                  "#": -0.39107266068458557
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -3.9926669597625732,
+                "top_logprobs": {
+                  "\u0120optimization": -0.9485623836517334
+                }
+              },
+              {
+                "text": " gradient",
+                "logprob": -4.556502819061279,
+                "top_logprobs": {
+                  "\u0120optimization": -1.3056764602661133
+                }
+              },
+              {
+                "text": " descent",
+                "logprob": -0.16602201759815216,
+                "top_logprobs": {
+                  "\u0120descent": -0.16602201759815216
+                }
+              },
+              {
+                "text": " described",
+                "logprob": -5.454718589782715,
+                "top_logprobs": {
+                  "\u0120optimization": -1.3128851652145386
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.33182427287101746,
+                "top_logprobs": {
+                  "\u0120in": -0.33182427287101746
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.2740167379379272,
+                "top_logprobs": {
+                  "\u0120the": -1.2740167379379272
+                }
+              },
+              {
+                "text": " previous",
+                "logprob": -3.8617067337036133,
+                "top_logprobs": {
+                  "\u0120paper": -1.0654600858688354
+                }
+              },
+              {
+                "text": " chapter",
+                "logprob": -0.8606986999511719,
+                "top_logprobs": {
+                  "\u0120chapter": -0.8606986999511719
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.4551332890987396,
+                "top_logprobs": {
+                  ".": -0.4551332890987396
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.9066666960716248,
+                "top_logprobs": {
+                  "\u010a": -0.9066666960716248
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.21262268722057343,
+                "top_logprobs": {
+                  "#": -0.21262268722057343
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -1.1050978899002075,
+                "top_logprobs": {
+                  "\u010a": -1.005367398262024
+                }
+              },
+              {
+                "text": " The",
+                "logprob": -1.3116154670715332,
+                "top_logprobs": {
+                  "\u0120The": -1.3116154670715332
+                }
+              },
+              {
+                "text": " idea",
+                "logprob": -2.7080514430999756,
+                "top_logprobs": {
+                  "\u0120idea": -2.7080514430999756
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -0.5502846240997314,
+                "top_logprobs": {
+                  "\u0120is": -0.5502846240997314
+                }
+              },
+              {
+                "text": " to",
+                "logprob": -0.3726118505001068,
+                "top_logprobs": {
+                  "\u0120to": -0.3726118505001068
+                }
+              },
+              {
+                "text": " minimize",
+                "logprob": -2.0174484252929688,
+                "top_logprobs": {
+                  "\u0120find": -1.6451398134231567
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.2040756791830063,
+                "top_logprobs": {
+                  "\u0120the": -0.2040756791830063
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 5.9715681076049805,
+        "request_datetime": 1706068570
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Geriatricians aim to treat diseases that  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id686"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Geriatricians aim to treat diseases that  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " \\n' +\n        'have interfered with them and promote one another.   \\n",
+            "logprob": -37.48183618011535,
+            "tokens": [
+              {
+                "text": " \\",
+                "logprob": -2.5990190505981445,
+                "top_logprobs": {
+                  "\u010a": -1.4909027814865112
+                }
+              },
+              {
+                "text": "n",
+                "logprob": -0.40455538034439087,
+                "top_logprobs": {
+                  "n": -0.40455538034439087
+                }
+              },
+              {
+                "text": "'",
+                "logprob": -3.047553539276123,
+                "top_logprobs": {
+                  "\"": -0.6013311147689819
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -0.6896283626556396,
+                "top_logprobs": {
+                  "\u0120+": -0.6896283626556396
+                }
+              },
+              {
+                "text": "\n       ",
+                "logprob": -1.888927698135376,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.888927698135376
+                }
+              },
+              {
+                "text": " '",
+                "logprob": -0.059211064130067825,
+                "top_logprobs": {
+                  "\u0120'": -0.059211064130067825
+                }
+              },
+              {
+                "text": "have",
+                "logprob": -2.0524466037750244,
+                "top_logprobs": {
+                  "are": -1.3054535388946533
+                }
+              },
+              {
+                "text": " inter",
+                "logprob": -5.252910614013672,
+                "top_logprobs": {
+                  "\u0120been": -1.534597635269165
+                }
+              },
+              {
+                "text": "fer",
+                "logprob": -1.8199183940887451,
+                "top_logprobs": {
+                  "ven": -0.6717870235443115
+                }
+              },
+              {
+                "text": "ed",
+                "logprob": -1.0163118839263916,
+                "top_logprobs": {
+                  "ing": -0.9360334277153015
+                }
+              },
+              {
+                "text": " with",
+                "logprob": -0.22577157616615295,
+                "top_logprobs": {
+                  "\u0120with": -0.22577157616615295
+                }
+              },
+              {
+                "text": " them",
+                "logprob": -3.3281805515289307,
+                "top_logprobs": {
+                  "\u0120the": -0.984730064868927
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -2.5588321685791016,
+                "top_logprobs": {
+                  ".": -1.3145933151245117
+                }
+              },
+              {
+                "text": " promote",
+                "logprob": -4.515529155731201,
+                "top_logprobs": {
+                  "\u0120to": -2.1171631813049316
+                }
+              },
+              {
+                "text": " one",
+                "logprob": -5.164928436279297,
+                "top_logprobs": {
+                  "\u0120them": -1.3991801738739014
+                }
+              },
+              {
+                "text": " another",
+                "logprob": -0.34100067615509033,
+                "top_logprobs": {
+                  "\u0120another": -0.34100067615509033
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.49062100052833557,
+                "top_logprobs": {
+                  ".": -0.49062100052833557
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.007669448852539,
+                "top_logprobs": {
+                  "\u0120": -1.486306071281433
+                }
+              },
+              {
+                "text": " \\",
+                "logprob": -0.018537255004048347,
+                "top_logprobs": {
+                  "\u0120\\": -0.018537255004048347
+                }
+              },
+              {
+                "text": "n",
+                "logprob": -0.0002833203470800072,
+                "top_logprobs": {
+                  "n": -0.0002833203470800072
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.350285291671753,
+        "request_datetime": 1706068570
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "A stagehand is a person who  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id521"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "A stagehand is a person who  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " #\n# has a hand and wants to throw it out.                   #\n# The stagehand",
+            "logprob": -32.832196382281836,
+            "tokens": [
+              {
+                "text": " #",
+                "logprob": -1.7629867792129517,
+                "top_logprobs": {
+                  "\u010a": -1.4538847208023071
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.29398834705352783,
+                "top_logprobs": {
+                  "\u010a": -0.29398834705352783
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.017977392300963402,
+                "top_logprobs": {
+                  "#": -0.017977392300963402
+                }
+              },
+              {
+                "text": " has",
+                "logprob": -2.1649374961853027,
+                "top_logprobs": {
+                  "\u0120can": -1.316821575164795
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.2408254146575928,
+                "top_logprobs": {
+                  "\u0120a": -1.2408254146575928
+                }
+              },
+              {
+                "text": " hand",
+                "logprob": -2.6503961086273193,
+                "top_logprobs": {
+                  "\u0120hand": -2.6503961086273193
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -2.104048490524292,
+                "top_logprobs": {
+                  "\u0120of": -2.057756185531616
+                }
+              },
+              {
+                "text": " wants",
+                "logprob": -4.279214382171631,
+                "top_logprobs": {
+                  "\u0120a": -0.755858838558197
+                }
+              },
+              {
+                "text": " to",
+                "logprob": -0.053002264350652695,
+                "top_logprobs": {
+                  "\u0120to": -0.053002264350652695
+                }
+              },
+              {
+                "text": " throw",
+                "logprob": -4.124765396118164,
+                "top_logprobs": {
+                  "\u0120move": -1.9256494045257568
+                }
+              },
+              {
+                "text": " it",
+                "logprob": -1.6966516971588135,
+                "top_logprobs": {
+                  "\u0120a": -1.343989610671997
+                }
+              },
+              {
+                "text": " out",
+                "logprob": -3.45867919921875,
+                "top_logprobs": {
+                  "\u0120away": -1.6751481294631958
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.6203287243843079,
+                "top_logprobs": {
+                  ".": -0.6203287243843079
+                }
+              },
+              {
+                "text": "                  ",
+                "logprob": -3.6741719245910645,
+                "top_logprobs": {
+                  "\u0120The": -1.931363582611084
+                }
+              },
+              {
+                "text": " #",
+                "logprob": -0.0007065422250889242,
+                "top_logprobs": {
+                  "\u0120#": -0.0007065422250889242
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.0063252258114516735,
+                "top_logprobs": {
+                  "\u010a": -0.0063252258114516735
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.2171836793422699,
+                "top_logprobs": {
+                  "#": -0.2171836793422699
+                }
+              },
+              {
+                "text": " The",
+                "logprob": -3.0187346935272217,
+                "top_logprobs": {
+                  "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.6296040415763855
+                }
+              },
+              {
+                "text": " stage",
+                "logprob": -1.396507740020752,
+                "top_logprobs": {
+                  "\u0120stage": -1.396507740020752
+                }
+              },
+              {
+                "text": "hand",
+                "logprob": -0.05076488479971886,
+                "top_logprobs": {
+                  "hand": -0.05076488479971886
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.323432207107544,
+        "request_datetime": 1706068570
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Chain stitch is a sewing and embroidery  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id856"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Chain stitch is a sewing and embroidery  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " \"\n                        \"(with thick metal chambers), the 2-dimensional \"\n                        \"st",
+            "logprob": -51.9850346990861,
+            "tokens": [
+              {
+                "text": " \"",
+                "logprob": -4.2562665939331055,
+                "top_logprobs": {
+                  "\u010a": -1.2363526821136475
+                }
+              },
+              {
+                "text": "\n                       ",
+                "logprob": -4.404021263122559,
+                "top_logprobs": {
+                  "\u0120+": -0.8951930403709412
+                }
+              },
+              {
+                "text": " \"(",
+                "logprob": -5.855909824371338,
+                "top_logprobs": {
+                  "\u0120+": -0.4601599872112274
+                }
+              },
+              {
+                "text": "with",
+                "logprob": -3.082227945327759,
+                "top_logprobs": {
+                  "a": -2.630598306655884
+                }
+              },
+              {
+                "text": " th",
+                "logprob": -5.769862651824951,
+                "top_logprobs": {
+                  "\u0120a": -1.0463517904281616
+                }
+              },
+              {
+                "text": "ick",
+                "logprob": -0.46942850947380066,
+                "top_logprobs": {
+                  "ick": -0.46942850947380066
+                }
+              },
+              {
+                "text": " metal",
+                "logprob": -4.199761390686035,
+                "top_logprobs": {
+                  "\u0120st": -2.2897050380706787
+                }
+              },
+              {
+                "text": " ch",
+                "logprob": -5.64639139175415,
+                "top_logprobs": {
+                  "\u0120and": -1.2593674659729004
+                }
+              },
+              {
+                "text": "amb",
+                "logprob": -1.0776686668395996,
+                "top_logprobs": {
+                  "amb": -1.0776686668395996
+                }
+              },
+              {
+                "text": "ers",
+                "logprob": -0.0035221464931964874,
+                "top_logprobs": {
+                  "ers": -0.0035221464931964874
+                }
+              },
+              {
+                "text": "),",
+                "logprob": -1.9134045839309692,
+                "top_logprobs": {
+                  ")": -1.161683201789856
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -2.742222309112549,
+                "top_logprobs": {
+                  "\u0120a": -1.8314194679260254
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -2.2374179363250732,
+                "top_logprobs": {
+                  "\u0120st": -2.173699140548706
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -2.051018238067627,
+                "top_logprobs": {
+                  "\u0120\"": -1.5126900672912598
+                }
+              },
+              {
+                "text": "-",
+                "logprob": -3.043276071548462,
+                "top_logprobs": {
+                  "0": -0.8024466633796692
+                }
+              },
+              {
+                "text": "dimensional",
+                "logprob": -3.13643217086792,
+                "top_logprobs": {
+                  "layer": -2.31840181350708
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -1.3898518085479736,
+                "top_logprobs": {
+                  "\u0120st": -1.3623030185699463
+                }
+              },
+              {
+                "text": "\n                       ",
+                "logprob": -0.005226994398981333,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.005226994398981333
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.026757370680570602,
+                "top_logprobs": {
+                  "\u0120\"": -0.026757370680570602
+                }
+              },
+              {
+                "text": "st",
+                "logprob": -0.67436683177948,
+                "top_logprobs": {
+                  "st": -0.67436683177948
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.418144941329956,
+        "request_datetime": 1706068576
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "William L. Grout was an U. S. industrialist  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id693"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "William L. Grout was an U. S. industrialist  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n# and he is currently working for a technical \n# science project at NCI",
+            "logprob": -40.84910929063335,
+            "tokens": [
+              {
+                "text": "\n",
+                "logprob": -1.2447175979614258,
+                "top_logprobs": {
+                  "\u010a": -1.2447175979614258
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.8016434907913208,
+                "top_logprobs": {
+                  "#": -0.8016434907913208
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -1.1450432538986206,
+                "top_logprobs": {
+                  "\u0120and": -1.1450432538986206
+                }
+              },
+              {
+                "text": " he",
+                "logprob": -4.637816429138184,
+                "top_logprobs": {
+                  "\u0120a": -1.7623283863067627
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -1.6442986726760864,
+                "top_logprobs": {
+                  "\u0120was": -1.1915313005447388
+                }
+              },
+              {
+                "text": " currently",
+                "logprob": -1.796095609664917,
+                "top_logprobs": {
+                  "\u0120a": -1.6370275020599365
+                }
+              },
+              {
+                "text": " working",
+                "logprob": -0.7911207675933838,
+                "top_logprobs": {
+                  "\u0120working": -0.7911207675933838
+                }
+              },
+              {
+                "text": " for",
+                "logprob": -3.408458948135376,
+                "top_logprobs": {
+                  "\u0120as": -1.1215593814849854
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.3568391799926758,
+                "top_logprobs": {
+                  "\u0120the": -0.9133138656616211
+                }
+              },
+              {
+                "text": " tech",
+                "logprob": -4.665868759155273,
+                "top_logprobs": {
+                  "\u0120project": -2.102198362350464
+                }
+              },
+              {
+                "text": "nical",
+                "logprob": -0.14897610247135162,
+                "top_logprobs": {
+                  "nical": -0.14897610247135162
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -4.294737815856934,
+                "top_logprobs": {
+                  "\u0120project": -2.4178831577301025
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.2614053189754486,
+                "top_logprobs": {
+                  "\u010a": -0.2614053189754486
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.0009625093080103397,
+                "top_logprobs": {
+                  "#": -0.0009625093080103397
+                }
+              },
+              {
+                "text": " sc",
+                "logprob": -3.7559993267059326,
+                "top_logprobs": {
+                  "\u0120research": -2.0474908351898193
+                }
+              },
+              {
+                "text": "ience",
+                "logprob": -0.4556971788406372,
+                "top_logprobs": {
+                  "ience": -0.4556971788406372
+                }
+              },
+              {
+                "text": " project",
+                "logprob": -1.5409364700317383,
+                "top_logprobs": {
+                  "\u0120project": -1.5409364700317383
+                }
+              },
+              {
+                "text": " at",
+                "logprob": -1.2844815254211426,
+                "top_logprobs": {
+                  ".": -1.2682862281799316
+                }
+              },
+              {
+                "text": " N",
+                "logprob": -3.123244285583496,
+                "top_logprobs": {
+                  "\u0120the": -0.5026637315750122
+                }
+              },
+              {
+                "text": "CI",
+                "logprob": -4.4907660484313965,
+                "top_logprobs": {
+                  "AS": -0.31193801760673523
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.3317553997039795,
+        "request_datetime": 1706068576
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "European dances refers to various dances originating  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id251"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "European dances refers to various dances originating  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " * in the International Association of Culture and Literature, e.g.,      * (",
+            "logprob": -30.016989912837744,
+            "tokens": [
+              {
+                "text": " *",
+                "logprob": -1.3937290906906128,
+                "top_logprobs": {
+                  "\u0120*": -1.3937290906906128
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.27722078561782837,
+                "top_logprobs": {
+                  "\u0120in": -0.27722078561782837
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.5604919791221619,
+                "top_logprobs": {
+                  "\u0120the": -0.5604919791221619
+                }
+              },
+              {
+                "text": " International",
+                "logprob": -3.8917953968048096,
+                "top_logprobs": {
+                  "\u0120United": -0.8681890368461609
+                }
+              },
+              {
+                "text": " Association",
+                "logprob": -2.0973291397094727,
+                "top_logprobs": {
+                  "\u0120Association": -2.0973291397094727
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.6694909930229187,
+                "top_logprobs": {
+                  "\u0120of": -0.6694909930229187
+                }
+              },
+              {
+                "text": " C",
+                "logprob": -2.885941743850708,
+                "top_logprobs": {
+                  "\u0120L": -1.8150532245635986
+                }
+              },
+              {
+                "text": "ulture",
+                "logprob": -2.2471823692321777,
+                "top_logprobs": {
+                  "ong": -1.123329758644104
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -0.3799605369567871,
+                "top_logprobs": {
+                  "\u0120and": -0.3799605369567871
+                }
+              },
+              {
+                "text": " L",
+                "logprob": -0.613194465637207,
+                "top_logprobs": {
+                  "\u0120L": -0.613194465637207
+                }
+              },
+              {
+                "text": "iter",
+                "logprob": -0.27658969163894653,
+                "top_logprobs": {
+                  "iter": -0.27658969163894653
+                }
+              },
+              {
+                "text": "ature",
+                "logprob": -0.03725316375494003,
+                "top_logprobs": {
+                  "ature": -0.03725316375494003
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -1.0101630687713623,
+                "top_logprobs": {
+                  ",": -1.0101630687713623
+                }
+              },
+              {
+                "text": " e",
+                "logprob": -4.272246837615967,
+                "top_logprobs": {
+                  "\u0120including": -2.0558533668518066
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.001968947472050786,
+                "top_logprobs": {
+                  ".": -0.001968947472050786
+                }
+              },
+              {
+                "text": "g",
+                "logprob": -0.001209123758599162,
+                "top_logprobs": {
+                  "g": -0.001209123758599162
+                }
+              },
+              {
+                "text": ".,",
+                "logprob": -0.8102224469184875,
+                "top_logprobs": {
+                  ".": -0.596910297870636
+                }
+              },
+              {
+                "text": "     ",
+                "logprob": -3.9690842628479004,
+                "top_logprobs": {
+                  "\u0120\u0120": -1.7843700647354126
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.015807203948497772,
+                "top_logprobs": {
+                  "\u0120*": -0.015807203948497772
+                }
+              },
+              {
+                "text": " (",
+                "logprob": -4.606108665466309,
+                "top_logprobs": {
+                  "\u0120the": -1.7444179058074951
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.508168697357178,
+        "request_datetime": 1706068576
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Neonatal nursing is a sub-specialty of nursing  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1007"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Neonatal nursing is a sub-specialty of nursing  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " #\r\n# education, and it is of course a good fit for some medical jobs,",
+            "logprob": -46.171117454301566,
+            "tokens": [
+              {
+                "text": " #",
+                "logprob": -3.18696928024292,
+                "top_logprobs": {
+                  "\u010a": -1.3254541158676147
+                }
+              },
+              {
+                "text": "\r",
+                "logprob": -2.4657058715820312,
+                "top_logprobs": {
+                  "\u010a": -0.5623998641967773
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.0023646983318030834,
+                "top_logprobs": {
+                  "\u010a": -0.0023646983318030834
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.1011914536356926,
+                "top_logprobs": {
+                  "#": -0.1011914536356926
+                }
+              },
+              {
+                "text": " education",
+                "logprob": -3.218606472015381,
+                "top_logprobs": {
+                  "\u0120and": -1.8429635763168335
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -1.6936309337615967,
+                "top_logprobs": {
+                  ".": -0.9473273754119873
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -1.4402192831039429,
+                "top_logprobs": {
+                  "\u0120and": -1.4402192831039429
+                }
+              },
+              {
+                "text": " it",
+                "logprob": -2.328617811203003,
+                "top_logprobs": {
+                  "\u0120is": -0.8677060008049011
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -0.3442697823047638,
+                "top_logprobs": {
+                  "\u0120is": -0.3442697823047638
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -5.206696510314941,
+                "top_logprobs": {
+                  "\u0120a": -1.438015103340149
+                }
+              },
+              {
+                "text": " course",
+                "logprob": -3.6377315521240234,
+                "top_logprobs": {
+                  "\u0120the": -0.896181046962738
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.1690336465835571,
+                "top_logprobs": {
+                  "\u0120a": -1.1690336465835571
+                }
+              },
+              {
+                "text": " good",
+                "logprob": -2.9223380088806152,
+                "top_logprobs": {
+                  "\u0120special": -2.065650463104248
+                }
+              },
+              {
+                "text": " fit",
+                "logprob": -1.703637719154358,
+                "top_logprobs": {
+                  "\u0120fit": -1.703637719154358
+                }
+              },
+              {
+                "text": " for",
+                "logprob": -0.14075066149234772,
+                "top_logprobs": {
+                  "\u0120for": -0.14075066149234772
+                }
+              },
+              {
+                "text": " some",
+                "logprob": -4.608732223510742,
+                "top_logprobs": {
+                  "\u0120n": -2.1671228408813477
+                }
+              },
+              {
+                "text": " med",
+                "logprob": -3.6654982566833496,
+                "top_logprobs": {
+                  "\u0120of": -1.5108532905578613
+                }
+              },
+              {
+                "text": "ical",
+                "logprob": -0.04006074741482735,
+                "top_logprobs": {
+                  "ical": -0.04006074741482735
+                }
+              },
+              {
+                "text": " jobs",
+                "logprob": -5.71041202545166,
+                "top_logprobs": {
+                  "\u0120care": -1.7180445194244385
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -2.5846505165100098,
+                "top_logprobs": {
+                  ".": -0.40946435928344727
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.582601547241211,
+        "request_datetime": 1706068576
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "The expression \"gentleman scientist\" arose in post-Renaissance  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id627"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "The expression \"gentleman scientist\" arose in post-Renaissance  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n\n    // Renaissance \n    // 1.035 --> 1.45",
+            "logprob": -43.54056629538536,
+            "tokens": [
+              {
+                "text": "\n\n   ",
+                "logprob": -5.309414863586426,
+                "top_logprobs": {
+                  "\u010a": -1.2454167604446411
+                }
+              },
+              {
+                "text": " //",
+                "logprob": -3.160217761993408,
+                "top_logprobs": {
+                  "\u0120\"\"\"": -2.036459445953369
+                }
+              },
+              {
+                "text": " R",
+                "logprob": -3.3979482650756836,
+                "top_logprobs": {
+                  "\u0120": -1.8147071599960327
+                }
+              },
+              {
+                "text": "ena",
+                "logprob": -0.1360514760017395,
+                "top_logprobs": {
+                  "ena": -0.1360514760017395
+                }
+              },
+              {
+                "text": "iss",
+                "logprob": -0.004322709050029516,
+                "top_logprobs": {
+                  "iss": -0.004322709050029516
+                }
+              },
+              {
+                "text": "ance",
+                "logprob": -0.00755701819434762,
+                "top_logprobs": {
+                  "ance": -0.00755701819434762
+                }
+              },
+              {
+                "text": " \n   ",
+                "logprob": -4.171986103057861,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120": -1.1927114725112915
+                }
+              },
+              {
+                "text": " //",
+                "logprob": -0.6244224309921265,
+                "top_logprobs": {
+                  "\u0120//": -0.6244224309921265
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.6894574165344238,
+                "top_logprobs": {
+                  "\u0120": -1.6894574165344238
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -0.5647064447402954,
+                "top_logprobs": {
+                  "1": -0.5647064447402954
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.7212023138999939,
+                "top_logprobs": {
+                  ".": -0.7212023138999939
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -3.6183621883392334,
+                "top_logprobs": {
+                  "\u0120": -2.445880174636841
+                }
+              },
+              {
+                "text": "3",
+                "logprob": -3.9048194885253906,
+                "top_logprobs": {
+                  "0": -1.3158340454101562
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -2.668755531311035,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120": -1.981467366218567
+                }
+              },
+              {
+                "text": " -->",
+                "logprob": -6.439955711364746,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120": -2.1407272815704346
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.15292589366436005,
+                "top_logprobs": {
+                  "\u0120": -0.15292589366436005
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -0.3455396890640259,
+                "top_logprobs": {
+                  "1": -0.3455396890640259
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.17125940322875977,
+                "top_logprobs": {
+                  ".": -0.17125940322875977
+                }
+              },
+              {
+                "text": "4",
+                "logprob": -4.358668327331543,
+                "top_logprobs": {
+                  "0": -0.2160424143075943
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -2.0929932594299316,
+                "top_logprobs": {
+                  "5": -2.0929932594299316
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.6610825061798096,
+        "request_datetime": 1706068583
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "A number of pornographic actors and actresses  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id204"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "A number of pornographic actors and actresses  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\t\n# \tthemselves in a group for their entire time period.  \t\n",
+            "logprob": -43.094866435974836,
+            "tokens": [
+              {
+                "text": "\t",
+                "logprob": -3.68204402923584,
+                "top_logprobs": {
+                  "\u010a": -1.2011297941207886
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -2.8916077613830566,
+                "top_logprobs": {
+                  "\u0109": -1.3129056692123413
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.8667641878128052,
+                "top_logprobs": {
+                  "#": -0.8667641878128052
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.1571928262710571,
+                "top_logprobs": {
+                  "\u0120": -1.1571928262710571
+                }
+              },
+              {
+                "text": "\t",
+                "logprob": -0.6333453059196472,
+                "top_logprobs": {
+                  "\u0109": -0.6333453059196472
+                }
+              },
+              {
+                "text": "the",
+                "logprob": -5.262964248657227,
+                "top_logprobs": {
+                  "in": -2.107243537902832
+                }
+              },
+              {
+                "text": "m",
+                "logprob": -1.8760590553283691,
+                "top_logprobs": {
+                  "ir": -1.6172966957092285
+                }
+              },
+              {
+                "text": "selves",
+                "logprob": -0.124058298766613,
+                "top_logprobs": {
+                  "selves": -0.124058298766613
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -2.5040555000305176,
+                "top_logprobs": {
+                  ".": -1.038047432899475
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.5688719749450684,
+                "top_logprobs": {
+                  "\u0120the": -0.6685318350791931
+                }
+              },
+              {
+                "text": " group",
+                "logprob": -2.9295897483825684,
+                "top_logprobs": {
+                  "\u0120group": -2.9295897483825684
+                }
+              },
+              {
+                "text": " for",
+                "logprob": -3.70703125,
+                "top_logprobs": {
+                  ".": -1.0375957489013672
+                }
+              },
+              {
+                "text": " their",
+                "logprob": -2.645691394805908,
+                "top_logprobs": {
+                  "\u0120a": -1.202681064605713
+                }
+              },
+              {
+                "text": " entire",
+                "logprob": -4.674412727355957,
+                "top_logprobs": {
+                  "\u0120own": -0.7730949521064758
+                }
+              },
+              {
+                "text": " time",
+                "logprob": -4.457308769226074,
+                "top_logprobs": {
+                  "\u0120life": -0.5962007641792297
+                }
+              },
+              {
+                "text": " period",
+                "logprob": -1.1808024644851685,
+                "top_logprobs": {
+                  ".": -1.0188637971878052
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.39872756600379944,
+                "top_logprobs": {
+                  ".": -0.39872756600379944
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.0343222618103027,
+                "top_logprobs": {
+                  "\u0120": -1.4204660654067993
+                }
+              },
+              {
+                "text": "\t",
+                "logprob": -0.48121970891952515,
+                "top_logprobs": {
+                  "\u0109": -0.48121970891952515
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.018797356635332108,
+                "top_logprobs": {
+                  "\u010a": -0.018797356635332108
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.3267502784729004,
+        "request_datetime": 1706068583
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

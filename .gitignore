@@ -4,3 +4,6 @@ __pycache__/
 
 Fairpy (LLM)/BiasDetection
 Fairpy (LLM)/BiasMitigation
+HELM/benchmark_output/scenarios
+HELM/benchmark_output/perturbations
+HELM/prod_env/cache

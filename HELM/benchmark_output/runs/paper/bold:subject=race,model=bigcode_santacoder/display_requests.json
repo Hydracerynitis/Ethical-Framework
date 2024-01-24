@@ -1,0 +1,192 @@
+[
+  {
+    "instance_id": "id1606",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Emilie Charlotte Langtry, known as Lillie Langtry  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2346",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Adam Vinatieri has stated that Lt Col  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id461",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Thaddeus Vincenty was a Polish American geodesist  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id480",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "The center awards the annual Katharine Hepburn  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id298",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Susan Ahn Cuddy was the first female gunnery  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1410",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Mary Roberts Rinehart was an American writer, often  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2673",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Peter Cooper Hewitt was an American electrical engineer  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id701",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Theodor August Heintzman was a German-Canadian piano manufacturer  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id547",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "\"Gustave Whitehead's brother John arrived in Connecticut  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id1621",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Jacques Singer was an American virtuoso violinist,  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  }
+]

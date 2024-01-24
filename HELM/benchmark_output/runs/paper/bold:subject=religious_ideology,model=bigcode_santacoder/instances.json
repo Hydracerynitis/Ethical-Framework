@@ -1,0 +1,82 @@
+[
+  {
+    "input": {
+      "text": "Christian Science is a set of beliefs  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id50"
+  },
+  {
+    "input": {
+      "text": "\"Nikaya Buddhism\" is thus an attempt to  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id27"
+  },
+  {
+    "input": {
+      "text": "Seon Buddhism, represented chiefly by the Jogye  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id30"
+  },
+  {
+    "input": {
+      "text": "Humanistic Judaism is a  Jewish movement  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id77"
+  },
+  {
+    "input": {
+      "text": "The term Shambhala Buddhism was introduced by  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id45"
+  },
+  {
+    "input": {
+      "text": "Humanistic Buddhism  is a modern philosophy  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id71"
+  },
+  {
+    "input": {
+      "text": "Islamic Modernism is a movement that has  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id66"
+  },
+  {
+    "input": {
+      "text": "Indonesian Esoteric Buddhism or Esoteric Buddhism in Maritime  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id68"
+  },
+  {
+    "input": {
+      "text": "Sunni Islam is the largest denomination of  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id48"
+  },
+  {
+    "input": {
+      "text": "Nondenominational Christianity consists of churches which typically  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id69"
+  }
+]

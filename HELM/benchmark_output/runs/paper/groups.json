@@ -1,0 +1,725 @@
+[
+  {
+    "title": "All scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Core scenarios",
+          "href": "?group=core_scenarios",
+          "markdown": false
+        },
+        {
+          "value": "The scenarios where we evaluate all the models.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 6.647058823529412,
+          "description": "min=1, mean=6.647, max=10, sum=226 (34)",
+          "markdown": false
+        },
+        {
+          "value": 2.2529411764705864,
+          "description": "min=2, mean=2.253, max=3.6, sum=229.8 (102)",
+          "markdown": false
+        },
+        {
+          "value": 129185.67500000012,
+          "description": "min=144.1, mean=1266.526, max=1760, sum=129185.675 (102)",
+          "markdown": false
+        },
+        {
+          "value": 1192.7499999999998,
+          "description": "min=1, mean=11.694, max=74.4, sum=1192.75 (102)",
+          "markdown": false
+        },
+        {
+          "value": 2,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Targeted evaluations",
+          "href": "?group=targeted_evaluations",
+          "markdown": false
+        },
+        {
+          "value": "Targeted evaluation of specific skills (e.g., knowledge, reasoning) and risks (e.g., disinformation, memorization/copyright).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint, generation",
+          "markdown": false
+        },
+        {
+          "value": 8.5,
+          "description": "min=1, mean=8.5, max=10, sum=51 (6)",
+          "markdown": false
+        },
+        {
+          "value": 2.3833333333333337,
+          "description": "min=2, mean=2.383, max=3, sum=42.9 (18)",
+          "markdown": false
+        },
+        {
+          "value": 4628.0,
+          "description": "min=144.1, mean=257.111, max=482.8, sum=4628 (18)",
+          "markdown": false
+        },
+        {
+          "value": 56.00000000000001,
+          "description": "min=1, mean=3.111, max=4.3, sum=56.0 (18)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Core scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Question answering",
+          "href": "?group=question_answering",
+          "markdown": false
+        },
+        {
+          "value": "In question answering, given a question and (optionally, in open-book settings) a passage, the goal is to produce the answer. QA is a general format that captures a wide range of tasks involving varying levels of world and commonsense knowledge and reasoning abilities.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 6.647058823529412,
+          "description": "min=1, mean=6.647, max=10, sum=226 (34)",
+          "markdown": false
+        },
+        {
+          "value": 2.2529411764705864,
+          "description": "min=2, mean=2.253, max=3.6, sum=229.8 (102)",
+          "markdown": false
+        },
+        {
+          "value": 129185.67500000012,
+          "description": "min=144.1, mean=1266.526, max=1760, sum=129185.675 (102)",
+          "markdown": false
+        },
+        {
+          "value": 1192.7499999999998,
+          "description": "min=1, mean=11.694, max=74.4, sum=1192.75 (102)",
+          "markdown": false
+        },
+        {
+          "value": 2,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Targeted evaluations",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Knowledge",
+          "href": "?group=knowledge",
+          "markdown": false
+        },
+        {
+          "value": "Targeted evaluation of knowledge (e.g. factual, cultural, commonsense).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 7.75,
+          "description": "min=1, mean=7.75, max=10, sum=31 (4)",
+          "markdown": false
+        },
+        {
+          "value": 2.075,
+          "description": "min=2, mean=2.075, max=2.1, sum=24.9 (12)",
+          "markdown": false
+        },
+        {
+          "value": 1740.8,
+          "description": "min=144.1, mean=145.067, max=149.8, sum=1740.8 (12)",
+          "markdown": false
+        },
+        {
+          "value": 50.00000000000001,
+          "description": "min=4, mean=4.167, max=4.3, sum=50.0 (12)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Harms",
+          "href": "?group=harms",
+          "markdown": false
+        },
+        {
+          "value": "Targeted evaluation of social harms (e.g., copyright, disinformation, social bias, toxicity).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint, generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=20 (2)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=18 (6)",
+          "markdown": false
+        },
+        {
+          "value": 2887.2000000000003,
+          "description": "min=479.6, mean=481.2, max=482.8, sum=2887.2 (6)",
+          "markdown": false
+        },
+        {
+          "value": 6.0,
+          "description": "min=1, mean=1, max=1, sum=6 (6)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary number of in-context examples",
+          "href": "?group=ablation_in_context",
+          "markdown": false
+        },
+        {
+          "value": "Vary the number of in-context training examples.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=50 (5)",
+          "markdown": false
+        },
+        {
+          "value": 2.1000000000000005,
+          "description": "min=2.1, mean=2.1, max=2.1, sum=31.5 (15)",
+          "markdown": false
+        },
+        {
+          "value": 21082.399999999998,
+          "description": "min=1402.1, mean=1405.493, max=1449.7, sum=21082.4 (15)",
+          "markdown": false
+        },
+        {
+          "value": 103.10000000000001,
+          "description": "min=3.8, mean=6.873, max=34.1, sum=103.1 (15)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary multiple-choice strategy",
+          "href": "?group=ablation_multiple_choice",
+          "markdown": false
+        },
+        {
+          "value": "Vary the adapation strategy for multiple-choice questions.",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=20 (2)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=18 (6)",
+          "markdown": false
+        },
+        {
+          "value": 2887.2000000000003,
+          "description": "min=479.6, mean=481.2, max=482.8, sum=2887.2 (6)",
+          "markdown": false
+        },
+        {
+          "value": 6.0,
+          "description": "min=1, mean=1, max=1, sum=6 (6)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "Vary prompting",
+          "href": "?group=ablation_prompts",
+          "markdown": false
+        },
+        {
+          "value": "Vary the instructions and labels for input/output.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=50 (5)",
+          "markdown": false
+        },
+        {
+          "value": 2.1000000000000005,
+          "description": "min=2.1, mean=2.1, max=2.1, sum=31.5 (15)",
+          "markdown": false
+        },
+        {
+          "value": 21082.399999999998,
+          "description": "min=1402.1, mean=1405.493, max=1449.7, sum=21082.4 (15)",
+          "markdown": false
+        },
+        {
+          "value": 103.10000000000001,
+          "description": "min=3.8, mean=6.873, max=34.1, sum=103.1 (15)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  },
+  {
+    "title": "Scenarios",
+    "header": [
+      {
+        "value": "Group",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Description",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "Adaptation method",
+        "description": "Adaptation strategy (e.g., generation)",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# instances",
+        "description": "Number of instances evaluated on",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# references",
+        "description": "Number of references provided per instance",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "Total number of prompt tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# completion tokens",
+        "description": "Total number of completion tokens",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "# models",
+        "description": "Number of models we're evaluating",
+        "markdown": false,
+        "metadata": {}
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "NarrativeQA",
+          "href": "?group=narrative_qa",
+          "markdown": false
+        },
+        {
+          "value": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=2, mean=5, max=8, sum=100 (20)",
+          "markdown": false
+        },
+        {
+          "value": 2.0,
+          "description": "min=2, mean=2, max=2, sum=120 (60)",
+          "markdown": false
+        },
+        {
+          "value": 89633.875,
+          "description": "min=1203.5, mean=1493.898, max=1760, sum=89633.875 (60)",
+          "markdown": false
+        },
+        {
+          "value": 306.75,
+          "description": "min=1, mean=5.112, max=52, sum=306.75 (60)",
+          "markdown": false
+        },
+        {
+          "value": 2,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "NaturalQuestions (closed-book)",
+          "href": "?group=natural_qa_closedbook",
+          "markdown": false
+        },
+        {
+          "value": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input does not include the Wikipedia page with the answer.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 7.75,
+          "description": "min=1, mean=7.75, max=10, sum=31 (4)",
+          "markdown": false
+        },
+        {
+          "value": 2.075,
+          "description": "min=2, mean=2.075, max=2.1, sum=24.9 (12)",
+          "markdown": false
+        },
+        {
+          "value": 1740.8,
+          "description": "min=144.1, mean=145.067, max=149.8, sum=1740.8 (12)",
+          "markdown": false
+        },
+        {
+          "value": 50.00000000000001,
+          "description": "min=4, mean=4.167, max=4.3, sum=50.0 (12)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "NaturalQuestions (open-book)",
+          "href": "?group=natural_qa_openbook_longans",
+          "markdown": false
+        },
+        {
+          "value": "The NaturalQuestions [(Kwiatkowski et al., 2019)](https://aclanthology.org/Q19-1026/) benchmark for question answering based on naturally-occurring queries through Google Search. The input includes the Wikipedia page with the answer.",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=50 (5)",
+          "markdown": false
+        },
+        {
+          "value": 2.1000000000000005,
+          "description": "min=2.1, mean=2.1, max=2.1, sum=31.5 (15)",
+          "markdown": false
+        },
+        {
+          "value": 21082.399999999998,
+          "description": "min=1402.1, mean=1405.493, max=1449.7, sum=21082.4 (15)",
+          "markdown": false
+        },
+        {
+          "value": 103.10000000000001,
+          "description": "min=3.8, mean=6.873, max=34.1, sum=103.1 (15)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "QuAC (Question Answering in Context)",
+          "href": "?group=quac",
+          "markdown": false
+        },
+        {
+          "value": "The QuAC benchmark for question answering in the context of dialogues [(Choi et al., 2018)](https://aclanthology.org/D18-1241/).",
+          "markdown": true
+        },
+        {
+          "value": "generation",
+          "markdown": false
+        },
+        {
+          "value": 9.0,
+          "description": "min=5, mean=9, max=10, sum=45 (5)",
+          "markdown": false
+        },
+        {
+          "value": 3.5600000000000005,
+          "description": "min=3.4, mean=3.56, max=3.6, sum=53.4 (15)",
+          "markdown": false
+        },
+        {
+          "value": 16728.6,
+          "description": "min=1012.3, mean=1115.24, max=1277.5, sum=16728.6 (15)",
+          "markdown": false
+        },
+        {
+          "value": 732.8999999999999,
+          "description": "min=33, mean=48.86, max=74.4, sum=732.9 (15)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "BBQ (Bias Benchmark for Question Answering)",
+          "href": "?group=bbq",
+          "markdown": false
+        },
+        {
+          "value": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).",
+          "markdown": true
+        },
+        {
+          "value": "multiple_choice_joint",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=20 (2)",
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=18 (6)",
+          "markdown": false
+        },
+        {
+          "value": 2887.2000000000003,
+          "description": "min=479.6, mean=481.2, max=482.8, sum=2887.2 (6)",
+          "markdown": false
+        },
+        {
+          "value": 6.0,
+          "description": "min=1, mean=1, max=1, sum=6 (6)",
+          "markdown": false
+        },
+        {
+          "value": 1,
+          "markdown": false
+        }
+      ]
+    ],
+    "links": []
+  }
+]

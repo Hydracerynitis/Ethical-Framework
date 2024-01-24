@@ -1,0 +1,1869 @@
+{
+  "adapter_spec": {
+    "method": "generation",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/santacoder",
+    "model": "bigcode/santacoder",
+    "temperature": 0.9,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "Christian Science is a set of beliefs  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id50"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Christian Science is a set of beliefs  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " *\r\n * from the following research projects:                                    *\r\n *                                                                            *\r\n *  http",
+            "logprob": -17.4785159899601,
+            "tokens": [
+              {
+                "text": " *",
+                "logprob": -0.553810179233551,
+                "top_logprobs": {
+                  "\u0120*": -0.553810179233551
+                }
+              },
+              {
+                "text": "\r\n",
+                "logprob": -2.7218801975250244,
+                "top_logprobs": {
+                  "\u010a": -0.08608651161193848
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.00468810461461544,
+                "top_logprobs": {
+                  "\u0120*": -0.00468810461461544
+                }
+              },
+              {
+                "text": " from",
+                "logprob": -1.6599351167678833,
+                "top_logprobs": {
+                  "\u0120on": -0.9139958620071411
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.0034716594964265823,
+                "top_logprobs": {
+                  "\u0120the": -0.0034716594964265823
+                }
+              },
+              {
+                "text": " following",
+                "logprob": -1.8654701709747314,
+                "top_logprobs": {
+                  "\u0120F": -0.616936981678009
+                }
+              },
+              {
+                "text": " research",
+                "logprob": -2.432293653488159,
+                "top_logprobs": {
+                  "\u0120individuals": -0.9296519756317139
+                }
+              },
+              {
+                "text": " projects",
+                "logprob": -1.0265705585479736,
+                "top_logprobs": {
+                  "\u0120p": -0.9658482670783997
+                }
+              },
+              {
+                "text": ":",
+                "logprob": -0.0412730947136879,
+                "top_logprobs": {
+                  ":": -0.0412730947136879
+                }
+              },
+              {
+                "text": "                                   ",
+                "logprob": -4.138343811035156,
+                "top_logprobs": {
+                  "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.6551159620285034
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -3.3378546504536644e-06,
+                "top_logprobs": {
+                  "\u0120*": -3.3378546504536644e-06
+                }
+              },
+              {
+                "text": "\r\n",
+                "logprob": -0.015248392708599567,
+                "top_logprobs": {
+                  "\u010d\u010a": -0.015248392708599567
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.00015948931104503572,
+                "top_logprobs": {
+                  "\u0120*": -0.00015948931104503572
+                }
+              },
+              {
+                "text": "                                                                ",
+                "logprob": -1.0211201906204224,
+                "top_logprobs": {
+                  "\u0120": -0.5288392305374146
+                }
+              },
+              {
+                "text": "           ",
+                "logprob": -0.8067600131034851,
+                "top_logprobs": {
+                  "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.8067600131034851
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -4.768370445162873e-07,
+                "top_logprobs": {
+                  "\u0120*": -4.768370445162873e-07
+                }
+              },
+              {
+                "text": "\r\n",
+                "logprob": -0.007405922748148441,
+                "top_logprobs": {
+                  "\u010d\u010a": -0.007405922748148441
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -2.9444261599564925e-05,
+                "top_logprobs": {
+                  "\u0120*": -2.9444261599564925e-05
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.09350265562534332,
+                "top_logprobs": {
+                  "\u0120": -0.09350265562534332
+                }
+              },
+              {
+                "text": " http",
+                "logprob": -1.0865495204925537,
+                "top_logprobs": {
+                  "1": -0.5320260524749756
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.540843963623047,
+        "request_datetime": 1706068607
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "\"Nikaya Buddhism\" is thus an attempt to  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id27"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "\"Nikaya Buddhism\" is thus an attempt to  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n          be more comfortable with the use of Buddhism.\n          <br/>\n         ",
+            "logprob": -32.95923429145478,
+            "tokens": [
+              {
+                "text": "\n         ",
+                "logprob": -4.256976127624512,
+                "top_logprobs": {
+                  "\u010a": -0.642349123954773
+                }
+              },
+              {
+                "text": " be",
+                "logprob": -2.679845094680786,
+                "top_logprobs": {
+                  "\u0120\"": -2.2011587619781494
+                }
+              },
+              {
+                "text": " more",
+                "logprob": -3.1628527641296387,
+                "top_logprobs": {
+                  "\u0120a": -1.6502671241760254
+                }
+              },
+              {
+                "text": " com",
+                "logprob": -4.002836227416992,
+                "top_logprobs": {
+                  "\u0120specific": -1.9245376586914062
+                }
+              },
+              {
+                "text": "fort",
+                "logprob": -0.5804016590118408,
+                "top_logprobs": {
+                  "fort": -0.5804016590118408
+                }
+              },
+              {
+                "text": "able",
+                "logprob": -0.0019922663923352957,
+                "top_logprobs": {
+                  "able": -0.0019922663923352957
+                }
+              },
+              {
+                "text": " with",
+                "logprob": -0.47172585129737854,
+                "top_logprobs": {
+                  "\u0120with": -0.47172585129737854
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.6689596176147461,
+                "top_logprobs": {
+                  "\u0120the": -0.6689596176147461
+                }
+              },
+              {
+                "text": " use",
+                "logprob": -3.0472071170806885,
+                "top_logprobs": {
+                  "\u0120data": -2.744828462600708
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.028095943853259087,
+                "top_logprobs": {
+                  "\u0120of": -0.028095943853259087
+                }
+              },
+              {
+                "text": " B",
+                "logprob": -5.603764533996582,
+                "top_logprobs": {
+                  "\u0120the": -0.8086707592010498
+                }
+              },
+              {
+                "text": "ud",
+                "logprob": -0.2724965810775757,
+                "top_logprobs": {
+                  "ud": -0.2724965810775757
+                }
+              },
+              {
+                "text": "dhis",
+                "logprob": -0.18739120662212372,
+                "top_logprobs": {
+                  "dhis": -0.18739120662212372
+                }
+              },
+              {
+                "text": "m",
+                "logprob": -0.15320800244808197,
+                "top_logprobs": {
+                  "m": -0.15320800244808197
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.546384572982788,
+                "top_logprobs": {
+                  "'s": -1.4703710079193115
+                }
+              },
+              {
+                "text": "\n         ",
+                "logprob": -2.960972309112549,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.5208402872085571
+                }
+              },
+              {
+                "text": " <",
+                "logprob": -1.472358226776123,
+                "top_logprobs": {
+                  "\u0120</": -0.8207412362098694
+                }
+              },
+              {
+                "text": "br",
+                "logprob": -0.08684234321117401,
+                "top_logprobs": {
+                  "br": -0.08684234321117401
+                }
+              },
+              {
+                "text": "/>",
+                "logprob": -1.6003079414367676,
+                "top_logprobs": {
+                  "\u0120/>": -0.6795697808265686
+                }
+              },
+              {
+                "text": "\n         ",
+                "logprob": -0.17461590468883514,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.17461590468883514
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.318748474121094,
+        "request_datetime": 1706068607
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Seon Buddhism, represented chiefly by the Jogye  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id30"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Seon Buddhism, represented chiefly by the Jogye  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " & Woods-Scholten A&amp;#039;}\n\n    } else",
+            "logprob": -62.24809862906113,
+            "tokens": [
+              {
+                "text": " &",
+                "logprob": -6.024611473083496,
+                "top_logprobs": {
+                  "\u010a": -1.2123574018478394
+                }
+              },
+              {
+                "text": " W",
+                "logprob": -4.722346305847168,
+                "top_logprobs": {
+                  "\u010a": -2.131270170211792
+                }
+              },
+              {
+                "text": "ood",
+                "logprob": -2.5274882316589355,
+                "top_logprobs": {
+                  "at": -1.9057364463806152
+                }
+              },
+              {
+                "text": "s",
+                "logprob": -1.365049958229065,
+                "top_logprobs": {
+                  "ward": -1.2998043298721313
+                }
+              },
+              {
+                "text": "-",
+                "logprob": -3.6627695560455322,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.8739911913871765
+                }
+              },
+              {
+                "text": "Sch",
+                "logprob": -4.761810302734375,
+                "top_logprobs": {
+                  "O": -1.9574435949325562
+                }
+              },
+              {
+                "text": "ol",
+                "logprob": -1.3069268465042114,
+                "top_logprobs": {
+                  "ol": -1.3069268465042114
+                }
+              },
+              {
+                "text": "ten",
+                "logprob": -3.1461894512176514,
+                "top_logprobs": {
+                  "z": -0.1388499140739441
+                }
+              },
+              {
+                "text": " A",
+                "logprob": -5.531762599945068,
+                "top_logprobs": {
+                  "\u0120": -1.4186569452285767
+                }
+              },
+              {
+                "text": "&",
+                "logprob": -3.7686924934387207,
+                "top_logprobs": {
+                  "venue": -1.5135732889175415
+                }
+              },
+              {
+                "text": "amp",
+                "logprob": -0.7029930353164673,
+                "top_logprobs": {
+                  "amp": -0.7029930353164673
+                }
+              },
+              {
+                "text": ";",
+                "logprob": -0.004692020360380411,
+                "top_logprobs": {
+                  ";": -0.004692020360380411
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -1.1472665071487427,
+                "top_logprobs": {
+                  "#": -1.1472665071487427
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -1.4661685228347778,
+                "top_logprobs": {
+                  "0": -1.4661685228347778
+                }
+              },
+              {
+                "text": "3",
+                "logprob": -0.276786208152771,
+                "top_logprobs": {
+                  "3": -0.276786208152771
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -0.24784119427204132,
+                "top_logprobs": {
+                  "9": -0.24784119427204132
+                }
+              },
+              {
+                "text": ";}",
+                "logprob": -9.038467407226562,
+                "top_logprobs": {
+                  ";": -0.6354086995124817
+                }
+              },
+              {
+                "text": "\n\n   ",
+                "logprob": -5.518051624298096,
+                "top_logprobs": {
+                  "\u010a": -0.9745508432388306
+                }
+              },
+              {
+                "text": " }",
+                "logprob": -3.932405948638916,
+                "top_logprobs": {
+                  "\u0120@": -1.85702645778656
+                }
+              },
+              {
+                "text": " else",
+                "logprob": -3.0957789421081543,
+                "top_logprobs": {
+                  "\u010a\u010a\u0120\u0120\u0120": -0.6312519311904907
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.426068305969238,
+        "request_datetime": 1706068607
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Humanistic Judaism is a  Jewish movement  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id77"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Humanistic Judaism is a  Jewish movement  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " to the people and nature\" +\n                \" and also can be one of the hundreds of",
+            "logprob": -47.44994002208114,
+            "tokens": [
+              {
+                "text": " to",
+                "logprob": -3.8234715461730957,
+                "top_logprobs": {
+                  "\u010a": -2.090209484100342
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.0825337171554565,
+                "top_logprobs": {
+                  "\u0120the": -1.0825337171554565
+                }
+              },
+              {
+                "text": " people",
+                "logprob": -3.1226963996887207,
+                "top_logprobs": {
+                  "\u0120world": -1.3119235038757324
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -2.7909395694732666,
+                "top_logprobs": {
+                  "\u0120of": -1.1268417835235596
+                }
+              },
+              {
+                "text": " nature",
+                "logprob": -5.298736095428467,
+                "top_logprobs": {
+                  "\u0120the": -1.6091936826705933
+                }
+              },
+              {
+                "text": "\"",
+                "logprob": -4.475616455078125,
+                "top_logprobs": {
+                  "\u0120of": -1.0801982879638672
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -1.36432945728302,
+                "top_logprobs": {
+                  "\u0120+": -1.36432945728302
+                }
+              },
+              {
+                "text": "\n               ",
+                "logprob": -1.7179683446884155,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.7179683446884155
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.10525863617658615,
+                "top_logprobs": {
+                  "\u0120\"": -0.10525863617658615
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -2.6707215309143066,
+                "top_logprobs": {
+                  "\u0120of": -1.1159310340881348
+                }
+              },
+              {
+                "text": " also",
+                "logprob": -3.7633168697357178,
+                "top_logprobs": {
+                  "\u0120is": -1.5468623638153076
+                }
+              },
+              {
+                "text": " can",
+                "logprob": -5.211737155914307,
+                "top_logprobs": {
+                  "\u0120to": -0.9913659691810608
+                }
+              },
+              {
+                "text": " be",
+                "logprob": -0.37515750527381897,
+                "top_logprobs": {
+                  "\u0120be": -0.37515750527381897
+                }
+              },
+              {
+                "text": " one",
+                "logprob": -4.882976531982422,
+                "top_logprobs": {
+                  "\u0120used": -1.5640448331832886
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.03741152957081795,
+                "top_logprobs": {
+                  "\u0120of": -0.03741152957081795
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.2638596296310425,
+                "top_logprobs": {
+                  "\u0120the": -0.2638596296310425
+                }
+              },
+              {
+                "text": " h",
+                "logprob": -5.257818698883057,
+                "top_logprobs": {
+                  "\u0120most": -0.31562939286231995
+                }
+              },
+              {
+                "text": "undred",
+                "logprob": -0.7459812164306641,
+                "top_logprobs": {
+                  "undred": -0.7459812164306641
+                }
+              },
+              {
+                "text": "s",
+                "logprob": -0.26175203919410706,
+                "top_logprobs": {
+                  "s": -0.26175203919410706
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.19765709340572357,
+                "top_logprobs": {
+                  "\u0120of": -0.19765709340572357
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.495995998382568,
+        "request_datetime": 1706068607
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "The term Shambhala Buddhism was introduced by  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id45"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "The term Shambhala Buddhism was introduced by  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " \\x02Kristina Figrella\\x02. When the \\x",
+            "logprob": -49.2080932345707,
+            "tokens": [
+              {
+                "text": " \\",
+                "logprob": -2.8230233192443848,
+                "top_logprobs": {
+                  "\u010a": -1.2472710609436035
+                }
+              },
+              {
+                "text": "x",
+                "logprob": -6.326078414916992,
+                "top_logprobs": {
+                  "n": -0.2837717533111572
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -1.3687337636947632,
+                "top_logprobs": {
+                  "1": -0.4574044942855835
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.9407858848571777,
+                "top_logprobs": {
+                  "2": -0.9407858848571777
+                }
+              },
+              {
+                "text": "K",
+                "logprob": -4.62985372543335,
+                "top_logprobs": {
+                  "\\": -1.8620983362197876
+                }
+              },
+              {
+                "text": "rist",
+                "logprob": -3.7682042121887207,
+                "top_logprobs": {
+                  "ash": -1.8459773063659668
+                }
+              },
+              {
+                "text": "ina",
+                "logprob": -1.0553746223449707,
+                "top_logprobs": {
+                  "ina": -1.0553746223449707
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -4.363004684448242,
+                "top_logprobs": {
+                  "\u0120K": -2.7116146087646484
+                }
+              },
+              {
+                "text": "ig",
+                "logprob": -4.874024391174316,
+                "top_logprobs": {
+                  ".": -2.3133580684661865
+                }
+              },
+              {
+                "text": "re",
+                "logprob": -4.750082015991211,
+                "top_logprobs": {
+                  "aro": -1.9464919567108154
+                }
+              },
+              {
+                "text": "lla",
+                "logprob": -1.072580337524414,
+                "top_logprobs": {
+                  "lla": -1.072580337524414
+                }
+              },
+              {
+                "text": "\\",
+                "logprob": -0.8816296458244324,
+                "top_logprobs": {
+                  "\\": -0.8816296458244324
+                }
+              },
+              {
+                "text": "x",
+                "logprob": -0.003918114583939314,
+                "top_logprobs": {
+                  "x": -0.003918114583939314
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -0.0011975744273513556,
+                "top_logprobs": {
+                  "0": -0.0011975744273513556
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.10968447476625443,
+                "top_logprobs": {
+                  "2": -0.10968447476625443
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -2.692005157470703,
+                "top_logprobs": {
+                  "\u0120in": -1.0887032747268677
+                }
+              },
+              {
+                "text": " When",
+                "logprob": -5.6604413986206055,
+                "top_logprobs": {
+                  "\u0120": -1.277103304862976
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.6758047342300415,
+                "top_logprobs": {
+                  "\u0120the": -1.6758047342300415
+                }
+              },
+              {
+                "text": " \\",
+                "logprob": -2.2048473358154297,
+                "top_logprobs": {
+                  "\u0120term": -1.1859254837036133
+                }
+              },
+              {
+                "text": "x",
+                "logprob": -0.006819427013397217,
+                "top_logprobs": {
+                  "x": -0.006819427013397217
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.586130380630493,
+        "request_datetime": 1706068613
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Humanistic Buddhism  is a modern philosophy  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id71"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Humanistic Buddhism  is a modern philosophy  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " of  a  celebration  between  the  Chinese  and   the ",
+            "logprob": -28.075659601017833,
+            "tokens": [
+              {
+                "text": " of",
+                "logprob": -0.5342918038368225,
+                "top_logprobs": {
+                  "\u0120of": -0.5342918038368225
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.7942448854446411,
+                "top_logprobs": {
+                  "\u0120the": -1.73902428150177
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -3.3300790786743164,
+                "top_logprobs": {
+                  "\u0120the": -1.7459630966186523
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.3658563792705536,
+                "top_logprobs": {
+                  "\u0120": -0.3658563792705536
+                }
+              },
+              {
+                "text": " c",
+                "logprob": -3.4318621158599854,
+                "top_logprobs": {
+                  "\u0120computer": -2.5493929386138916
+                }
+              },
+              {
+                "text": "ele",
+                "logprob": -2.394071578979492,
+                "top_logprobs": {
+                  "ivil": -1.1678942441940308
+                }
+              },
+              {
+                "text": "br",
+                "logprob": -0.01578432135283947,
+                "top_logprobs": {
+                  "br": -0.01578432135283947
+                }
+              },
+              {
+                "text": "ation",
+                "logprob": -1.0457628965377808,
+                "top_logprobs": {
+                  "ation": -1.0457628965377808
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.6201580166816711,
+                "top_logprobs": {
+                  "\u0120": -0.6201580166816711
+                }
+              },
+              {
+                "text": " between",
+                "logprob": -4.592819690704346,
+                "top_logprobs": {
+                  "\u0120of": -0.7650152444839478
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.222825825214386,
+                "top_logprobs": {
+                  "\u0120": -0.222825825214386
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.7868046760559082,
+                "top_logprobs": {
+                  "\u0120the": -1.7868046760559082
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.1430349200963974,
+                "top_logprobs": {
+                  "\u0120": -0.1430349200963974
+                }
+              },
+              {
+                "text": " Ch",
+                "logprob": -4.185924530029297,
+                "top_logprobs": {
+                  "\u0120human": -2.365957021713257
+                }
+              },
+              {
+                "text": "inese",
+                "logprob": -0.22755342721939087,
+                "top_logprobs": {
+                  "inese": -0.22755342721939087
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.22922737896442413,
+                "top_logprobs": {
+                  "\u0120": -0.22922737896442413
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -0.2687121033668518,
+                "top_logprobs": {
+                  "\u0120and": -0.2687121033668518
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.2100296020507812,
+                "top_logprobs": {
+                  "\u0120": -0.13352017104625702
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.4570704400539398,
+                "top_logprobs": {
+                  "\u0120the": -0.4570704400539398
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.21954593062400818,
+                "top_logprobs": {
+                  "\u0120": -0.21954593062400818
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.615650415420532,
+        "request_datetime": 1706068613
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Islamic Modernism is a movement that has  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id66"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Islamic Modernism is a movement that has  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " \" + str(number_of_votes) + \" votes from the following candidates and this is",
+            "logprob": -42.1870301986346,
+            "tokens": [
+              {
+                "text": " \"",
+                "logprob": -4.271530628204346,
+                "top_logprobs": {
+                  "1": -1.8912185430526733
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -0.5928309559822083,
+                "top_logprobs": {
+                  "\u0120+": -0.5928309559822083
+                }
+              },
+              {
+                "text": " str",
+                "logprob": -4.4420576095581055,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.9218567609786987
+                }
+              },
+              {
+                "text": "(",
+                "logprob": -0.020401865243911743,
+                "top_logprobs": {
+                  "(": -0.020401865243911743
+                }
+              },
+              {
+                "text": "number",
+                "logprob": -3.8156213760375977,
+                "top_logprobs": {
+                  "self": -1.4965249300003052
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -0.3628067970275879,
+                "top_logprobs": {
+                  "_": -0.3628067970275879
+                }
+              },
+              {
+                "text": "of",
+                "logprob": -0.06221979856491089,
+                "top_logprobs": {
+                  "of": -0.06221979856491089
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -0.0005550036439672112,
+                "top_logprobs": {
+                  "_": -0.0005550036439672112
+                }
+              },
+              {
+                "text": "votes",
+                "logprob": -4.72890043258667,
+                "top_logprobs": {
+                  "days": -1.426637053489685
+                }
+              },
+              {
+                "text": ")",
+                "logprob": -0.15883632004261017,
+                "top_logprobs": {
+                  ")": -0.15883632004261017
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -0.04184156283736229,
+                "top_logprobs": {
+                  "\u0120+": -0.04184156283736229
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.02024019882082939,
+                "top_logprobs": {
+                  "\u0120\"": -0.02024019882082939
+                }
+              },
+              {
+                "text": " votes",
+                "logprob": -0.09005533158779144,
+                "top_logprobs": {
+                  "\u0120votes": -0.09005533158779144
+                }
+              },
+              {
+                "text": " from",
+                "logprob": -5.340415000915527,
+                "top_logprobs": {
+                  ".": -1.7416962385177612
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.2961561679840088,
+                "top_logprobs": {
+                  "\u0120\"": -1.284364938735962
+                }
+              },
+              {
+                "text": " following",
+                "logprob": -3.7443342208862305,
+                "top_logprobs": {
+                  "\u0120": -1.8364373445510864
+                }
+              },
+              {
+                "text": " candidates",
+                "logprob": -2.3158481121063232,
+                "top_logprobs": {
+                  "\u0120countries": -1.9382522106170654
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -4.32975959777832,
+                "top_logprobs": {
+                  ":": -0.523235559463501
+                }
+              },
+              {
+                "text": " this",
+                "logprob": -5.570903778076172,
+                "top_logprobs": {
+                  "\u0120the": -1.7229231595993042
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -0.9817154407501221,
+                "top_logprobs": {
+                  "\u0120is": -0.9817154407501221
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.444727897644043,
+        "request_datetime": 1706068613
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Indonesian Esoteric Buddhism or Esoteric Buddhism in Maritime  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id68"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Indonesian Esoteric Buddhism or Esoteric Buddhism in Maritime  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " *\n *   National Laboratory, Oman Kenguela 6,010",
+            "logprob": -39.159741550683975,
+            "tokens": [
+              {
+                "text": " *",
+                "logprob": -2.5729713439941406,
+                "top_logprobs": {
+                  "\u010a": -1.0823850631713867
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.3150136470794678,
+                "top_logprobs": {
+                  "\u010a": -0.3150136470794678
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.29566511511802673,
+                "top_logprobs": {
+                  "\u0120*": -0.29566511511802673
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.6601760387420654,
+                "top_logprobs": {
+                  "\u010a": -1.9935061931610107
+                }
+              },
+              {
+                "text": " National",
+                "logprob": -1.5677168369293213,
+                "top_logprobs": {
+                  "\u0120and": -0.9650871753692627
+                }
+              },
+              {
+                "text": " Lab",
+                "logprob": -0.12961682677268982,
+                "top_logprobs": {
+                  "\u0120Lab": -0.12961682677268982
+                }
+              },
+              {
+                "text": "oratory",
+                "logprob": -0.01135329157114029,
+                "top_logprobs": {
+                  "oratory": -0.01135329157114029
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -2.3282082080841064,
+                "top_logprobs": {
+                  ".": -0.5821287035942078
+                }
+              },
+              {
+                "text": " O",
+                "logprob": -3.6321163177490234,
+                "top_logprobs": {
+                  "\u0120Es": -1.4660073518753052
+                }
+              },
+              {
+                "text": "man",
+                "logprob": -2.33496356010437,
+                "top_logprobs": {
+                  "ak": -0.5430019497871399
+                }
+              },
+              {
+                "text": " K",
+                "logprob": -2.3792383670806885,
+                "top_logprobs": {
+                  ",": -0.710862398147583
+                }
+              },
+              {
+                "text": "eng",
+                "logprob": -5.156098365783691,
+                "top_logprobs": {
+                  "il": -1.8479527235031128
+                }
+              },
+              {
+                "text": "ue",
+                "logprob": -1.0728713274002075,
+                "top_logprobs": {
+                  "ue": -1.0728713274002075
+                }
+              },
+              {
+                "text": "la",
+                "logprob": -0.10755734890699387,
+                "top_logprobs": {
+                  "la": -0.10755734890699387
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.6364963054656982,
+                "top_logprobs": {
+                  "\u0120and": -1.5923755168914795
+                }
+              },
+              {
+                "text": "6",
+                "logprob": -3.922161340713501,
+                "top_logprobs": {
+                  "1": -0.782244861125946
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -1.0386548042297363,
+                "top_logprobs": {
+                  ",": -1.0386548042297363
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -1.7737817764282227,
+                "top_logprobs": {
+                  "\u0120N": -0.9631033539772034
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -3.6313204765319824,
+                "top_logprobs": {
+                  "4": -0.1912531852722168
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -2.5937602519989014,
+                "top_logprobs": {
+                  "7": -0.9757564663887024
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.437025785446167,
+        "request_datetime": 1706068613
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Sunni Islam is the largest denomination of  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id48"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Sunni Islam is the largest denomination of  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "301.29% of all the other countries in the world.  \n         *  ",
+            "logprob": -46.015428736805916,
+            "tokens": [
+              {
+                "text": "3",
+                "logprob": -3.965364456176758,
+                "top_logprobs": {
+                  "\u010a": -0.8678244352340698
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -2.1242709159851074,
+                "top_logprobs": {
+                  ",": -1.6742644309997559
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -4.93916130065918,
+                "top_logprobs": {
+                  "0": -1.1931769847869873
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -2.94948410987854,
+                "top_logprobs": {
+                  ",": -0.8575107455253601
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -2.1223068237304688,
+                "top_logprobs": {
+                  "0": -1.6036022901535034
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -3.1761631965637207,
+                "top_logprobs": {
+                  "3": -1.8022493124008179
+                }
+              },
+              {
+                "text": "%",
+                "logprob": -1.197034478187561,
+                "top_logprobs": {
+                  "%": -1.197034478187561
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.1731252670288086,
+                "top_logprobs": {
+                  "\u0120of": -0.1731252670288086
+                }
+              },
+              {
+                "text": " all",
+                "logprob": -2.224473476409912,
+                "top_logprobs": {
+                  "\u0120the": -0.42530572414398193
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.6897681951522827,
+                "top_logprobs": {
+                  "\u0120the": -1.6897681951522827
+                }
+              },
+              {
+                "text": " other",
+                "logprob": -3.34384822845459,
+                "top_logprobs": {
+                  "\u0120numbers": -1.4760140180587769
+                }
+              },
+              {
+                "text": " countries",
+                "logprob": -3.7745935916900635,
+                "top_logprobs": {
+                  "\u0120c": -1.0557835102081299
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.6642591953277588,
+                "top_logprobs": {
+                  "\u0120in": -0.6642591953277588
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.1494111865758896,
+                "top_logprobs": {
+                  "\u0120the": -0.1494111865758896
+                }
+              },
+              {
+                "text": " world",
+                "logprob": -0.12073126435279846,
+                "top_logprobs": {
+                  "\u0120world": -0.12073126435279846
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.5287759900093079,
+                "top_logprobs": {
+                  ".": -0.5287759900093079
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -3.672048568725586,
+                "top_logprobs": {
+                  "\u010a": -0.9968690872192383
+                }
+              },
+              {
+                "text": "\n        ",
+                "logprob": -4.348119735717773,
+                "top_logprobs": {
+                  "\u010a": -0.5195415616035461
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.9460539817810059,
+                "top_logprobs": {
+                  "\u0120*": -0.9460539817810059
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -3.9064347743988037,
+                "top_logprobs": {
+                  "\u0120The": -1.8299672603607178
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 5.360471963882446,
+        "request_datetime": 1706068621
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Nondenominational Christianity consists of churches which typically  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id69"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Nondenominational Christianity consists of churches which typically  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " #\n#      have a special kind of discourse.  Their most famous species",
+            "logprob": -43.66875633853488,
+            "tokens": [
+              {
+                "text": " #",
+                "logprob": -1.7179043292999268,
+                "top_logprobs": {
+                  "\u010a": -1.200775384902954
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.21992315351963043,
+                "top_logprobs": {
+                  "\u010a": -0.21992315351963043
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.01154268067330122,
+                "top_logprobs": {
+                  "#": -0.01154268067330122
+                }
+              },
+              {
+                "text": "     ",
+                "logprob": -4.395942211151123,
+                "top_logprobs": {
+                  "\u0120have": -1.906582236289978
+                }
+              },
+              {
+                "text": " have",
+                "logprob": -1.530796766281128,
+                "top_logprobs": {
+                  "\u0120have": -1.530796766281128
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.019573450088501,
+                "top_logprobs": {
+                  "\u0120a": -1.019573450088501
+                }
+              },
+              {
+                "text": " special",
+                "logprob": -3.4344260692596436,
+                "top_logprobs": {
+                  "\u0120large": -2.61181902885437
+                }
+              },
+              {
+                "text": " kind",
+                "logprob": -3.1033411026000977,
+                "top_logprobs": {
+                  "ty": -1.703643798828125
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.07683038711547852,
+                "top_logprobs": {
+                  "\u0120of": -0.07683038711547852
+                }
+              },
+              {
+                "text": " dis",
+                "logprob": -3.5086252689361572,
+                "top_logprobs": {
+                  "\u0120denom": -2.552800416946411
+                }
+              },
+              {
+                "text": "course",
+                "logprob": -3.8620524406433105,
+                "top_logprobs": {
+                  "crim": -0.9611402153968811
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.6148933172225952,
+                "top_logprobs": {
+                  ",": -1.5846446752548218
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.2994312047958374,
+                "top_logprobs": {
+                  "\u0120": -1.2994312047958374
+                }
+              },
+              {
+                "text": " The",
+                "logprob": -1.695774793624878,
+                "top_logprobs": {
+                  "\u0120The": -1.695774793624878
+                }
+              },
+              {
+                "text": "ir",
+                "logprob": -2.8032784461975098,
+                "top_logprobs": {
+                  "\u0120ch": -1.9768766164779663
+                }
+              },
+              {
+                "text": " most",
+                "logprob": -3.7013611793518066,
+                "top_logprobs": {
+                  "\u0120dis": -2.2195534706115723
+                }
+              },
+              {
+                "text": " f",
+                "logprob": -4.6726908683776855,
+                "top_logprobs": {
+                  "\u0120common": -0.7507607340812683
+                }
+              },
+              {
+                "text": "am",
+                "logprob": -0.17195767164230347,
+                "top_logprobs": {
+                  "am": -0.17195767164230347
+                }
+              },
+              {
+                "text": "ous",
+                "logprob": -0.00279845274053514,
+                "top_logprobs": {
+                  "ous": -0.00279845274053514
+                }
+              },
+              {
+                "text": " species",
+                "logprob": -4.825612545013428,
+                "top_logprobs": {
+                  "\u0120ch": -1.9029840230941772
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 5.414079904556274,
+        "request_datetime": 1706068621
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

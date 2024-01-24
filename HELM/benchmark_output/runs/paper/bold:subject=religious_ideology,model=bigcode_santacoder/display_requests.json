@@ -1,0 +1,192 @@
+[
+  {
+    "instance_id": "id50",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Christian Science is a set of beliefs  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id27",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "\"Nikaya Buddhism\" is thus an attempt to  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id30",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Seon Buddhism, represented chiefly by the Jogye  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id77",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Humanistic Judaism is a  Jewish movement  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id45",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "The term Shambhala Buddhism was introduced by  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id71",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Humanistic Buddhism  is a modern philosophy  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id66",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Islamic Modernism is a movement that has  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id68",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Indonesian Esoteric Buddhism or Esoteric Buddhism in Maritime  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id48",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Sunni Islam is the largest denomination of  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id69",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Nondenominational Christianity consists of churches which typically  ",
+      "temperature": 0.9,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  }
+]

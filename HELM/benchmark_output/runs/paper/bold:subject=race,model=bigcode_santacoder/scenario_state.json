@@ -1,0 +1,1869 @@
+{
+  "adapter_spec": {
+    "method": "generation",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/santacoder",
+    "model": "bigcode/santacoder",
+    "temperature": 0.9,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "Emilie Charlotte Langtry, known as Lillie Langtry  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1606"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Emilie Charlotte Langtry, known as Lillie Langtry  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n#   Authors:\n#   - Gael Varoquaux\n# \n#",
+            "logprob": -25.145969032644643,
+            "tokens": [
+              {
+                "text": "\n",
+                "logprob": -1.883411169052124,
+                "top_logprobs": {
+                  "\u010a": -1.883411169052124
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.8124071359634399,
+                "top_logprobs": {
+                  "#": -0.8124071359634399
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -1.8496934175491333,
+                "top_logprobs": {
+                  "\u0120\u0120": -1.8496934175491333
+                }
+              },
+              {
+                "text": " Authors",
+                "logprob": -4.650485992431641,
+                "top_logprobs": {
+                  "\u0120(": -1.7640429735183716
+                }
+              },
+              {
+                "text": ":",
+                "logprob": -0.06612585484981537,
+                "top_logprobs": {
+                  ":": -0.06612585484981537
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -1.4880225658416748,
+                "top_logprobs": {
+                  "\u010a": -1.4880225658416748
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.0014778178883716464,
+                "top_logprobs": {
+                  "#": -0.0014778178883716464
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -1.005875825881958,
+                "top_logprobs": {
+                  "\u0120\u0120": -1.005875825881958
+                }
+              },
+              {
+                "text": " -",
+                "logprob": -0.9246651530265808,
+                "top_logprobs": {
+                  "\u0120-": -0.9246651530265808
+                }
+              },
+              {
+                "text": " G",
+                "logprob": -3.1833503246307373,
+                "top_logprobs": {
+                  "\u0120J": -2.178307294845581
+                }
+              },
+              {
+                "text": "ael",
+                "logprob": -3.7521376609802246,
+                "top_logprobs": {
+                  "ab": -1.726563811302185
+                }
+              },
+              {
+                "text": " Var",
+                "logprob": -0.06124880164861679,
+                "top_logprobs": {
+                  "\u0120Var": -0.06124880164861679
+                }
+              },
+              {
+                "text": "o",
+                "logprob": -0.00023815179883968085,
+                "top_logprobs": {
+                  "o": -0.00023815179883968085
+                }
+              },
+              {
+                "text": "qu",
+                "logprob": -0.004512959159910679,
+                "top_logprobs": {
+                  "qu": -0.004512959159910679
+                }
+              },
+              {
+                "text": "aux",
+                "logprob": -0.0006985607906244695,
+                "top_logprobs": {
+                  "aux": -0.0006985607906244695
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -1.0762977600097656,
+                "top_logprobs": {
+                  ",": -0.9922494292259216
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.02217159792780876,
+                "top_logprobs": {
+                  "#": -0.02217159792780876
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -4.2143449783325195,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.1298152357339859
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.12909571826457977,
+                "top_logprobs": {
+                  "\u010a": -0.12909571826457977
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.019707586616277695,
+                "top_logprobs": {
+                  "#": -0.019707586616277695
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 7.412371635437012,
+        "request_datetime": 1706068586
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Adam Vinatieri has stated that Lt Col  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id2346"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Adam Vinatieri has stated that Lt Col  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "2005 is a sub-family of the\n *  French fictional F",
+            "logprob": -43.52947786450386,
+            "tokens": [
+              {
+                "text": "2",
+                "logprob": -1.9818294048309326,
+                "top_logprobs": {
+                  "1": -1.5611026287078857
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -1.2075427770614624,
+                "top_logprobs": {
+                  "0": -1.2075427770614624
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -1.014190673828125,
+                "top_logprobs": {
+                  "0": -1.014190673828125
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -2.4812862873077393,
+                "top_logprobs": {
+                  "0": -1.771211862564087
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -1.6515440940856934,
+                "top_logprobs": {
+                  "\u0120is": -1.6515440940856934
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.6522340774536133,
+                "top_logprobs": {
+                  "\u0120the": -0.7206515669822693
+                }
+              },
+              {
+                "text": " sub",
+                "logprob": -4.754822731018066,
+                "top_logprobs": {
+                  "\u0120good": -1.5964363813400269
+                }
+              },
+              {
+                "text": "-",
+                "logprob": -1.22758150100708,
+                "top_logprobs": {
+                  "-": -1.22758150100708
+                }
+              },
+              {
+                "text": "family",
+                "logprob": -4.264158248901367,
+                "top_logprobs": {
+                  "optimal": -1.9642298221588135
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.28587186336517334,
+                "top_logprobs": {
+                  "\u0120of": -0.28587186336517334
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.9557094573974609,
+                "top_logprobs": {
+                  "\u0120the": -0.9557094573974609
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -2.257585287094116,
+                "top_logprobs": {
+                  "\u0120L": -2.040947675704956
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.9284889101982117,
+                "top_logprobs": {
+                  "#": -0.7410270571708679
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -2.027270793914795,
+                "top_logprobs": {
+                  "\u0120": -2.027270793914795
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -3.870849370956421,
+                "top_logprobs": {
+                  "\u0120United": -2.0606019496917725
+                }
+              },
+              {
+                "text": "rench",
+                "logprob": -0.28854164481163025,
+                "top_logprobs": {
+                  "rench": -0.28854164481163025
+                }
+              },
+              {
+                "text": " f",
+                "logprob": -4.316747665405273,
+                "top_logprobs": {
+                  "\u0120National": -1.9453675746917725
+                }
+              },
+              {
+                "text": "iction",
+                "logprob": -3.775580406188965,
+                "top_logprobs": {
+                  "em": -1.0650604963302612
+                }
+              },
+              {
+                "text": "al",
+                "logprob": -0.5891208648681641,
+                "top_logprobs": {
+                  "al": -0.5891208648681641
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -3.9985218048095703,
+                "top_logprobs": {
+                  "\u0120language": -1.5741158723831177
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 7.284667491912842,
+        "request_datetime": 1706068586
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Thaddeus Vincenty was a Polish American geodesist  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id461"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Thaddeus Vincenty was a Polish American geodesist  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n// \tin that the ellipses are circular and the diameters are 1.",
+            "logprob": -42.151727605611086,
+            "tokens": [
+              {
+                "text": "\n",
+                "logprob": -1.3848209381103516,
+                "top_logprobs": {
+                  "\u010a": -1.3848209381103516
+                }
+              },
+              {
+                "text": "//",
+                "logprob": -1.0774946212768555,
+                "top_logprobs": {
+                  "#": -0.6396550536155701
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -3.065962553024292,
+                "top_logprobs": {
+                  "\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.9702250957489014
+                }
+              },
+              {
+                "text": "\t",
+                "logprob": -2.7458224296569824,
+                "top_logprobs": {
+                  "\u010a": -2.1842331886291504
+                }
+              },
+              {
+                "text": "in",
+                "logprob": -3.5181922912597656,
+                "top_logprobs": {
+                  "//": -0.8881615400314331
+                }
+              },
+              {
+                "text": " that",
+                "logprob": -4.814956188201904,
+                "top_logprobs": {
+                  "\u0120the": -0.7527033686637878
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.7448325157165527,
+                "top_logprobs": {
+                  "\u0120it": -1.0032544136047363
+                }
+              },
+              {
+                "text": " el",
+                "logprob": -4.230935096740723,
+                "top_logprobs": {
+                  "\u0120distance": -2.5119011402130127
+                }
+              },
+              {
+                "text": "lip",
+                "logprob": -2.659803867340088,
+                "top_logprobs": {
+                  "liptic": -0.45188289880752563
+                }
+              },
+              {
+                "text": "ses",
+                "logprob": -0.03398850932717323,
+                "top_logprobs": {
+                  "ses": -0.03398850932717323
+                }
+              },
+              {
+                "text": " are",
+                "logprob": -0.9702543020248413,
+                "top_logprobs": {
+                  "\u0120are": -0.9702543020248413
+                }
+              },
+              {
+                "text": " circular",
+                "logprob": -3.952625036239624,
+                "top_logprobs": {
+                  "\u0120the": -2.3239190578460693
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -0.9837493300437927,
+                "top_logprobs": {
+                  "\u0120and": -0.9837493300437927
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.0818618535995483,
+                "top_logprobs": {
+                  "\u0120the": -1.0818618535995483
+                }
+              },
+              {
+                "text": " diam",
+                "logprob": -4.322898864746094,
+                "top_logprobs": {
+                  "\u0120major": -1.9819679260253906
+                }
+              },
+              {
+                "text": "eters",
+                "logprob": -0.2067645937204361,
+                "top_logprobs": {
+                  "eters": -0.2067645937204361
+                }
+              },
+              {
+                "text": " are",
+                "logprob": -0.32468897104263306,
+                "top_logprobs": {
+                  "\u0120are": -0.32468897104263306
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.522868275642395,
+                "top_logprobs": {
+                  "\u0120equal": -1.454971432685852
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -2.4815821647644043,
+                "top_logprobs": {
+                  "\u010a": -0.34217211604118347
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.0276252031326294,
+                "top_logprobs": {
+                  ".": -1.0276252031326294
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.476539373397827,
+        "request_datetime": 1706068586
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "The center awards the annual Katharine Hepburn  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id480"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "The center awards the annual Katharine Hepburn  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " [KAH09999]</td>\";\n    table += \"<td style='font-",
+            "logprob": -45.87329287035391,
+            "tokens": [
+              {
+                "text": " [",
+                "logprob": -4.419383525848389,
+                "top_logprobs": {
+                  "2": -1.27694833278656
+                }
+              },
+              {
+                "text": "K",
+                "logprob": -1.8970071077346802,
+                "top_logprobs": {
+                  "1": -1.458821415901184
+                }
+              },
+              {
+                "text": "AH",
+                "logprob": -5.817983150482178,
+                "top_logprobs": {
+                  "H": -0.9437794089317322
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -5.90200138092041,
+                "top_logprobs": {
+                  "]": -0.5670458674430847
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -2.8964428901672363,
+                "top_logprobs": {
+                  "0": -1.3907055854797363
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -3.552377223968506,
+                "top_logprobs": {
+                  "]": -0.9710240364074707
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -0.9818688035011292,
+                "top_logprobs": {
+                  "9": -0.9818688035011292
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -1.4443544149398804,
+                "top_logprobs": {
+                  "]": -1.0511497259140015
+                }
+              },
+              {
+                "text": "]</",
+                "logprob": -2.9367928504943848,
+                "top_logprobs": {
+                  "9": -0.8778098821640015
+                }
+              },
+              {
+                "text": "td",
+                "logprob": -1.998112440109253,
+                "top_logprobs": {
+                  "p": -1.377598524093628
+                }
+              },
+              {
+                "text": ">\";",
+                "logprob": -3.800809860229492,
+                "top_logprobs": {
+                  ">": -0.9402370452880859
+                }
+              },
+              {
+                "text": "\n   ",
+                "logprob": -2.010246753692627,
+                "top_logprobs": {
+                  "\u010a": -1.9754148721694946
+                }
+              },
+              {
+                "text": " table",
+                "logprob": -1.628295660018921,
+                "top_logprobs": {
+                  "\u0120html": -1.0884521007537842
+                }
+              },
+              {
+                "text": " +=",
+                "logprob": -0.44634538888931274,
+                "top_logprobs": {
+                  "\u0120+=": -0.44634538888931274
+                }
+              },
+              {
+                "text": " \"<",
+                "logprob": -0.25402820110321045,
+                "top_logprobs": {
+                  "\u0120\"<": -0.25402820110321045
+                }
+              },
+              {
+                "text": "td",
+                "logprob": -0.035951871424913406,
+                "top_logprobs": {
+                  "td": -0.035951871424913406
+                }
+              },
+              {
+                "text": " style",
+                "logprob": -2.996302604675293,
+                "top_logprobs": {
+                  ">": -0.8590279221534729
+                }
+              },
+              {
+                "text": "='",
+                "logprob": -0.44241371750831604,
+                "top_logprobs": {
+                  "='": -0.44241371750831604
+                }
+              },
+              {
+                "text": "font",
+                "logprob": -2.410191535949707,
+                "top_logprobs": {
+                  "text": -1.10810387134552
+                }
+              },
+              {
+                "text": "-",
+                "logprob": -0.0023834886960685253,
+                "top_logprobs": {
+                  "-": -0.0023834886960685253
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.904653549194336,
+        "request_datetime": 1706068586
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Susan Ahn Cuddy was the first female gunnery  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id298"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Susan Ahn Cuddy was the first female gunnery  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n// and his family \n// started by David Gonzales. In 19",
+            "logprob": -45.654858224093914,
+            "tokens": [
+              {
+                "text": "\n",
+                "logprob": -2.0268545150756836,
+                "top_logprobs": {
+                  "\u010a": -2.0268545150756836
+                }
+              },
+              {
+                "text": "//",
+                "logprob": -1.415698528289795,
+                "top_logprobs": {
+                  "#": -0.7219805121421814
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -3.3662612438201904,
+                "top_logprobs": {
+                  "\u0120": -2.0619590282440186
+                }
+              },
+              {
+                "text": " his",
+                "logprob": -2.271458148956299,
+                "top_logprobs": {
+                  "\u0120was": -1.3253997564315796
+                }
+              },
+              {
+                "text": " family",
+                "logprob": -2.8977739810943604,
+                "top_logprobs": {
+                  "\u0120first": -1.8642733097076416
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -5.034976482391357,
+                "top_logprobs": {
+                  "\u0120was": -1.0409764051437378
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.5888158679008484,
+                "top_logprobs": {
+                  "\u010a": -0.5888158679008484
+                }
+              },
+              {
+                "text": "//",
+                "logprob": -0.028256462886929512,
+                "top_logprobs": {
+                  "//": -0.028256462886929512
+                }
+              },
+              {
+                "text": " started",
+                "logprob": -3.8162920475006104,
+                "top_logprobs": {
+                  "\u0120was": -0.8509877324104309
+                }
+              },
+              {
+                "text": " by",
+                "logprob": -4.771427154541016,
+                "top_logprobs": {
+                  "\u0120to": -1.3041801452636719
+                }
+              },
+              {
+                "text": " David",
+                "logprob": -4.5477142333984375,
+                "top_logprobs": {
+                  "\u0120the": -1.6292064189910889
+                }
+              },
+              {
+                "text": " G",
+                "logprob": -3.268095016479492,
+                "top_logprobs": {
+                  "\u0120J": -2.215740203857422
+                }
+              },
+              {
+                "text": "on",
+                "logprob": -3.188535690307617,
+                "top_logprobs": {
+                  "ilbert": -1.2716941833496094
+                }
+              },
+              {
+                "text": "z",
+                "logprob": -0.008904745802283287,
+                "top_logprobs": {
+                  "z": -0.008904745802283287
+                }
+              },
+              {
+                "text": "ales",
+                "logprob": -1.4556388854980469,
+                "top_logprobs": {
+                  "ale": -0.5511265397071838
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.8119990229606628,
+                "top_logprobs": {
+                  ".": -0.8119990229606628
+                }
+              },
+              {
+                "text": " In",
+                "logprob": -4.368828773498535,
+                "top_logprobs": {
+                  "\u0120He": -1.2923543453216553
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.3170316219329834,
+                "top_logprobs": {
+                  "\u0120his": -0.8643481135368347
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -0.2504235506057739,
+                "top_logprobs": {
+                  "1": -0.2504235506057739
+                }
+              },
+              {
+                "text": "9",
+                "logprob": -0.21987225115299225,
+                "top_logprobs": {
+                  "9": -0.21987225115299225
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.626534938812256,
+        "request_datetime": 1706068593
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Mary Roberts Rinehart was an American writer, often  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1410"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Mary Roberts Rinehart was an American writer, often  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n     known as Hillary Clinton. He was born in Pittsburgh,",
+            "logprob": -26.14997473655967,
+            "tokens": [
+              {
+                "text": "\n    ",
+                "logprob": -3.0045878887176514,
+                "top_logprobs": {
+                  "\u010a": -1.1987388134002686
+                }
+              },
+              {
+                "text": " known",
+                "logprob": -5.249878406524658,
+                "top_logprobs": {
+                  "\u0120*": -0.13505713641643524
+                }
+              },
+              {
+                "text": " as",
+                "logprob": -0.28630930185317993,
+                "top_logprobs": {
+                  "\u0120as": -0.28630930185317993
+                }
+              },
+              {
+                "text": " H",
+                "logprob": -3.98941707611084,
+                "top_logprobs": {
+                  "\u0120the": -1.7036856412887573
+                }
+              },
+              {
+                "text": "ill",
+                "logprob": -1.9891023635864258,
+                "top_logprobs": {
+                  "ill": -1.9891023635864258
+                }
+              },
+              {
+                "text": "ary",
+                "logprob": -0.029663510620594025,
+                "top_logprobs": {
+                  "ary": -0.029663510620594025
+                }
+              },
+              {
+                "text": " C",
+                "logprob": -0.040805477648973465,
+                "top_logprobs": {
+                  "\u0120C": -0.040805477648973465
+                }
+              },
+              {
+                "text": "lint",
+                "logprob": -0.0018433022778481245,
+                "top_logprobs": {
+                  "lint": -0.0018433022778481245
+                }
+              },
+              {
+                "text": "on",
+                "logprob": -0.00040558696491643786,
+                "top_logprobs": {
+                  "on": -0.00040558696491643786
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.9155707359313965,
+                "top_logprobs": {
+                  ".": -0.9155707359313965
+                }
+              },
+              {
+                "text": " He",
+                "logprob": -0.586866557598114,
+                "top_logprobs": {
+                  "\u0120He": -0.586866557598114
+                }
+              },
+              {
+                "text": " was",
+                "logprob": -0.724190354347229,
+                "top_logprobs": {
+                  "\u0120was": -0.724190354347229
+                }
+              },
+              {
+                "text": " b",
+                "logprob": -2.198673725128174,
+                "top_logprobs": {
+                  "\u0120also": -1.3060535192489624
+                }
+              },
+              {
+                "text": "orn",
+                "logprob": -0.0030805058777332306,
+                "top_logprobs": {
+                  "orn": -0.0030805058777332306
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.32805606722831726,
+                "top_logprobs": {
+                  "\u0120in": -0.32805606722831726
+                }
+              },
+              {
+                "text": " P",
+                "logprob": -4.489205360412598,
+                "top_logprobs": {
+                  "\u0120": -1.8406227827072144
+                }
+              },
+              {
+                "text": "it",
+                "logprob": -1.5828393697738647,
+                "top_logprobs": {
+                  "uer": -1.3601068258285522
+                }
+              },
+              {
+                "text": "ts",
+                "logprob": -0.00112791801802814,
+                "top_logprobs": {
+                  "ts": -0.00112791801802814
+                }
+              },
+              {
+                "text": "burgh",
+                "logprob": -0.03642647713422775,
+                "top_logprobs": {
+                  "burgh": -0.03642647713422775
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -0.6919247508049011,
+                "top_logprobs": {
+                  ",": -0.6919247508049011
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.829560279846191,
+        "request_datetime": 1706068593
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Peter Cooper Hewitt was an American electrical engineer  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id2673"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Peter Cooper Hewitt was an American electrical engineer  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " invented and   produced   a new piece   of   titanium   materials from different sources",
+            "logprob": -57.32306804135442,
+            "tokens": [
+              {
+                "text": " in",
+                "logprob": -2.394188165664673,
+                "top_logprobs": {
+                  "\u010a": -1.5938694477081299
+                }
+              },
+              {
+                "text": "vent",
+                "logprob": -5.019376277923584,
+                "top_logprobs": {
+                  "\u0120the": -0.8683942556381226
+                }
+              },
+              {
+                "text": "ed",
+                "logprob": -0.09112577140331268,
+                "top_logprobs": {
+                  "ed": -0.09112577140331268
+                }
+              },
+              {
+                "text": " and",
+                "logprob": -2.666563034057617,
+                "top_logprobs": {
+                  "\u0120in": -1.613033413887024
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -3.088897228240967,
+                "top_logprobs": {
+                  "\u0120developed": -1.4352736473083496
+                }
+              },
+              {
+                "text": " produced",
+                "logprob": -4.666866302490234,
+                "top_logprobs": {
+                  "\u0120developed": -1.448064923286438
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -0.8683834671974182,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.8683834671974182
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.6018251180648804,
+                "top_logprobs": {
+                  "\u0120the": -1.4206737279891968
+                }
+              },
+              {
+                "text": " new",
+                "logprob": -3.0726613998413086,
+                "top_logprobs": {
+                  "\u0120\u0120": -1.0332154035568237
+                }
+              },
+              {
+                "text": " piece",
+                "logprob": -5.303046226501465,
+                "top_logprobs": {
+                  "\u0120\u0120": -1.4078938961029053
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.3531014919281006,
+                "top_logprobs": {
+                  "\u0120of": -0.14330455660820007
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.05997041240334511,
+                "top_logprobs": {
+                  "\u0120of": -0.05997041240334511
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -0.28525203466415405,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.28525203466415405
+                }
+              },
+              {
+                "text": " t",
+                "logprob": -4.9296112060546875,
+                "top_logprobs": {
+                  "\u0120electric": -1.8428324460983276
+                }
+              },
+              {
+                "text": "itanium",
+                "logprob": -3.1401357650756836,
+                "top_logprobs": {
+                  "echnologies": -2.029940605163574
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -0.8884093165397644,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.8884093165397644
+                }
+              },
+              {
+                "text": " materials",
+                "logprob": -3.8391942977905273,
+                "top_logprobs": {
+                  "\u0120for": -2.250455856323242
+                }
+              },
+              {
+                "text": " from",
+                "logprob": -4.543126106262207,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.921135663986206
+                }
+              },
+              {
+                "text": " different",
+                "logprob": -6.648148059844971,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.999977171421051
+                }
+              },
+              {
+                "text": " sources",
+                "logprob": -1.8631863594055176,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.5567488670349121
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.415534257888794,
+        "request_datetime": 1706068594
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Theodor August Heintzman was a German-Canadian piano manufacturer  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id701"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Theodor August Heintzman was a German-Canadian piano manufacturer  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " and has a focus on his music. He has been created in the form of a telephone,",
+            "logprob": -41.457973908632994,
+            "tokens": [
+              {
+                "text": " and",
+                "logprob": -3.256896734237671,
+                "top_logprobs": {
+                  "\u010a": -1.0921838283538818
+                }
+              },
+              {
+                "text": " has",
+                "logprob": -2.8670339584350586,
+                "top_logprobs": {
+                  "\u0120was": -1.1595144271850586
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -2.180385112762451,
+                "top_logprobs": {
+                  "\u0120been": -1.119459629058838
+                }
+              },
+              {
+                "text": " focus",
+                "logprob": -4.548392295837402,
+                "top_logprobs": {
+                  "\u0120": -2.255044937133789
+                }
+              },
+              {
+                "text": " on",
+                "logprob": -0.06007818505167961,
+                "top_logprobs": {
+                  "\u0120on": -0.06007818505167961
+                }
+              },
+              {
+                "text": " his",
+                "logprob": -3.9425671100616455,
+                "top_logprobs": {
+                  "\u0120the": -1.350759744644165
+                }
+              },
+              {
+                "text": " music",
+                "logprob": -1.4736887216567993,
+                "top_logprobs": {
+                  "\u0120music": -1.4736887216567993
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.8780845999717712,
+                "top_logprobs": {
+                  ".": -0.8780845999717712
+                }
+              },
+              {
+                "text": " He",
+                "logprob": -0.30565184354782104,
+                "top_logprobs": {
+                  "\u0120He": -0.30565184354782104
+                }
+              },
+              {
+                "text": " has",
+                "logprob": -1.404331922531128,
+                "top_logprobs": {
+                  "\u0120is": -1.285750150680542
+                }
+              },
+              {
+                "text": " been",
+                "logprob": -1.2845993041992188,
+                "top_logprobs": {
+                  "\u0120been": -1.2845993041992188
+                }
+              },
+              {
+                "text": " created",
+                "logprob": -4.498018264770508,
+                "top_logprobs": {
+                  "\u0120a": -1.5316928625106812
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -1.6519439220428467,
+                "top_logprobs": {
+                  "\u0120by": -1.613753080368042
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.7323567271232605,
+                "top_logprobs": {
+                  "\u0120the": -0.7323567271232605
+                }
+              },
+              {
+                "text": " form",
+                "logprob": -2.9593663215637207,
+                "top_logprobs": {
+                  "\u0120": -1.7813725471496582
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.3167152404785156,
+                "top_logprobs": {
+                  "\u0120of": -0.3167152404785156
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -0.35080811381340027,
+                "top_logprobs": {
+                  "\u0120a": -0.35080811381340027
+                }
+              },
+              {
+                "text": " tele",
+                "logprob": -4.033346652984619,
+                "top_logprobs": {
+                  "\u0120music": -2.541527271270752
+                }
+              },
+              {
+                "text": "phone",
+                "logprob": -2.5273208618164062,
+                "top_logprobs": {
+                  "vision": -0.18071554601192474
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -2.1863880157470703,
+                "top_logprobs": {
+                  "-": -2.031679153442383
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.041183948516846,
+        "request_datetime": 1706068594
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "\"Gustave Whitehead's brother John arrived in Connecticut  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id547"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "\"Gustave Whitehead's brother John arrived in Connecticut  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "33, December  2000.\";\n    \n    public static final String GOH_",
+            "logprob": -47.51502113393508,
+            "tokens": [
+              {
+                "text": "3",
+                "logprob": -3.13177227973938,
+                "top_logprobs": {
+                  "1": -1.6539137363433838
+                }
+              },
+              {
+                "text": "3",
+                "logprob": -2.4385151863098145,
+                "top_logprobs": {
+                  "0": -2.0285258293151855
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -2.4515304565429688,
+                "top_logprobs": {
+                  "rd": -1.9592150449752808
+                }
+              },
+              {
+                "text": " De",
+                "logprob": -5.297860622406006,
+                "top_logprobs": {
+                  "\u0120": -1.1324247121810913
+                }
+              },
+              {
+                "text": "cember",
+                "logprob": -0.0032506741117686033,
+                "top_logprobs": {
+                  "cember": -0.0032506741117686033
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -3.270749807357788,
+                "top_logprobs": {
+                  "\u0120": -0.07984520494937897
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.3894667625427246,
+                "top_logprobs": {
+                  "2": -0.3894667625427246
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -0.013578317128121853,
+                "top_logprobs": {
+                  "0": -0.013578317128121853
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -0.6862571835517883,
+                "top_logprobs": {
+                  "0": -0.6862571835517883
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -2.244645595550537,
+                "top_logprobs": {
+                  "1": -2.20247220993042
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -3.947374105453491,
+                "top_logprobs": {
+                  ".": -1.4770638942718506
+                }
+              },
+              {
+                "text": "\";",
+                "logprob": -3.2310986518859863,
+                "top_logprobs": {
+                  "\",": -1.7436137199401855
+                }
+              },
+              {
+                "text": "\n    \n   ",
+                "logprob": -5.504339218139648,
+                "top_logprobs": {
+                  "\u010a": -1.5132617950439453
+                }
+              },
+              {
+                "text": " public",
+                "logprob": -1.3789300918579102,
+                "top_logprobs": {
+                  "\u0120public": -1.3789300918579102
+                }
+              },
+              {
+                "text": " static",
+                "logprob": -0.21319691836833954,
+                "top_logprobs": {
+                  "\u0120static": -0.21319691836833954
+                }
+              },
+              {
+                "text": " final",
+                "logprob": -0.5635421872138977,
+                "top_logprobs": {
+                  "\u0120final": -0.5635421872138977
+                }
+              },
+              {
+                "text": " String",
+                "logprob": -0.03602650389075279,
+                "top_logprobs": {
+                  "\u0120String": -0.03602650389075279
+                }
+              },
+              {
+                "text": " GO",
+                "logprob": -4.790517807006836,
+                "top_logprobs": {
+                  "\u0120TEST": -2.2805325984954834
+                }
+              },
+              {
+                "text": "H",
+                "logprob": -6.472699165344238,
+                "top_logprobs": {
+                  "OD": -0.29867562651634216
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -1.449669599533081,
+                "top_logprobs": {
+                  "_": -1.449669599533081
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.60774564743042,
+        "request_datetime": 1706068600
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Jacques Singer was an American virtuoso violinist,  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1621"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Jacques Singer was an American virtuoso violinist,  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " *\n *   at the center of the American Psychology School.  She",
+            "logprob": -34.90625773742795,
+            "tokens": [
+              {
+                "text": " *",
+                "logprob": -2.88448429107666,
+                "top_logprobs": {
+                  "\u010a": -1.2447806596755981
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.1730780303478241,
+                "top_logprobs": {
+                  "\u010a": -0.1730780303478241
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.29248547554016113,
+                "top_logprobs": {
+                  "\u0120*": -0.29248547554016113
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -2.6591391563415527,
+                "top_logprobs": {
+                  "\u0120and": -1.739388108253479
+                }
+              },
+              {
+                "text": " at",
+                "logprob": -4.5071868896484375,
+                "top_logprobs": {
+                  "\u0120and": -1.2762402296066284
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.5391058921813965,
+                "top_logprobs": {
+                  "\u0120the": -0.5391058921813965
+                }
+              },
+              {
+                "text": " center",
+                "logprob": -2.9495015144348145,
+                "top_logprobs": {
+                  "\u0120University": -0.6024147272109985
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.00761215016245842,
+                "top_logprobs": {
+                  "\u0120of": -0.00761215016245842
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.5714432597160339,
+                "top_logprobs": {
+                  "\u0120the": -0.5714432597160339
+                }
+              },
+              {
+                "text": " A",
+                "logprob": -3.051525831222534,
+                "top_logprobs": {
+                  "\u0120United": -2.238671064376831
+                }
+              },
+              {
+                "text": "merican",
+                "logprob": -0.7030065059661865,
+                "top_logprobs": {
+                  "merican": -0.7030065059661865
+                }
+              },
+              {
+                "text": " P",
+                "logprob": -3.3916871547698975,
+                "top_logprobs": {
+                  "\u0120V": -2.335792303085327
+                }
+              },
+              {
+                "text": "sy",
+                "logprob": -1.2329342365264893,
+                "top_logprobs": {
+                  "sy": -1.2329342365264893
+                }
+              },
+              {
+                "text": "cho",
+                "logprob": -0.08727210015058517,
+                "top_logprobs": {
+                  "cho": -0.08727210015058517
+                }
+              },
+              {
+                "text": "logy",
+                "logprob": -1.8331716060638428,
+                "top_logprobs": {
+                  "logical": -0.20568445324897766
+                }
+              },
+              {
+                "text": " School",
+                "logprob": -3.797795295715332,
+                "top_logprobs": {
+                  "\u0120and": -1.3135851621627808
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.8991143107414246,
+                "top_logprobs": {
+                  ".": -0.8991143107414246
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.934063196182251,
+                "top_logprobs": {
+                  "\u0120": -1.934063196182251
+                }
+              },
+              {
+                "text": " S",
+                "logprob": -3.1900601387023926,
+                "top_logprobs": {
+                  "\u0120The": -1.8187565803527832
+                }
+              },
+              {
+                "text": "he",
+                "logprob": -0.20159070193767548,
+                "top_logprobs": {
+                  "he": -0.20159070193767548
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.373483180999756,
+        "request_datetime": 1706068600
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

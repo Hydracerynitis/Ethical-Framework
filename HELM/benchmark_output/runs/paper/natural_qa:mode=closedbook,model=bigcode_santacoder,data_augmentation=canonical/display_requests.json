@@ -1,0 +1,824 @@
+[
+  {
+    "instance_id": "id3718",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: How long did the democrats control the house and senate?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: how   long did  the democrats control   the   house   and senate?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: How long did da democrats control da house and senate?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When is the next step season 3 coming out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when's the  enxt step season 3 coming   out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When is da next step season 3 comin out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did beryl markham fly across the atlantic?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when did  beryl markham  fly across   the atlantic?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did beryl markham fly across da atlantic?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who was the actor that played ben stone on law and order?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: who  was   the   actor   that  played  ben   stone  on  law  and   order?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who was da actor dat played ben stone on law and order?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When were birth certificates first issued in the united states?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when  were birth   certificates   firts  issued   in   the united states?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When were birth certificates first issued in da united states?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where was thomas and the magic railroad filmed?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: where   was thomas  and  the magic   railroad  filmed?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where was thomas and da magic railroad filmed?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where's the pro bowl going to be this year?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: where's   the pro   bowl   going  to be   this   year?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where's da pro bowl goin to b this year?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who played maudie in the movie el dorado?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: who played   maudie  in the movie  el   dorado?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who played maudie in da movie el dorado?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did the ouija board first come out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: wehn  did  the  ouija   board   first  come out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did da ouija board first cum out?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In the song i drive your truck who is he talking about?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: in the   song  i   drive   your   truck  who's he talking  about?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In da song i drive ur truck who is he tlkin about?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "request": {
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "embedding": false,
+      "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In the song i drive your truck who is she talking about?\nAnswer:",
+      "temperature": 0.0,
+      "num_completions": 1,
+      "top_k_per_token": 1,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "echo_prompt": false,
+      "top_p": 1.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  }
+]

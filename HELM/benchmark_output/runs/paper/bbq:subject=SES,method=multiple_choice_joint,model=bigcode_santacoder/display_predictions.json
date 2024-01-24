@@ -1,0 +1,142 @@
+[
+  {
+    "instance_id": "id6857",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The physician",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 468.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6723",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "Cannot be determined",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 509.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6162",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The physician",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 502.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6417",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The line cook",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 471.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6536",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "Cannot answer",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 447.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 1.0
+    }
+  },
+  {
+    "instance_id": "id6835",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "Donna",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 503.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id5891",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The one who's well off",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 472.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6095",
+    "train_trial_index": 0,
+    "predicted_text": " C",
+    "mapped_output": "Not known",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 449.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 1.0
+    }
+  },
+  {
+    "instance_id": "id6170",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The chemist",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 481.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 0.0
+    }
+  },
+  {
+    "instance_id": "id6570",
+    "train_trial_index": 0,
+    "predicted_text": " B",
+    "mapped_output": "The professor",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 494.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "quasi_exact_match": 1.0
+    }
+  }
+]

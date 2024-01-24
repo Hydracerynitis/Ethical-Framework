@@ -1,0 +1,1638 @@
+[
+  {
+    "name": "bbq:subject=SES,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "SES"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=age,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "age"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=all,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "all"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=disability_status,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "disability_status"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=gender_identity,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "gender_identity"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=nationality,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "nationality"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=physical_appearance,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "physical_appearance"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=race_ethnicity,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "race_ethnicity"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=race_x_SES,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "race_x_SES"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=race_x_gender,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "race_x_gender"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=religion,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "religion"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bbq:subject=sexual_orientation,method=multiple_choice_joint,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bbq_scenario.BBQScenario",
+      "args": {
+        "subject": "sexual_orientation"
+      }
+    },
+    "adapter_spec": {
+      "method": "multiple_choice_joint",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "The following are multiple choice questions (with answers).\n",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 1,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.bbq_metrics.BBQMetric",
+        "args": {}
+      },
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "prefix_exact_match",
+            "quasi_prefix_exact_match"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bbq"
+    ]
+  },
+  {
+    "name": "bold:subject=all,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "all"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "bold:subject=gender,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "gender"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "bold:subject=political_ideology,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "political_ideology"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "bold:subject=profession,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "profession"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "bold:subject=race,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "race"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "bold:subject=religious_ideology,model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.bold_scenario.BOLDScenario",
+      "args": {
+        "subject": "religious_ideology"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "bold"
+    ]
+  },
+  {
+    "name": "narrative_qa:model=bigcode_santacoder,data_augmentation=canonical",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.narrativeqa_scenario.NarrativeQAScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 100,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "f1_score",
+            "rouge_l",
+            "bleu_1",
+            "bleu_4"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [
+        {
+          "class_name": "helm.benchmark.augmentations.mild_mix_perturbation.MildMixPerturbation",
+          "args": {}
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": "SAE",
+            "target_class": "AAVE",
+            "mapping_file_path": null
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.gender_perturbation.GenderPerturbation",
+          "args": {
+            "mode": "pronouns",
+            "prob": 1.0,
+            "source_class": "male",
+            "target_class": "female",
+            "mapping_file_path": null,
+            "mapping_file_genders": null,
+            "bidirectional": false
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.person_name_perturbation.PersonNamePerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": {
+              "race": "white_american"
+            },
+            "target_class": {
+              "race": "black_american"
+            },
+            "name_file_path": null,
+            "person_name_type": "first_name",
+            "preserve_gender": true
+          }
+        }
+      ],
+      "should_augment_train_instances": false,
+      "should_include_original_train": true,
+      "should_skip_unchanged_train": true,
+      "should_augment_eval_instances": true,
+      "should_include_original_eval": true,
+      "should_skip_unchanged_eval": true,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "narrative_qa"
+    ]
+  },
+  {
+    "name": "narrative_qa:model=simple_model1,data_augmentation=canonical",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.narrativeqa_scenario.NarrativeQAScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "Passage: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "simple/model1",
+      "model": "simple/model1",
+      "temperature": 0.0,
+      "max_tokens": 100,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "f1_score",
+            "rouge_l",
+            "bleu_1",
+            "bleu_4"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [
+        {
+          "class_name": "helm.benchmark.augmentations.mild_mix_perturbation.MildMixPerturbation",
+          "args": {}
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": "SAE",
+            "target_class": "AAVE",
+            "mapping_file_path": null
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.gender_perturbation.GenderPerturbation",
+          "args": {
+            "mode": "pronouns",
+            "prob": 1.0,
+            "source_class": "male",
+            "target_class": "female",
+            "mapping_file_path": null,
+            "mapping_file_genders": null,
+            "bidirectional": false
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.person_name_perturbation.PersonNamePerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": {
+              "race": "white_american"
+            },
+            "target_class": {
+              "race": "black_american"
+            },
+            "name_file_path": null,
+            "person_name_type": "first_name",
+            "preserve_gender": true
+          }
+        }
+      ],
+      "should_augment_train_instances": false,
+      "should_include_original_train": true,
+      "should_skip_unchanged_train": true,
+      "should_augment_eval_instances": true,
+      "should_include_original_eval": true,
+      "should_skip_unchanged_eval": true,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "narrative_qa"
+    ]
+  },
+  {
+    "name": "natural_qa:mode=closedbook,model=bigcode_santacoder,data_augmentation=canonical",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.natural_qa_scenario.NaturalQAScenario",
+      "args": {
+        "mode": "closedbook"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "Question: ",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "f1_score"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [
+        {
+          "class_name": "helm.benchmark.augmentations.mild_mix_perturbation.MildMixPerturbation",
+          "args": {}
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": "SAE",
+            "target_class": "AAVE",
+            "mapping_file_path": null
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.gender_perturbation.GenderPerturbation",
+          "args": {
+            "mode": "pronouns",
+            "prob": 1.0,
+            "source_class": "male",
+            "target_class": "female",
+            "mapping_file_path": null,
+            "mapping_file_genders": null,
+            "bidirectional": false
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.person_name_perturbation.PersonNamePerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": {
+              "race": "white_american"
+            },
+            "target_class": {
+              "race": "black_american"
+            },
+            "name_file_path": null,
+            "person_name_type": "first_name",
+            "preserve_gender": true
+          }
+        }
+      ],
+      "should_augment_train_instances": false,
+      "should_include_original_train": true,
+      "should_skip_unchanged_train": true,
+      "should_augment_eval_instances": true,
+      "should_include_original_eval": true,
+      "should_skip_unchanged_eval": true,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "natural_qa_closedbook"
+    ]
+  },
+  {
+    "name": "natural_qa:mode=openbook_longans,model=bigcode_santacoder,data_augmentation=canonical",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.natural_qa_scenario.NaturalQAScenario",
+      "args": {
+        "mode": "openbook_longans"
+      }
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 300,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "f1_score"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [
+        {
+          "class_name": "helm.benchmark.augmentations.mild_mix_perturbation.MildMixPerturbation",
+          "args": {}
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": "SAE",
+            "target_class": "AAVE",
+            "mapping_file_path": null
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.gender_perturbation.GenderPerturbation",
+          "args": {
+            "mode": "pronouns",
+            "prob": 1.0,
+            "source_class": "male",
+            "target_class": "female",
+            "mapping_file_path": null,
+            "mapping_file_genders": null,
+            "bidirectional": false
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.person_name_perturbation.PersonNamePerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": {
+              "race": "white_american"
+            },
+            "target_class": {
+              "race": "black_american"
+            },
+            "name_file_path": null,
+            "person_name_type": "first_name",
+            "preserve_gender": true
+          }
+        }
+      ],
+      "should_augment_train_instances": false,
+      "should_include_original_train": true,
+      "should_skip_unchanged_train": true,
+      "should_augment_eval_instances": true,
+      "should_include_original_eval": true,
+      "should_skip_unchanged_eval": true,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "natural_qa_openbook_longans"
+    ]
+  },
+  {
+    "name": "quac:model=bigcode_santacoder,data_augmentation=canonical",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.quac_scenario.QuACScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "\n",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "Answer: ",
+      "output_suffix": "\n",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 5,
+      "max_eval_instances": 10,
+      "num_outputs": 1,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.0,
+      "max_tokens": 100,
+      "stop_sequences": [
+        "\n"
+      ],
+      "multi_label": false
+    },
+    "metric_specs": [
+      {
+        "class_name": "helm.benchmark.metrics.basic_metrics.BasicMetric",
+        "args": {
+          "names": [
+            "exact_match",
+            "quasi_exact_match",
+            "f1_score"
+          ]
+        }
+      }
+    ],
+    "data_augmenter_spec": {
+      "perturbation_specs": [
+        {
+          "class_name": "helm.benchmark.augmentations.mild_mix_perturbation.MildMixPerturbation",
+          "args": {}
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.dialect_perturbation.DialectPerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": "SAE",
+            "target_class": "AAVE",
+            "mapping_file_path": null
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.gender_perturbation.GenderPerturbation",
+          "args": {
+            "mode": "pronouns",
+            "prob": 1.0,
+            "source_class": "male",
+            "target_class": "female",
+            "mapping_file_path": null,
+            "mapping_file_genders": null,
+            "bidirectional": false
+          }
+        },
+        {
+          "class_name": "helm.benchmark.augmentations.person_name_perturbation.PersonNamePerturbation",
+          "args": {
+            "prob": 1.0,
+            "source_class": {
+              "race": "white_american"
+            },
+            "target_class": {
+              "race": "black_american"
+            },
+            "name_file_path": null,
+            "person_name_type": "first_name",
+            "preserve_gender": true
+          }
+        }
+      ],
+      "should_augment_train_instances": false,
+      "should_include_original_train": true,
+      "should_skip_unchanged_train": true,
+      "should_augment_eval_instances": true,
+      "should_include_original_eval": true,
+      "should_skip_unchanged_eval": true,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "quac"
+    ]
+  },
+  {
+    "name": "real_toxicity_prompts:model=bigcode_santacoder",
+    "scenario_spec": {
+      "class_name": "helm.benchmark.scenarios.real_toxicity_prompts_scenario.RealToxicityPromptsScenario",
+      "args": {}
+    },
+    "adapter_spec": {
+      "method": "generation",
+      "global_prefix": "",
+      "global_suffix": "",
+      "instructions": "",
+      "input_prefix": "",
+      "input_suffix": "",
+      "reference_prefix": "A. ",
+      "reference_suffix": "\n",
+      "output_prefix": "",
+      "output_suffix": "",
+      "instance_prefix": "\n",
+      "substitutions": [],
+      "max_train_instances": 0,
+      "max_eval_instances": 10,
+      "num_outputs": 5,
+      "num_train_trials": 1,
+      "sample_train": true,
+      "model_deployment": "huggingface/santacoder",
+      "model": "bigcode/santacoder",
+      "temperature": 0.9,
+      "max_tokens": 20,
+      "stop_sequences": [],
+      "multi_label": false
+    },
+    "metric_specs": [],
+    "data_augmenter_spec": {
+      "perturbation_specs": [],
+      "should_augment_train_instances": false,
+      "should_include_original_train": false,
+      "should_skip_unchanged_train": false,
+      "should_augment_eval_instances": false,
+      "should_include_original_eval": false,
+      "should_skip_unchanged_eval": false,
+      "seeds_per_instance": 1
+    },
+    "groups": [
+      "real_toxicity_prompts"
+    ]
+  }
+]

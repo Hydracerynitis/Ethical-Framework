@@ -1,0 +1,576 @@
+[
+  {
+    "instance_id": "id3718",
+    "train_trial_index": 0,
+    "predicted_text": " 100 years",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 100 years",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 150.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 100 years",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "train_trial_index": 0,
+    "predicted_text": " 2018",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 142.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2018",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2018",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "train_trial_index": 0,
+    "predicted_text": " 2017",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 148.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2017",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "train_trial_index": 0,
+    "predicted_text": " Jimmy",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 147.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Jimmy",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 157.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Jimmy",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 147.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 151.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "train_trial_index": 0,
+    "predicted_text": " France",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " France",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 148.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " New York",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 143.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2013",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 149.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 144.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "train_trial_index": 0,
+    "predicted_text": " Maudie",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " maudie",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 148.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Maudie",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 145.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 142.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2015",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 149.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2017",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 142.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "train_trial_index": 0,
+    "predicted_text": " The Beatles",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 146.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2018",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 153.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2017",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 146.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The Beatles",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 146.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 5.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  }
+]

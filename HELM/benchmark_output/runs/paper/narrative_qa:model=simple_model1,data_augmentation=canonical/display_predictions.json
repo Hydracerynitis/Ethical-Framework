@@ -1,0 +1,1042 @@
+[
+  {
+    "instance_id": "id1413",
+    "train_trial_index": 0,
+    "predicted_text": "crush?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1740.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "crush?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1468.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "crush?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1740.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "crush?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1740.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "crush?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1740.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "train_trial_index": 0,
+    "predicted_text": "Jones?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1620.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "jones?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1741.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Jones?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1620.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Jones?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1620.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Jones?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1620.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "train_trial_index": 0,
+    "predicted_text": "language?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1614.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "language?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1697.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "language?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1614.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "language?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1614.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "language?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1614.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "train_trial_index": 0,
+    "predicted_text": "Carson?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1736.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "carson?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1447.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Carson?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1736.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Carson?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1736.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Carson?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1736.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "train_trial_index": 0,
+    "predicted_text": "La?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1374.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16666666666666666
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "la?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1577.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16666666666666666
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "La?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1374.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.15384615384615385
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "La?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1374.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16666666666666666
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "La?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1374.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16666666666666666
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "train_trial_index": 0,
+    "predicted_text": "bigamy?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1749.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "bigamy?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1511.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "bigamy?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1749.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "bigamy?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1749.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "bigamy?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1749.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "train_trial_index": 0,
+    "predicted_text": "Morton?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1604.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "morton?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1716.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Morton?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1604.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Morton?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1604.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Morton?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1604.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "train_trial_index": 0,
+    "predicted_text": "Ginger?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1865.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "ginger?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1747.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Ginger?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1865.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Ginger?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1865.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Ginger?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1865.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "train_trial_index": 0,
+    "predicted_text": "Earl?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1654.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "earl?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1823.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Earl?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1654.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Earl?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1654.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "Earl?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1654.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "train_trial_index": 0,
+    "predicted_text": "with?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1532.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "with?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1936.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "wid?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1532.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "with?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1532.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": "with?\nAnswer:",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1532.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 3.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  }
+]

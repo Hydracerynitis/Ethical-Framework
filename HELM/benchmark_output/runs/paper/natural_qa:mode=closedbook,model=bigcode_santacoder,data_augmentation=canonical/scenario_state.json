@@ -1,0 +1,3103 @@
+{
+  "adapter_spec": {
+    "method": "generation",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "",
+    "input_prefix": "Question: ",
+    "input_suffix": "\n",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "output_prefix": "Answer: ",
+    "output_suffix": "\n",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 5,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/santacoder",
+    "model": "bigcode/santacoder",
+    "temperature": 0.0,
+    "max_tokens": 300,
+    "stop_sequences": [
+      "\n"
+    ],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "How long did the democrats control the house and senate?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "57 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "35 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3718"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: How long did the democrats control the house and senate?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 100 years",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": " years",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120years": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.847801923751831,
+        "request_datetime": 1706068144
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "how   long did  the democrats control   the   house   and senate?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "57 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "35 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3718",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: how   long did  the democrats control   the   house   and senate?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 100 years",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": " years",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120years": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.242252588272095,
+        "request_datetime": 1706068144
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "How long did da democrats control da house and senate?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "57 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "35 yrs"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3718",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: How long did da democrats control da house and senate?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 100 years",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": " years",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120years": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.7782390117645264,
+        "request_datetime": 1706068144
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When is the next step season 3 coming out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "March 16, 2015"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3320"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When is the next step season 3 coming out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2018",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "8",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "8": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.9620063304901123,
+        "request_datetime": 1706068144
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "when's the  enxt step season 3 coming   out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "March 16, 2015"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3320",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when's the  enxt step season 3 coming   out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2018",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "8",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "8": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.7825522422790527,
+        "request_datetime": 1706068148
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When is da next step season 3 comin out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "March 16, 2015"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3320",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When is da next step season 3 comin out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2018",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "8",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "8": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.661482334136963,
+        "request_datetime": 1706068148
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When did beryl markham fly across the atlantic?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "4 September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id956"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did beryl markham fly across the atlantic?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2017",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "7",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "7": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.613572359085083,
+        "request_datetime": 1706068148
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "when did  beryl markham  fly across   the atlantic?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "4 September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id956",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when did  beryl markham  fly across   the atlantic?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.729358196258545,
+        "request_datetime": 1706068148
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When did beryl markham fly across da atlantic?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "4 September 1936"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id956",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did beryl markham fly across da atlantic?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2017",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "7",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "7": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.955970525741577,
+        "request_datetime": 1706068151
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Who was the actor that played ben stone on law and order?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Michael Moriarty"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id519"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who was the actor that played ben stone on law and order?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " Jimmy",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " J",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120J": 0.0
+                }
+              },
+              {
+                "text": "im",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "im": 0.0
+                }
+              },
+              {
+                "text": "my",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "my": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.532550573348999,
+        "request_datetime": 1706068151
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "who  was   the   actor   that  played  ben   stone  on  law  and   order?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Michael Moriarty"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id519",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: who  was   the   actor   that  played  ben   stone  on  law  and   order?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " Jimmy",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " J",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120J": 0.0
+                }
+              },
+              {
+                "text": "im",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "im": 0.0
+                }
+              },
+              {
+                "text": "my",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "my": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.568591356277466,
+        "request_datetime": 1706068151
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Who was da actor dat played ben stone on law and order?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Michael Moriarty"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id519",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who was da actor dat played ben stone on law and order?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " Jimmy",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " J",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120J": 0.0
+                }
+              },
+              {
+                "text": "im",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "im": 0.0
+                }
+              },
+              {
+                "text": "my",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "my": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.228801727294922,
+        "request_datetime": 1706068152
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When were birth certificates first issued in the united states?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1900"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1902"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "From 1900 to 1946"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3418"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When were birth certificates first issued in the united states?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.8586769104003906,
+        "request_datetime": 1706068155
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "when  were birth   certificates   firts  issued   in   the united states?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1900"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1902"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "From 1900 to 1946"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3418",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: when  were birth   certificates   firts  issued   in   the united states?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.304869174957275,
+        "request_datetime": 1706068155
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When were birth certificates first issued in da united states?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "1900"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "1902"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "From 1900 to 1946"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3418",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When were birth certificates first issued in da united states?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.256737947463989,
+        "request_datetime": 1706068155
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Where was thomas and the magic railroad filmed?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Toronto, Ontario, Canada"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "the Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on the Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2114"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where was thomas and the magic railroad filmed?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " France",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " Fr",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120Fr": 0.0
+                }
+              },
+              {
+                "text": "ance",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "ance": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.820148468017578,
+        "request_datetime": 1706068155
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "where   was thomas  and  the magic   railroad  filmed?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Toronto, Ontario, Canada"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "the Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on the Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2114",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: where   was thomas  and  the magic   railroad  filmed?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " France",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " Fr",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120Fr": 0.0
+                }
+              },
+              {
+                "text": "ance",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "ance": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.538175344467163,
+        "request_datetime": 1706068158
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Where was thomas and da magic railroad filmed?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Toronto, Ontario, Canada"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "the Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on da Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Isle of Man"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2114",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where was thomas and da magic railroad filmed?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " New York",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " New",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120New": 0.0
+                }
+              },
+              {
+                "text": " York",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120York": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.133837938308716,
+        "request_datetime": 1706068159
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Where's the pro bowl going to be this year?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Camping World Stadium, Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id4120"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where's the pro bowl going to be this year?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.998382091522217,
+        "request_datetime": 1706068159
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "where's   the pro   bowl   going  to be   this   year?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Camping World Stadium, Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id4120",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: where's   the pro   bowl   going  to be   this   year?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2013",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "3",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "3": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 4.283497333526611,
+        "request_datetime": 1706068159
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Where's da pro bowl goin to b this year?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Camping World Stadium, Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando, Florida"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "Camping World Stadium in Orlando"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id4120",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Where's da pro bowl goin to b this year?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.508013963699341,
+        "request_datetime": 1706068161
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Who played maudie in the movie el dorado?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Charlene Holt"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2726"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who played maudie in the movie el dorado?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " Maudie",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " M",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120M": 0.0
+                }
+              },
+              {
+                "text": "aud",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "aud": 0.0
+                }
+              },
+              {
+                "text": "ie",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "ie": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.9949510097503662,
+        "request_datetime": 1706068162
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "who played   maudie  in the movie  el   dorado?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Charlene Holt"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2726",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: who played   maudie  in the movie  el   dorado?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " maudie",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " m",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120m": 0.0
+                }
+              },
+              {
+                "text": "aud",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "aud": 0.0
+                }
+              },
+              {
+                "text": "ie",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "ie": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.5009310245513916,
+        "request_datetime": 1706068163
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Who played maudie in da movie el dorado?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "Charlene Holt"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2726",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: Who played maudie in da movie el dorado?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " Maudie",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " M",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120M": 0.0
+                }
+              },
+              {
+                "text": "aud",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "aud": 0.0
+                }
+              },
+              {
+                "text": "ie",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "ie": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.108827590942383,
+        "request_datetime": 1706068164
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When did the ouija board first come out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "July 1, 1890"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3928"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did the ouija board first come out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.6078600883483887,
+        "request_datetime": 1706068164
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "wehn  did  the  ouija   board   first  come out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "July 1, 1890"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3928",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: wehn  did  the  ouija   board   first  come out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2015",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "5",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "5": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 3.5671446323394775,
+        "request_datetime": 1706068164
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "When did da ouija board first cum out?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "July 1, 1890"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id3928",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: When did da ouija board first cum out?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2017",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "7",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "7": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.7338545322418213,
+        "request_datetime": 1706068166
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "In the song i drive your truck who is he talking about?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "his brother"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "his brother, who died in action in the United States Army"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2032"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In the song i drive your truck who is he talking about?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " The Beatles",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " The",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120The": 0.0
+                }
+              },
+              {
+                "text": " B",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120B": 0.0
+                }
+              },
+              {
+                "text": "eat",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "eat": 0.0
+                }
+              },
+              {
+                "text": "les",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "les": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.239185094833374,
+        "request_datetime": 1706068167
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "in the   song  i   drive   your   truck  who's he talking  about?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "his brother"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "his brother, who died in action in the United States Army"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2032",
+        "perturbation": {
+          "name": "mild_mix",
+          "robustness": true,
+          "fairness": false,
+          "computed_on": "perturbed"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: in the   song  i   drive   your   truck  who's he talking  about?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2018",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "8",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "8": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.7086896896362305,
+        "request_datetime": 1706068168
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "In da song i drive ur truck who is he tlkin about?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "his brother"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "his homeboy, who died in action in da United States Army"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2032",
+        "perturbation": {
+          "name": "dialect",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "prob": 1.0,
+          "source_class": "SAE",
+          "target_class": "AAVE",
+          "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In da song i drive ur truck who is he tlkin about?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " 2017",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " ",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120": 0.0
+                }
+              },
+              {
+                "text": "2",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "2": 0.0
+                }
+              },
+              {
+                "text": "0",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "0": 0.0
+                }
+              },
+              {
+                "text": "1",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "1": 0.0
+                }
+              },
+              {
+                "text": "7",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "7": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 2.551880359649658,
+        "request_datetime": 1706068168
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "In the song i drive your truck who is she talking about?"
+        },
+        "references": [
+          {
+            "output": {
+              "text": "his brother"
+            },
+            "tags": [
+              "correct"
+            ]
+          },
+          {
+            "output": {
+              "text": "his brother, who died in action in the United States Army"
+            },
+            "tags": [
+              "correct"
+            ]
+          }
+        ],
+        "split": "valid",
+        "id": "id2032",
+        "perturbation": {
+          "name": "gender",
+          "robustness": false,
+          "fairness": true,
+          "computed_on": "perturbed",
+          "mode": "pronouns",
+          "prob": 1.0,
+          "source_class": "male",
+          "target_class": "female",
+          "bidirectional": false
+        }
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Question: How many episodes is ash vs evil dead season 3?\nAnswer: 10\n\nQuestion: When does madea's family funeral come out?\nAnswer: 2018\n\nQuestion: When is the last time the jaguars won a playoff game?\nAnswer: 2017\n\nQuestion: Where was the statue of liberty originally built?\nAnswer: France\n\nQuestion: When was the last time the seattle seahawks won the superbowl?\nAnswer: 2013\n\nQuestion: In the song i drive your truck who is she talking about?\nAnswer:",
+        "temperature": 0.0,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 300,
+        "stop_sequences": [
+          "\n"
+        ],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " The Beatles",
+            "logprob": 0.0,
+            "tokens": [
+              {
+                "text": " The",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120The": 0.0
+                }
+              },
+              {
+                "text": " B",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "\u0120B": 0.0
+                }
+              },
+              {
+                "text": "eat",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "eat": 0.0
+                }
+              },
+              {
+                "text": "les",
+                "logprob": 0.0,
+                "top_logprobs": {
+                  "les": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 1.7916734218597412,
+        "request_datetime": 1706068169
+      },
+      "num_train_instances": 5,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

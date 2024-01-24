@@ -1,0 +1,917 @@
+[
+  {
+    "instance_id": "id12560",
+    "train_trial_index": 0,
+    "predicted_text": " Brown's song \"The Beatles\" by Jack Brown. The track \"The Beatles\" was released in 1971, and the album was released in 1972.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1948.0,
+      "num_output_tokens": 45.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12560",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  city.   ono   was   enrolled   in  the   karuizawa   mountain resort,   where   they   were   bartered  for   food.   ono   said  it was   during thsi period  in her  life   that  she  developed her  \"aggressive\"  attitude and   understanding  of  \"outsider\"  status   when children--who  were  once  well-",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1948.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12560",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "ad of da Beatles, and a number of other songs. She also played a number of songs on da albums, including \"The Beatles\" and \"The Beatles of the Beatles\". She also played a number of songs on da albums, including \"The Beatles\" and \"The Beatles of the Beatles\". She also played a number of songs on da albums, including \"The Beatles\" and \"",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1948.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12560",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": "ic Brown's song \"The Beatles\" by Eric Brown. The track \"The Beatles\" was released in 1971, and the album was released in 1972.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1948.0,
+      "num_output_tokens": 46.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12560",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " a photo of her leaning on Lennon. The track \"The Beatles\" was a double-track, and featured a photo of her leaning on Ono. The album \"The Beatles\" was a double-track, and featured a photo of her leaning on Lennon. The album \"The Beatles\" was a double-track, and featured a photo of her leaning on Ono. The album \"The Beat",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1948.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12426",
+    "train_trial_index": 0,
+    "predicted_text": " In July 1943, he was appointed to the V and W-class destroyer and flotilla leader HMS Wallace, which was involved in convoy escort tasks on the east coast of Britain, as well as the Allied invasion of Sicily.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1065.0,
+      "num_output_tokens": 67.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.27450980392156865
+    }
+  },
+  {
+    "instance_id": "id12426",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  in  january 1946,  philip  returned   to   the united   kingdom   on   the  whelp,   and   was posted   as  an   instructor  at  hms   royal  arthur, the   petty offcers'   school   in corsham, wiltshire.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1458.0,
+      "num_output_tokens": 82.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.22857142857142856
+    }
+  },
+  {
+    "instance_id": "id12426",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " In July 1943, he was appointed to da V and W-class destroyer and flotilla leader HMS Wallace, which was involved in convoy escort tasks on da east coast of Britain, as well as da Allied invasion of Sicily.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1084.0,
+      "num_output_tokens": 67.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.3018867924528302
+    }
+  },
+  {
+    "instance_id": "id12426",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " In July 1943, as second in command of HMS Wallace,",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1069.0,
+      "num_output_tokens": 19.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.2
+    }
+  },
+  {
+    "instance_id": "id12426",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " In July 1943, he was appointed to the V and W-class destroyer and flotilla leader HMS Wallace, which was involved in convoy escort tasks on the east coast of Britain, as well as the Allied invasion of Sicily.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1066.0,
+      "num_output_tokens": 67.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.27450980392156865
+    }
+  },
+  {
+    "instance_id": "id11865",
+    "train_trial_index": 0,
+    "predicted_text": " The first time she was in love with her father, Raven, was able to control her souls and prevent her from returning to power.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1848.0,
+      "num_output_tokens": 30.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.38888888888888884
+    }
+  },
+  {
+    "instance_id": "id11865",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1980-01-01",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 921.0,
+      "num_output_tokens": 11.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11865",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1980-1985",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1860.0,
+      "num_output_tokens": 10.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11865",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The first time she was in love with her father, Raven, was able to control her souls and prevent her from returning to power.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1848.0,
+      "num_output_tokens": 30.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.38888888888888884
+    }
+  },
+  {
+    "instance_id": "id12120",
+    "train_trial_index": 0,
+    "predicted_text": " Garvey's response was published a month later: he called the letter a conspiratorial fabrication meant to undermine the success and favour he had gained while in Jamaica and in the United States. While W. E. B. Du Bois felt that the Black Star Line was \"original and promising\", he added that \"Marcus Garvey is, without doubt, the most dangerous enemy of the Negro race in America and in",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1070.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16901408450704228
+    }
+  },
+  {
+    "instance_id": "id12120",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "   \"the  black   star   line   was   \"original   andd   promising\", he added that \"marcus garvey is, without doubt, the  most   dangerous enemy   of the   negro race   in  america  and in  the   world.  he's   either a   lunatic   or  a  traitor.\"   du bois  considered   garvey's program   of  complete   seperation ",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1485.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.2033898305084746
+    }
+  },
+  {
+    "instance_id": "id12120",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " da Black Star Line was \"original and promising\", he added dat \"Marcus Garvey is, w/o doubt, da most dangerous enemy of da Negro race in America and in da world. He is either a lunatic or a traitor.\" Du Bois considered Garvey's program of complete separation a capitulation to white supremacy; a tacit admission dat Blacks could never b equal to Whites. Nuthin how",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1089.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.2191780821917808
+    }
+  },
+  {
+    "instance_id": "id12120",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Garvey's response was published a month later: she called the letter a conspiratorial fabrication meant to undermine the success and favour she had gained while in Jamaica and in the United States. While W. E. B. Du Bois felt that the Black Star Line was \"original and promising\", she added that \"Marcus Garvey is, without doubt, the most dangerous enemy of the Negro race in America and in",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1073.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16901408450704228
+    }
+  },
+  {
+    "instance_id": "id12120",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Garvey's response was published a month later: he called the letter a conspiratorial fabrication meant to undermine the success and favour he had gained while in Jamaica and in the United States. While W. E. B. Du Bois felt that the Black Star Line was \"original and promising\", he added that \"Marcus Garvey is, without doubt, the most dangerous enemy of the Negro race in America and in",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1071.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.16901408450704228
+    }
+  },
+  {
+    "instance_id": "id12239",
+    "train_trial_index": 0,
+    "predicted_text": " He received no medals",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1003.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12239",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  yes",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1351.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12239",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " He received no medals",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1023.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12239",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " YES",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1009.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12538",
+    "train_trial_index": 0,
+    "predicted_text": " The cable was lost after 1,200 miles (1,900 km) had been laid and the expedition had to be abandoned.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 789.0,
+      "num_output_tokens": 36.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.23529411764705882
+    }
+  },
+  {
+    "instance_id": "id12538",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  the  cable was   lost after 1,200  miles  (1,900  km)  had  been   laid   and   the  expedition  had  to   be  abandoned.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1086.0,
+      "num_output_tokens": 52.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.23529411764705882
+    }
+  },
+  {
+    "instance_id": "id12538",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Da cable was lost after 1,200 miles (1,900 km) had been laid and da expedition had to b abandoned.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 804.0,
+      "num_output_tokens": 36.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.2777777777777778
+    }
+  },
+  {
+    "instance_id": "id12538",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The cable was lost after 1,200 miles (1,900 km) had been laid and the expedition had to be abandoned.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 791.0,
+      "num_output_tokens": 36.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.23529411764705882
+    }
+  },
+  {
+    "instance_id": "id11594",
+    "train_trial_index": 0,
+    "predicted_text": " He was invited to play at the Grand Ole Opry in 1950 that he gained serious significance in the United States. His second release in early 1950, \"I'm Moving On\" was the first of seven number 1 hits on the country charts. \"I'm Moving On\" stayed at the top for 21 weeks, setting the all-time record for most weeks at number 1. That same year",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 816.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5666666666666667
+    }
+  },
+  {
+    "instance_id": "id11594",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "   \"yes\"",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1088.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11594",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " His other \"signature song\" was \"I've Been Everywhere\", in which he portrayed hisself as a hitchhiker braggin about alll the towns he'd been thru. Dis song was originally written and performed in Australia by Geoff Mack, and its re-write incorporated North American place names. Rattling offf a well-rhymed series of city names at an auctioneer's pace has long",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 834.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.13333333333333333
+    }
+  },
+  {
+    "instance_id": "id11594",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " \"I'm Moving On\" stayed at the top for 21 weeks, setting the all-time record for most weeks at number 1. That same year \"The Golden Rocket\" and \"The Rhumba Boogie\" both hit number one with the latter remaining No. 1 for eight weeks. Along with these hits, her other \"signature song\" was \"I've Been Everywhere\", in which she portrayed herself as a h",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 812.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.15151515151515152
+    }
+  },
+  {
+    "instance_id": "id11594",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " He was invited to play at the Grand Ole Opry in 1950 that he gained serious significance in the United States. His second release in early 1950, \"I'm Moving On\" was the first of seven number 1 hits on the country charts. \"I'm Moving On\" stayed at the top for 21 weeks, setting the all-time record for most weeks at number 1. That same year",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 821.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5666666666666667
+    }
+  },
+  {
+    "instance_id": "id11798",
+    "train_trial_index": 0,
+    "predicted_text": " No",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 787.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11798",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " yes",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1059.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11798",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 804.0,
+      "num_output_tokens": 0.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11798",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " No",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 787.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11873",
+    "train_trial_index": 0,
+    "predicted_text": " He was spirited away to the Praetorian camp and put under their protection. The Senate quickly met and began debating a change of government, but this eventually devolved into an argument over which of them would be the new princeps. When they heard of the Praetorians' claim, they demanded that Claudius be delivered to them for approval, but he refused, sensing the danger that would come with complying",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 857.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11873",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  he was spirited away to the praetorian camp and put under their protection.  the senate quickly met and began debating a change of government, but this eventually devolved into an arguement over which of them would be the new princeps.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1187.0,
+      "num_output_tokens": 59.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11873",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Thea is no evidence dat Claudius had a direct hand in da assassination, although it has been argued dat he knew bou the plot -- particularly since he left da scene of da crime shortly b4 his nephew was murdered. However, after da deaths of Caligula's wife and daughter, it became apparent dat Cassius intended to go beyond da terms of da conspiracy and",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 884.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id11873",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The Senate quickly met and began debating a change of government, but this eventually devolved into an argument over which of them would be the new princeps. When they heard of the Praetorians' claim, they demanded that Claudius be delivered to them for approval, but she refused, sensing the danger that would come with complying. Some historians, particularly Josephus, claim that Claudius was",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 861.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12273",
+    "train_trial_index": 0,
+    "predicted_text": " David Ellefson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 867.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12273",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  david  ellefson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1192.0,
+      "num_output_tokens": 8.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12273",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " David Ellefson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 914.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12273",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " David Ellefson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 867.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id12273",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " David Ellefson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 869.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  }
+]

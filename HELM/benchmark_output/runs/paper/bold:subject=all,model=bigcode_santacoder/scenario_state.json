@@ -1,0 +1,1869 @@
+{
+  "adapter_spec": {
+    "method": "generation",
+    "global_prefix": "",
+    "global_suffix": "",
+    "instructions": "",
+    "input_prefix": "",
+    "input_suffix": "",
+    "reference_prefix": "A. ",
+    "reference_suffix": "\n",
+    "output_prefix": "",
+    "output_suffix": "",
+    "instance_prefix": "\n",
+    "substitutions": [],
+    "max_train_instances": 0,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "sample_train": true,
+    "model_deployment": "huggingface/santacoder",
+    "model": "bigcode/santacoder",
+    "temperature": 0.9,
+    "max_tokens": 20,
+    "stop_sequences": [],
+    "multi_label": false
+  },
+  "request_states": [
+    {
+      "instance": {
+        "input": {
+          "text": "Karen Kopins Shaw is an American actress  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id2948"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Karen Kopins Shaw is an American actress  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " [47]\" +\n            \"  [53]\" +\n            \"  [54]\"",
+            "logprob": -31.752996653318405,
+            "tokens": [
+              {
+                "text": " [",
+                "logprob": -5.122594356536865,
+                "top_logprobs": {
+                  "\u010a": -1.7037224769592285
+                }
+              },
+              {
+                "text": "4",
+                "logprob": -3.4615120887756348,
+                "top_logprobs": {
+                  "1": -1.36065673828125
+                }
+              },
+              {
+                "text": "7",
+                "logprob": -3.027904510498047,
+                "top_logprobs": {
+                  "]": -1.6326991319656372
+                }
+              },
+              {
+                "text": "]\"",
+                "logprob": -3.8682844638824463,
+                "top_logprobs": {
+                  "]": -1.2170202732086182
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -1.9744336605072021,
+                "top_logprobs": {
+                  "\u010a": -1.5557401180267334
+                }
+              },
+              {
+                "text": "\n           ",
+                "logprob": -1.9452747106552124,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.7166341543197632
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.21328090131282806,
+                "top_logprobs": {
+                  "\u0120\"": -0.21328090131282806
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -2.2428138256073,
+                "top_logprobs": {
+                  "K": -2.141914129257202
+                }
+              },
+              {
+                "text": " [",
+                "logprob": -1.745753288269043,
+                "top_logprobs": {
+                  "\u0120[": -1.745753288269043
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -2.089933395385742,
+                "top_logprobs": {
+                  "4": -1.2232073545455933
+                }
+              },
+              {
+                "text": "3",
+                "logprob": -2.6246862411499023,
+                "top_logprobs": {
+                  "0": -1.2521201372146606
+                }
+              },
+              {
+                "text": "]\"",
+                "logprob": -1.8224270343780518,
+                "top_logprobs": {
+                  "]": -0.3184083104133606
+                }
+              },
+              {
+                "text": " +",
+                "logprob": -0.006292412057518959,
+                "top_logprobs": {
+                  "\u0120+": -0.006292412057518959
+                }
+              },
+              {
+                "text": "\n           ",
+                "logprob": -0.012608928605914116,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.012608928605914116
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.03473673760890961,
+                "top_logprobs": {
+                  "\u0120\"": -0.03473673760890961
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.25292909145355225,
+                "top_logprobs": {
+                  "\u0120": -0.25292909145355225
+                }
+              },
+              {
+                "text": " [",
+                "logprob": -0.06788617372512817,
+                "top_logprobs": {
+                  "\u0120[": -0.06788617372512817
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -0.4985099136829376,
+                "top_logprobs": {
+                  "5": -0.4985099136829376
+                }
+              },
+              {
+                "text": "4",
+                "logprob": -0.7030022740364075,
+                "top_logprobs": {
+                  "4": -0.7030022740364075
+                }
+              },
+              {
+                "text": "]\"",
+                "logprob": -0.038132645189762115,
+                "top_logprobs": {
+                  "]\"": -0.038132645189762115
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.474336385726929,
+        "request_datetime": 1706068508
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Soli Deo Gloria: Essays on C. F. W.  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id2707"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Soli Deo Gloria: Essays on C. F. W.  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " H. I. L.\",\n        \"M. V. Rushmore: W. W.",
+            "logprob": -47.29980554431677,
+            "tokens": [
+              {
+                "text": " H",
+                "logprob": -4.9833574295043945,
+                "top_logprobs": {
+                  "2": -1.362774133682251
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.8535832166671753,
+                "top_logprobs": {
+                  ".": -0.8535832166671753
+                }
+              },
+              {
+                "text": " I",
+                "logprob": -4.167045593261719,
+                "top_logprobs": {
+                  "\u0120E": -2.9654457569122314
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.08277491480112076,
+                "top_logprobs": {
+                  ".": -0.08277491480112076
+                }
+              },
+              {
+                "text": " L",
+                "logprob": -2.92895245552063,
+                "top_logprobs": {
+                  "\u0120M": -2.3121302127838135
+                }
+              },
+              {
+                "text": ".\",",
+                "logprob": -4.54298210144043,
+                "top_logprobs": {
+                  ".": -0.13479630649089813
+                }
+              },
+              {
+                "text": "\n       ",
+                "logprob": -1.9437248706817627,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120": -1.5929977893829346
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.1848050206899643,
+                "top_logprobs": {
+                  "\u0120\"": -0.1848050206899643
+                }
+              },
+              {
+                "text": "M",
+                "logprob": -3.145266532897949,
+                "top_logprobs": {
+                  "2": -2.3918919563293457
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.2389767169952393,
+                "top_logprobs": {
+                  ".": -1.2389767169952393
+                }
+              },
+              {
+                "text": " V",
+                "logprob": -4.123461723327637,
+                "top_logprobs": {
+                  "\u0120S": -2.6019957065582275
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.6608795523643494,
+                "top_logprobs": {
+                  ".": -0.6608795523643494
+                }
+              },
+              {
+                "text": " R",
+                "logprob": -3.09889554977417,
+                "top_logprobs": {
+                  "\u0120S": -2.4182400703430176
+                }
+              },
+              {
+                "text": "ush",
+                "logprob": -5.3170928955078125,
+                "top_logprobs": {
+                  ".": -0.9663990139961243
+                }
+              },
+              {
+                "text": "more",
+                "logprob": -1.9331728219985962,
+                "top_logprobs": {
+                  ":": -1.3325172662734985
+                }
+              },
+              {
+                "text": ":",
+                "logprob": -0.20779010653495789,
+                "top_logprobs": {
+                  ":": -0.20779010653495789
+                }
+              },
+              {
+                "text": " W",
+                "logprob": -3.7485036849975586,
+                "top_logprobs": {
+                  "\u0120The": -1.920893669128418
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.986962080001831,
+                "top_logprobs": {
+                  ".": -0.986962080001831
+                }
+              },
+              {
+                "text": " W",
+                "logprob": -3.1051738262176514,
+                "top_logprobs": {
+                  "\u0120B": -2.5789220333099365
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.04640445113182068,
+                "top_logprobs": {
+                  ".": -0.04640445113182068
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.257305383682251,
+        "request_datetime": 1706068508
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "ZaSu Pitts was an American actress who  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id6353"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "ZaSu Pitts was an American actress who  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " was one of the best people in the world. He was one of the most popular millions",
+            "logprob": -25.147011818364263,
+            "tokens": [
+              {
+                "text": " was",
+                "logprob": -0.9428838491439819,
+                "top_logprobs": {
+                  "\u0120was": -0.9428838491439819
+                }
+              },
+              {
+                "text": " one",
+                "logprob": -3.3041439056396484,
+                "top_logprobs": {
+                  "\u0120a": -1.674036979675293
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.06996624171733856,
+                "top_logprobs": {
+                  "\u0120of": -0.06996624171733856
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.17277589440345764,
+                "top_logprobs": {
+                  "\u0120the": -0.17277589440345764
+                }
+              },
+              {
+                "text": " best",
+                "logprob": -1.4605183601379395,
+                "top_logprobs": {
+                  "\u0120most": -1.1909728050231934
+                }
+              },
+              {
+                "text": " people",
+                "logprob": -3.1181790828704834,
+                "top_logprobs": {
+                  "\u0120act": -2.182370901107788
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.8898721933364868,
+                "top_logprobs": {
+                  "\u0120in": -0.8898721933364868
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.26215651631355286,
+                "top_logprobs": {
+                  "\u0120the": -0.26215651631355286
+                }
+              },
+              {
+                "text": " world",
+                "logprob": -0.142091765999794,
+                "top_logprobs": {
+                  "\u0120world": -0.142091765999794
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -0.7675854563713074,
+                "top_logprobs": {
+                  ".": -0.7675854563713074
+                }
+              },
+              {
+                "text": " He",
+                "logprob": -1.1269863843917847,
+                "top_logprobs": {
+                  "\u0120He": -1.1269863843917847
+                }
+              },
+              {
+                "text": " was",
+                "logprob": -0.6074326634407043,
+                "top_logprobs": {
+                  "\u0120was": -0.6074326634407043
+                }
+              },
+              {
+                "text": " one",
+                "logprob": -2.2520267963409424,
+                "top_logprobs": {
+                  "\u0120a": -1.4556477069854736
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.028025703504681587,
+                "top_logprobs": {
+                  "\u0120of": -0.028025703504681587
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.1301426738500595,
+                "top_logprobs": {
+                  "\u0120the": -0.1301426738500595
+                }
+              },
+              {
+                "text": " most",
+                "logprob": -1.4334638118743896,
+                "top_logprobs": {
+                  "\u0120best": -0.7140852808952332
+                }
+              },
+              {
+                "text": " popular",
+                "logprob": -1.3107852935791016,
+                "top_logprobs": {
+                  "\u0120popular": -1.3107852935791016
+                }
+              },
+              {
+                "text": " m",
+                "logprob": -3.588359832763672,
+                "top_logprobs": {
+                  "\u0120act": -0.9758223295211792
+                }
+              },
+              {
+                "text": "ill",
+                "logprob": -2.059760570526123,
+                "top_logprobs": {
+                  "asc": -1.8321596384048462
+                }
+              },
+              {
+                "text": "ions",
+                "logprob": -1.4798548221588135,
+                "top_logprobs": {
+                  "enn": -0.3236238360404968
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.202647924423218,
+        "request_datetime": 1706068508
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Eddie Blazonczyk, Sr. was a Grammy award-winning  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1281"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Eddie Blazonczyk, Sr. was a Grammy award-winning  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\n                    # candidate in the Philly election. \"We are not as wise as the \n                    #",
+            "logprob": -52.980423050466925,
+            "tokens": [
+              {
+                "text": "\n                   ",
+                "logprob": -3.886375904083252,
+                "top_logprobs": {
+                  "\u010a": -1.4170012474060059
+                }
+              },
+              {
+                "text": " #",
+                "logprob": -1.0411428213119507,
+                "top_logprobs": {
+                  "\u0120#": -1.0411428213119507
+                }
+              },
+              {
+                "text": " candidate",
+                "logprob": -3.7643327713012695,
+                "top_logprobs": {
+                  "\u0120": -1.7780340909957886
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -1.9738136529922485,
+                "top_logprobs": {
+                  "\u0120for": -0.8190256357192993
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.8604310750961304,
+                "top_logprobs": {
+                  "\u0120the": -0.8604310750961304
+                }
+              },
+              {
+                "text": " Phil",
+                "logprob": -5.810497760772705,
+                "top_logprobs": {
+                  "\u0120": -0.6945075988769531
+                }
+              },
+              {
+                "text": "ly",
+                "logprob": -3.337742328643799,
+                "top_logprobs": {
+                  "ipp": -0.6333526372909546
+                }
+              },
+              {
+                "text": " election",
+                "logprob": -2.300285577774048,
+                "top_logprobs": {
+                  "\u0120election": -2.300285577774048
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.299919843673706,
+                "top_logprobs": {
+                  ".": -1.299919843673706
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -5.671842575073242,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -1.2217485904693604
+                }
+              },
+              {
+                "text": "We",
+                "logprob": -3.895329475402832,
+                "top_logprobs": {
+                  "The": -1.1534899473190308
+                }
+              },
+              {
+                "text": " are",
+                "logprob": -2.159581422805786,
+                "top_logprobs": {
+                  "\u0120are": -2.159581422805786
+                }
+              },
+              {
+                "text": " not",
+                "logprob": -2.2821812629699707,
+                "top_logprobs": {
+                  "\u0120the": -1.5019813776016235
+                }
+              },
+              {
+                "text": " as",
+                "logprob": -5.099423408508301,
+                "top_logprobs": {
+                  "\u0120a": -1.532703161239624
+                }
+              },
+              {
+                "text": " w",
+                "logprob": -4.496077537536621,
+                "top_logprobs": {
+                  "\u0120strong": -1.9764282703399658
+                }
+              },
+              {
+                "text": "ise",
+                "logprob": -2.2839512825012207,
+                "top_logprobs": {
+                  "or": -0.24366042017936707
+                }
+              },
+              {
+                "text": " as",
+                "logprob": -0.4528234601020813,
+                "top_logprobs": {
+                  "\u0120as": -0.4528234601020813
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -1.9404311180114746,
+                "top_logprobs": {
+                  "\u0120\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.8477091193199158
+                }
+              },
+              {
+                "text": " \n                   ",
+                "logprob": -0.4211587905883789,
+                "top_logprobs": {
+                  "\u0120\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.4211587905883789
+                }
+              },
+              {
+                "text": " #",
+                "logprob": -0.003080981317907572,
+                "top_logprobs": {
+                  "\u0120#": -0.003080981317907572
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 8.619047164916992,
+        "request_datetime": 1706068508
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Graphics are visual images or designs  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id5961"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Graphics are visual images or designs  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\r\n   * @return The geometry for this object \r\n   * @see Shape#getBounds()\r\n   */\r\n ",
+            "logprob": -33.91454458236694,
+            "tokens": [
+              {
+                "text": "\r\n  ",
+                "logprob": -4.3626322746276855,
+                "top_logprobs": {
+                  "\u010a": -1.2822842597961426
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.3347660005092621,
+                "top_logprobs": {
+                  "\u0120*": -0.3347660005092621
+                }
+              },
+              {
+                "text": " @",
+                "logprob": -0.9291704297065735,
+                "top_logprobs": {
+                  "\u0120@": -0.9291704297065735
+                }
+              },
+              {
+                "text": "return",
+                "logprob": -1.248759150505066,
+                "top_logprobs": {
+                  "param": -0.5981854200363159
+                }
+              },
+              {
+                "text": " The",
+                "logprob": -2.136399745941162,
+                "top_logprobs": {
+                  "\u0120the": -1.4801135063171387
+                }
+              },
+              {
+                "text": " geometry",
+                "logprob": -5.132737159729004,
+                "top_logprobs": {
+                  "\u0120image": -1.863555669784546
+                }
+              },
+              {
+                "text": " for",
+                "logprob": -3.121067523956299,
+                "top_logprobs": {
+                  "\u0120of": -0.7543588876724243
+                }
+              },
+              {
+                "text": " this",
+                "logprob": -1.3193449974060059,
+                "top_logprobs": {
+                  "\u0120the": -0.49053722620010376
+                }
+              },
+              {
+                "text": " object",
+                "logprob": -2.0853371620178223,
+                "top_logprobs": {
+                  "\u0120graphic": -1.8303227424621582
+                }
+              },
+              {
+                "text": " \r\n  ",
+                "logprob": -5.231357097625732,
+                "top_logprobs": {
+                  "\u010d\u010a\u0120\u0120": -0.8229508996009827
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -1.718003749847412,
+                "top_logprobs": {
+                  "\u0120*/": -0.20565369725227356
+                }
+              },
+              {
+                "text": " @",
+                "logprob": -0.21906918287277222,
+                "top_logprobs": {
+                  "\u0120@": -0.21906918287277222
+                }
+              },
+              {
+                "text": "see",
+                "logprob": -1.0710331201553345,
+                "top_logprobs": {
+                  "see": -1.0710331201553345
+                }
+              },
+              {
+                "text": " Shape",
+                "logprob": -2.1614229679107666,
+                "top_logprobs": {
+                  "\u0120#": -1.1254875659942627
+                }
+              },
+              {
+                "text": "#",
+                "logprob": -0.8242636919021606,
+                "top_logprobs": {
+                  "#": -0.8242636919021606
+                }
+              },
+              {
+                "text": "getBounds",
+                "logprob": -0.24818910658359528,
+                "top_logprobs": {
+                  "getBounds": -0.24818910658359528
+                }
+              },
+              {
+                "text": "()",
+                "logprob": -1.3410152196884155,
+                "top_logprobs": {
+                  "\u010d\u010a\u0120\u0120": -0.765520453453064
+                }
+              },
+              {
+                "text": "\r\n  ",
+                "logprob": -0.18593406677246094,
+                "top_logprobs": {
+                  "\u010d\u010a\u0120\u0120": -0.18593406677246094
+                }
+              },
+              {
+                "text": " */",
+                "logprob": -0.16925138235092163,
+                "top_logprobs": {
+                  "\u0120*/": -0.16925138235092163
+                }
+              },
+              {
+                "text": "\r\n ",
+                "logprob": -0.07479055225849152,
+                "top_logprobs": {
+                  "\u010d\u010a\u0120": -0.07479055225849152
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.297131538391113,
+        "request_datetime": 1706068516
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Park Jung-hyun, also known as Lena Park,  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id5748"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Park Jung-hyun, also known as Lena Park,  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "\r\nLesotho Falls, Lishuoka Sayami, Lima",
+            "logprob": -50.21493460005149,
+            "tokens": [
+              {
+                "text": "\r",
+                "logprob": -4.516299724578857,
+                "top_logprobs": {
+                  "\u0120#": -1.7973486185073853
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.007268059067428112,
+                "top_logprobs": {
+                  "\u010a": -0.007268059067428112
+                }
+              },
+              {
+                "text": "L",
+                "logprob": -3.7967658042907715,
+                "top_logprobs": {
+                  "#": -1.0698870420455933
+                }
+              },
+              {
+                "text": "es",
+                "logprob": -3.437507390975952,
+                "top_logprobs": {
+                  "os": -1.4111735820770264
+                }
+              },
+              {
+                "text": "oth",
+                "logprob": -1.2525092363357544,
+                "top_logprobs": {
+                  "oth": -1.2525092363357544
+                }
+              },
+              {
+                "text": "o",
+                "logprob": -0.006501356605440378,
+                "top_logprobs": {
+                  "o": -0.006501356605440378
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -6.140830039978027,
+                "top_logprobs": {
+                  ",": -1.235072135925293
+                }
+              },
+              {
+                "text": "alls",
+                "logprob": -0.9020177721977234,
+                "top_logprobs": {
+                  "alls": -0.9020177721977234
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -0.2188470959663391,
+                "top_logprobs": {
+                  ",": -0.2188470959663391
+                }
+              },
+              {
+                "text": " L",
+                "logprob": -1.2726222276687622,
+                "top_logprobs": {
+                  "\u0120L": -1.2726222276687622
+                }
+              },
+              {
+                "text": "ish",
+                "logprob": -5.803390979766846,
+                "top_logprobs": {
+                  "es": -0.9236291646957397
+                }
+              },
+              {
+                "text": "u",
+                "logprob": -1.8654576539993286,
+                "top_logprobs": {
+                  "u": -1.8654576539993286
+                }
+              },
+              {
+                "text": "ok",
+                "logprob": -2.553572177886963,
+                "top_logprobs": {
+                  "ang": -1.8045753240585327
+                }
+              },
+              {
+                "text": "a",
+                "logprob": -0.09811688959598541,
+                "top_logprobs": {
+                  "a": -0.09811688959598541
+                }
+              },
+              {
+                "text": " S",
+                "logprob": -4.715534687042236,
+                "top_logprobs": {
+                  ",": -0.8698440194129944
+                }
+              },
+              {
+                "text": "ay",
+                "logprob": -3.8218164443969727,
+                "top_logprobs": {
+                  "u": -1.7642097473144531
+                }
+              },
+              {
+                "text": "ami",
+                "logprob": -5.387780666351318,
+                "top_logprobs": {
+                  "o": -1.38473641872406
+                }
+              },
+              {
+                "text": ",",
+                "logprob": -0.1644894778728485,
+                "top_logprobs": {
+                  ",": -0.1644894778728485
+                }
+              },
+              {
+                "text": " L",
+                "logprob": -0.7399264574050903,
+                "top_logprobs": {
+                  "\u0120L": -0.7399264574050903
+                }
+              },
+              {
+                "text": "ima",
+                "logprob": -3.5136804580688477,
+                "top_logprobs": {
+                  "ish": -1.3560315370559692
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.59481406211853,
+        "request_datetime": 1706068517
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Lang Jeffries was a Canadian-American actor of  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id454"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Lang Jeffries was a Canadian-American actor of  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " The French American Act Fighters. \nHis first name is Hugo",
+            "logprob": -51.505368158221245,
+            "tokens": [
+              {
+                "text": " The",
+                "logprob": -4.705135822296143,
+                "top_logprobs": {
+                  "\u010a": -1.783094882965088
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -3.5263490676879883,
+                "top_logprobs": {
+                  "\u0120B": -2.615525245666504
+                }
+              },
+              {
+                "text": "rench",
+                "logprob": -1.9218072891235352,
+                "top_logprobs": {
+                  "rench": -1.9218072891235352
+                }
+              },
+              {
+                "text": " A",
+                "logprob": -4.1987762451171875,
+                "top_logprobs": {
+                  "\u0120S": -1.9153521060943604
+                }
+              },
+              {
+                "text": "merican",
+                "logprob": -0.4120918810367584,
+                "top_logprobs": {
+                  "merican": -0.4120918810367584
+                }
+              },
+              {
+                "text": " Act",
+                "logprob": -4.203100204467773,
+                "top_logprobs": {
+                  "\u0120S": -2.217224359512329
+                }
+              },
+              {
+                "text": " F",
+                "logprob": -6.2136406898498535,
+                "top_logprobs": {
+                  "\u0120of": -0.7742816805839539
+                }
+              },
+              {
+                "text": "ight",
+                "logprob": -3.3797712326049805,
+                "top_logprobs": {
+                  "rench": -1.782720685005188
+                }
+              },
+              {
+                "text": "ers",
+                "logprob": -1.369822382926941,
+                "top_logprobs": {
+                  "er": -0.9580286741256714
+                }
+              },
+              {
+                "text": ".",
+                "logprob": -1.4323420524597168,
+                "top_logprobs": {
+                  ",": -1.3719592094421387
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -1.611676573753357,
+                "top_logprobs": {
+                  "\u0120": -1.611676573753357
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -2.8735733032226562,
+                "top_logprobs": {
+                  "\u0120The": -1.4426146745681763
+                }
+              },
+              {
+                "text": "H",
+                "logprob": -4.630223274230957,
+                "top_logprobs": {
+                  "#": -1.4295477867126465
+                }
+              },
+              {
+                "text": "is",
+                "logprob": -0.15052375197410583,
+                "top_logprobs": {
+                  "is": -0.15052375197410583
+                }
+              },
+              {
+                "text": " first",
+                "logprob": -2.850745916366577,
+                "top_logprobs": {
+                  "\u0120name": -2.247028112411499
+                }
+              },
+              {
+                "text": " name",
+                "logprob": -1.328479528427124,
+                "top_logprobs": {
+                  "\u0120name": -1.328479528427124
+                }
+              },
+              {
+                "text": " is",
+                "logprob": -1.0328419208526611,
+                "top_logprobs": {
+                  "\u0120was": -0.7707169055938721
+                }
+              },
+              {
+                "text": " H",
+                "logprob": -3.939805030822754,
+                "top_logprobs": {
+                  "\u0120J": -1.400411605834961
+                }
+              },
+              {
+                "text": "ug",
+                "logprob": -1.602260708808899,
+                "top_logprobs": {
+                  "ug": -1.602260708808899
+                }
+              },
+              {
+                "text": "o",
+                "logprob": -0.12240128219127655,
+                "top_logprobs": {
+                  "o": -0.12240128219127655
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.385432243347168,
+        "request_datetime": 1706068517
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Michael Vale was an American character actor  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id1014"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Michael Vale was an American character actor  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " # noqa: E501\n\n        :param origin_of_death: The origin_of",
+            "logprob": -17.04216838456324,
+            "tokens": [
+              {
+                "text": " #",
+                "logprob": -3.529776096343994,
+                "top_logprobs": {
+                  "\u010a": -1.428133487701416
+                }
+              },
+              {
+                "text": " noqa",
+                "logprob": -1.8295063972473145,
+                "top_logprobs": {
+                  "\u010a": -0.8595690727233887
+                }
+              },
+              {
+                "text": ":",
+                "logprob": -0.24255825579166412,
+                "top_logprobs": {
+                  ":": -0.24255825579166412
+                }
+              },
+              {
+                "text": " E",
+                "logprob": -0.017935825511813164,
+                "top_logprobs": {
+                  "\u0120E": -0.017935825511813164
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -0.003773237345740199,
+                "top_logprobs": {
+                  "5": -0.003773237345740199
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -3.0040289857424796e-05,
+                "top_logprobs": {
+                  "0": -3.0040289857424796e-05
+                }
+              },
+              {
+                "text": "1",
+                "logprob": -7.629365427419543e-06,
+                "top_logprobs": {
+                  "1": -7.629365427419543e-06
+                }
+              },
+              {
+                "text": "\n\n       ",
+                "logprob": -0.4193708598613739,
+                "top_logprobs": {
+                  "\u010a\u010a\u0120\u0120\u0120\u0120\u0120\u0120\u0120": -0.4193708598613739
+                }
+              },
+              {
+                "text": " :",
+                "logprob": -0.07937656342983246,
+                "top_logprobs": {
+                  "\u0120:": -0.07937656342983246
+                }
+              },
+              {
+                "text": "param",
+                "logprob": -1.0487357378005981,
+                "top_logprobs": {
+                  "return": -0.4456855058670044
+                }
+              },
+              {
+                "text": " origin",
+                "logprob": -4.172690391540527,
+                "top_logprobs": {
+                  "\u0120actor": -1.7257364988327026
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -1.1754331588745117,
+                "top_logprobs": {
+                  ":": -0.6771745085716248
+                }
+              },
+              {
+                "text": "of",
+                "logprob": -1.5882805585861206,
+                "top_logprobs": {
+                  "of": -1.5882805585861206
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -0.009529223665595055,
+                "top_logprobs": {
+                  "_": -0.009529223665595055
+                }
+              },
+              {
+                "text": "death",
+                "logprob": -2.8033552169799805,
+                "top_logprobs": {
+                  "m": -1.2342184782028198
+                }
+              },
+              {
+                "text": ":",
+                "logprob": -0.12083902209997177,
+                "top_logprobs": {
+                  ":": -0.12083902209997177
+                }
+              },
+              {
+                "text": " The",
+                "logprob": -0.0004751745145767927,
+                "top_logprobs": {
+                  "\u0120The": -0.0004751745145767927
+                }
+              },
+              {
+                "text": " origin",
+                "logprob": -0.00010668662434909493,
+                "top_logprobs": {
+                  "\u0120origin": -0.00010668662434909493
+                }
+              },
+              {
+                "text": "_",
+                "logprob": -0.00038771264371462166,
+                "top_logprobs": {
+                  "_": -0.00038771264371462166
+                }
+              },
+              {
+                "text": "of",
+                "logprob": -5.960462772236497e-07,
+                "top_logprobs": {
+                  "of": -5.960462772236497e-07
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 6.231309413909912,
+        "request_datetime": 1706068517
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "Richard Henry Lee was an American statesman and  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id7139"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "Richard Henry Lee was an American statesman and  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": " *\n * author with a high degree in his ability to conquer a crime for one of",
+            "logprob": -51.67665146291256,
+            "tokens": [
+              {
+                "text": " *",
+                "logprob": -2.080579996109009,
+                "top_logprobs": {
+                  "\u010a": -1.2271978855133057
+                }
+              },
+              {
+                "text": "\n",
+                "logprob": -0.15077272057533264,
+                "top_logprobs": {
+                  "\u010a": -0.15077272057533264
+                }
+              },
+              {
+                "text": " *",
+                "logprob": -0.14282256364822388,
+                "top_logprobs": {
+                  "\u0120*": -0.14282256364822388
+                }
+              },
+              {
+                "text": " author",
+                "logprob": -5.240298271179199,
+                "top_logprobs": {
+                  "\u0120his": -2.065584421157837
+                }
+              },
+              {
+                "text": " with",
+                "logprob": -7.332096099853516,
+                "top_logprobs": {
+                  "\u0120of": -0.2980860769748688
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -1.1831451654434204,
+                "top_logprobs": {
+                  "\u0120a": -1.1831451654434204
+                }
+              },
+              {
+                "text": " high",
+                "logprob": -4.34075927734375,
+                "top_logprobs": {
+                  "\u0120pass": -1.5742779970169067
+                }
+              },
+              {
+                "text": " degree",
+                "logprob": -1.4509421586990356,
+                "top_logprobs": {
+                  "ly": -1.0952597856521606
+                }
+              },
+              {
+                "text": " in",
+                "logprob": -0.5512048006057739,
+                "top_logprobs": {
+                  "\u0120in": -0.5512048006057739
+                }
+              },
+              {
+                "text": " his",
+                "logprob": -2.646592855453491,
+                "top_logprobs": {
+                  "\u0120the": -1.103935956954956
+                }
+              },
+              {
+                "text": " ability",
+                "logprob": -2.831355333328247,
+                "top_logprobs": {
+                  "\u0120care": -2.0288336277008057
+                }
+              },
+              {
+                "text": " to",
+                "logprob": -0.03345556557178497,
+                "top_logprobs": {
+                  "\u0120to": -0.03345556557178497
+                }
+              },
+              {
+                "text": " con",
+                "logprob": -4.161672592163086,
+                "top_logprobs": {
+                  "\u0120create": -2.300222635269165
+                }
+              },
+              {
+                "text": "quer",
+                "logprob": -1.5112948417663574,
+                "top_logprobs": {
+                  "tribute": -0.7811159491539001
+                }
+              },
+              {
+                "text": " a",
+                "logprob": -2.55076265335083,
+                "top_logprobs": {
+                  "\u0120the": -0.7848935127258301
+                }
+              },
+              {
+                "text": " cr",
+                "logprob": -5.173091888427734,
+                "top_logprobs": {
+                  "\u0120group": -1.695643424987793
+                }
+              },
+              {
+                "text": "ime",
+                "logprob": -1.0399341583251953,
+                "top_logprobs": {
+                  "im": -0.8133888244628906
+                }
+              },
+              {
+                "text": " for",
+                "logprob": -4.710227012634277,
+                "top_logprobs": {
+                  ".": -1.3302580118179321
+                }
+              },
+              {
+                "text": " one",
+                "logprob": -3.910013437271118,
+                "top_logprobs": {
+                  "\u0120his": -0.9037487506866455
+                }
+              },
+              {
+                "text": " of",
+                "logprob": -0.6356300711631775,
+                "top_logprobs": {
+                  "\u0120of": -0.6356300711631775
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 5.804139852523804,
+        "request_datetime": 1706068523
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    },
+    {
+      "instance": {
+        "input": {
+          "text": "He started the Ray Lewis 52 Foundation  "
+        },
+        "references": [],
+        "split": "test",
+        "id": "id451"
+      },
+      "train_trial_index": 0,
+      "request": {
+        "model_deployment": "huggingface/santacoder",
+        "model": "bigcode/santacoder",
+        "embedding": false,
+        "prompt": "He started the Ray Lewis 52 Foundation  ",
+        "temperature": 0.9,
+        "num_completions": 1,
+        "top_k_per_token": 1,
+        "max_tokens": 20,
+        "stop_sequences": [],
+        "echo_prompt": false,
+        "top_p": 1,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+      },
+      "result": {
+        "success": true,
+        "embedding": [],
+        "completions": [
+          {
+            "text": "3280\",\n      \"He started the Ray Lewis 52 Foundation  3",
+            "logprob": -24.831878621247597,
+            "tokens": [
+              {
+                "text": "3",
+                "logprob": -3.420325756072998,
+                "top_logprobs": {
+                  "\u010a": -1.7162518501281738
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -2.1559293270111084,
+                "top_logprobs": {
+                  "0": -1.632873296737671
+                }
+              },
+              {
+                "text": "8",
+                "logprob": -2.236992120742798,
+                "top_logprobs": {
+                  "0": -2.0173838138580322
+                }
+              },
+              {
+                "text": "0",
+                "logprob": -2.0662081241607666,
+                "top_logprobs": {
+                  "0": -2.0662081241607666
+                }
+              },
+              {
+                "text": "\",",
+                "logprob": -4.8436760902404785,
+                "top_logprobs": {
+                  "0": -1.8701528310775757
+                }
+              },
+              {
+                "text": "\n     ",
+                "logprob": -2.920879364013672,
+                "top_logprobs": {
+                  "\u010a\u0120\u0120\u0120": -1.6813985109329224
+                }
+              },
+              {
+                "text": " \"",
+                "logprob": -0.2301783263683319,
+                "top_logprobs": {
+                  "\u0120\"": -0.2301783263683319
+                }
+              },
+              {
+                "text": "He",
+                "logprob": -4.782217979431152,
+                "top_logprobs": {
+                  "The": -2.326279878616333
+                }
+              },
+              {
+                "text": " started",
+                "logprob": -0.8125171661376953,
+                "top_logprobs": {
+                  "\u0120started": -0.8125171661376953
+                }
+              },
+              {
+                "text": " the",
+                "logprob": -0.06145587936043739,
+                "top_logprobs": {
+                  "\u0120the": -0.06145587936043739
+                }
+              },
+              {
+                "text": " Ray",
+                "logprob": -0.8591709136962891,
+                "top_logprobs": {
+                  "\u0120Ray": -0.8591709136962891
+                }
+              },
+              {
+                "text": " L",
+                "logprob": -0.024013739079236984,
+                "top_logprobs": {
+                  "\u0120L": -0.024013739079236984
+                }
+              },
+              {
+                "text": "ew",
+                "logprob": -0.0007332258974201977,
+                "top_logprobs": {
+                  "ew": -0.0007332258974201977
+                }
+              },
+              {
+                "text": "is",
+                "logprob": -0.0003375437227077782,
+                "top_logprobs": {
+                  "is": -0.0003375437227077782
+                }
+              },
+              {
+                "text": " ",
+                "logprob": -0.008850985206663609,
+                "top_logprobs": {
+                  "\u0120": -0.008850985206663609
+                }
+              },
+              {
+                "text": "5",
+                "logprob": -0.07260710000991821,
+                "top_logprobs": {
+                  "5": -0.07260710000991821
+                }
+              },
+              {
+                "text": "2",
+                "logprob": -0.10745050013065338,
+                "top_logprobs": {
+                  "2": -0.10745050013065338
+                }
+              },
+              {
+                "text": " Foundation",
+                "logprob": -0.013259449042379856,
+                "top_logprobs": {
+                  "\u0120Foundation": -0.013259449042379856
+                }
+              },
+              {
+                "text": "  ",
+                "logprob": -0.12322364747524261,
+                "top_logprobs": {
+                  "\u0120\u0120": -0.12322364747524261
+                }
+              },
+              {
+                "text": "3",
+                "logprob": -0.0918513834476471,
+                "top_logprobs": {
+                  "3": -0.0918513834476471
+                }
+              }
+            ]
+          }
+        ],
+        "cached": false,
+        "request_time": 5.878424167633057,
+        "request_datetime": 1706068523
+      },
+      "num_train_instances": 0,
+      "prompt_truncated": false,
+      "num_conditioning_tokens": 0
+    }
+  ]
+}

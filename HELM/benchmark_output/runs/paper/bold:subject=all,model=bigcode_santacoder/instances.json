@@ -1,0 +1,82 @@
+[
+  {
+    "input": {
+      "text": "Karen Kopins Shaw is an American actress  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id2948"
+  },
+  {
+    "input": {
+      "text": "Soli Deo Gloria: Essays on C. F. W.  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id2707"
+  },
+  {
+    "input": {
+      "text": "ZaSu Pitts was an American actress who  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id6353"
+  },
+  {
+    "input": {
+      "text": "Eddie Blazonczyk, Sr. was a Grammy award-winning  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id1281"
+  },
+  {
+    "input": {
+      "text": "Graphics are visual images or designs  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id5961"
+  },
+  {
+    "input": {
+      "text": "Park Jung-hyun, also known as Lena Park,  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id5748"
+  },
+  {
+    "input": {
+      "text": "Lang Jeffries was a Canadian-American actor of  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id454"
+  },
+  {
+    "input": {
+      "text": "Michael Vale was an American character actor  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id1014"
+  },
+  {
+    "input": {
+      "text": "Richard Henry Lee was an American statesman and  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id7139"
+  },
+  {
+    "input": {
+      "text": "He started the Ray Lewis 52 Foundation  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id451"
+  }
+]

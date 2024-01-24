@@ -1,0 +1,9 @@
+{
+  "name": "bold",
+  "description": "A large-scale dataset that consists of 23,679 English text generation prompts for bias benchmarking\n    across five domains: profession, gender, race, religion, and political ideology.",
+  "tags": [
+    "harms",
+    "bias"
+  ],
+  "definition_path": "https://github.com/stanford-crfm/helm/blob/main/src/helm/benchmark/scenarios/bold_scenario.py"
+}

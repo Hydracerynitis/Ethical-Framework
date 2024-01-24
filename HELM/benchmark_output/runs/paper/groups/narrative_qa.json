@@ -1,0 +1,371 @@
+[
+  {
+    "title": "",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "F1",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nF1: Average F1 score in terms of word overlap between the model output and correct reference.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "F1",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "ECE (10-bin)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n10-bin expected calibration error: The average difference between the model's confidence and accuracy, averaged across 10 bins where each bin contains an equal number of points (only computed for classification tasks). Warning - not reliable for small datasets (e.g., with < 300 examples) because each bin will have very few examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "ECE (10-bin)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "F1 (Robustness)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nF1: Average F1 score in terms of word overlap between the model output and correct reference.\n- Perturbation Robustness: Computes worst case over different robustness perturbations (misspellings, formatting, contrast sets).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "F1",
+          "run_group": "NarrativeQA",
+          "perturbation": "Robustness"
+        }
+      },
+      {
+        "value": "F1 (Fairness)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nF1: Average F1 score in terms of word overlap between the model output and correct reference.\n- Perturbation Fairness: Computes worst case over different fairness perturbations (changing dialect, race of names, gender).",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "F1",
+          "run_group": "NarrativeQA",
+          "perturbation": "Fairness"
+        }
+      },
+      {
+        "value": "Stereotypes (race)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nStereotypical associations (race, profession): Measures uneven association of racial groups (Asian, Hispanic, White) with target professions. This measurement is based on cooccurence statistics between the racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Stereotypes (race)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "Stereotypes (gender)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nStereotypical associations (gender, profession): Measures uneven association of gender groups (male, female) with target professions. This measurement is based on cooccurence statistics between the gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)) and the target professions (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Stereotypes (gender)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "Representation (race)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nDemographic representation (race): Measures uneven representation of racial groups (Asian, Hispanic, White). This measurement is based on disparities in the frequency statistics across racially-associated names (word list from [Garg et al., 2018](https://www.pnas.org/doi/10.1073/pnas.1720347115); race associations based on US Census statistics).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Representation (race)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "Representation (gender)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nDemographic representation (gender): Measures uneven representation of gender groups (male, female). This measurement is based on disparities in the frequency statistics across gender terms (word list from [Bolukbasi et al., 2016](https://papers.nips.cc/paper/2016/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html)).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Representation (gender)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "Toxic fraction",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nToxic fraction: Fraction of model outputs that are toxic (based on the PerspectiveAPI toxicity classifier).",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Toxic fraction",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "NarrativeQA"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The NarrativeQA benchmark for reading comprehension over narratives [(Ko\u010disk\u00fd et al., 2017)](https://aclanthology.org/Q18-1023/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "NarrativeQA"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "Simple Model 1",
+          "description": "",
+          "href": "?group=narrative_qa&subgroup=&runSpecs=%5B%22narrative_qa%3Amodel%3Dsimple_model1%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.020833333333333332,
+          "description": "min=0.021, mean=0.021, max=0.021, sum=0.021 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.020833333333333332,
+          "description": "min=0.021, mean=0.021, max=0.021, sum=0.021 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.019230769230769232,
+          "description": "min=0.019, mean=0.019, max=0.019, sum=0.019 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 8.0,
+          "description": "min=8, mean=8, max=8, sum=8 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 3.0,
+          "description": "min=3, mean=3, max=3, sum=3 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1652.5,
+          "description": "min=1652.5, mean=1652.5, max=1652.5, sum=1652.5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ],
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=narrative_qa&subgroup=&runSpecs=%5B%22narrative_qa%3Amodel%3Dbigcode_santacoder%2Cdata_augmentation%3Dcanonical%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.022727272727272728,
+          "description": "min=0.023, mean=0.023, max=0.023, sum=0.023 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.022727272727272728,
+          "description": "min=0.023, mean=0.023, max=0.023, sum=0.023 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 8.0,
+          "description": "min=8, mean=8, max=8, sum=8 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.25,
+          "description": "min=1.25, mean=1.25, max=1.25, sum=1.25 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1460.5,
+          "description": "min=1460.5, mean=1460.5, max=1460.5, sum=1460.5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 9.375,
+          "description": "min=9.375, mean=9.375, max=9.375, sum=9.375 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "compare all",
+        "href": "?group=narrative_qa&subgroup=&runSpecs=%5B%22narrative_qa%3Amodel%3Dbigcode_santacoder%2Cdata_augmentation%3Dcanonical%22%2C%20%22narrative_qa%3Amodel%3Dsimple_model1%2Cdata_augmentation%3Dcanonical%22%5D"
+      },
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/narrative_qa_narrative_qa_.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/narrative_qa_narrative_qa_.json"
+      }
+    ],
+    "name": "narrative_qa_"
+  }
+]

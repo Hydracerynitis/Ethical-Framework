@@ -1,0 +1,2218 @@
+[
+  {
+    "title": "BBQ (Bias Benchmark for Question Answering)",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "markdown": false
+        },
+        {
+          "value": 0.44999999999999996,
+          "description": "min=0.3, mean=0.45, max=0.6, sum=0.9 (2)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.08333333333333334,
+          "description": "min=-0.233, mean=0.083, max=0.4, sum=0.167 (2)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": -1.0,
+          "description": "min=-1, mean=-1, max=-1, sum=-2 (2)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "12 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=20 (2)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=10 (2)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (2)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 481.20000000000005,
+          "description": "min=479.6, mean=481.2, max=482.8, sum=962.4 (2)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=2 (2)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=2 (2)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq.json"
+      }
+    ],
+    "name": "bbq"
+  },
+  {
+    "title": "subject: SES",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20SES&runSpecs=%5B%22bbq%3Asubject%3DSES%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.3,
+          "description": "min=0.3, mean=0.3, max=0.3, sum=0.3 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": -0.23333333333333334,
+          "description": "min=-0.233, mean=-0.233, max=-0.233, sum=-0.233 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": -1.0,
+          "description": "min=-1, mean=-1, max=-1, sum=-1 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=10 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 479.6,
+          "description": "min=479.6, mean=479.6, max=479.6, sum=479.6 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:SES.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:SES.json"
+      }
+    ],
+    "name": "bbq_subject:SES"
+  },
+  {
+    "title": "subject: age",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20age&runSpecs=%5B%22bbq%3Asubject%3Dage%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:age.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:age.json"
+      }
+    ],
+    "name": "bbq_subject:age"
+  },
+  {
+    "title": "subject: all",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20all&runSpecs=%5B%22bbq%3Asubject%3Dall%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "value": 0.6,
+          "description": "min=0.6, mean=0.6, max=0.6, sum=0.6 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": 0.4,
+          "description": "min=0.4, mean=0.4, max=0.4, sum=0.4 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "value": -1.0,
+          "description": "min=-1, mean=-1, max=-1, sum=-1 (1)",
+          "style": {
+            "font-weight": "bold"
+          },
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "value": 10.0,
+          "description": "min=10, mean=10, max=10, sum=10 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 5.0,
+          "description": "min=5, mean=5, max=5, sum=5 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 0.0,
+          "description": "min=0, mean=0, max=0, sum=0 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 482.8,
+          "description": "min=482.8, mean=482.8, max=482.8, sum=482.8 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        },
+        {
+          "value": 1.0,
+          "description": "min=1, mean=1, max=1, sum=1 (1)",
+          "style": {},
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:all.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:all.json"
+      }
+    ],
+    "name": "bbq_subject:all"
+  },
+  {
+    "title": "subject: disability_status",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20disability_status&runSpecs=%5B%22bbq%3Asubject%3Ddisability_status%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:disability_status.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:disability_status.json"
+      }
+    ],
+    "name": "bbq_subject:disability_status"
+  },
+  {
+    "title": "subject: gender_identity",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20gender_identity&runSpecs=%5B%22bbq%3Asubject%3Dgender_identity%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:gender_identity.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:gender_identity.json"
+      }
+    ],
+    "name": "bbq_subject:gender_identity"
+  },
+  {
+    "title": "subject: nationality",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20nationality&runSpecs=%5B%22bbq%3Asubject%3Dnationality%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:nationality.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:nationality.json"
+      }
+    ],
+    "name": "bbq_subject:nationality"
+  },
+  {
+    "title": "subject: physical_appearance",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20physical_appearance&runSpecs=%5B%22bbq%3Asubject%3Dphysical_appearance%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:physical_appearance.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:physical_appearance.json"
+      }
+    ],
+    "name": "bbq_subject:physical_appearance"
+  },
+  {
+    "title": "subject: race_ethnicity",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20race_ethnicity&runSpecs=%5B%22bbq%3Asubject%3Drace_ethnicity%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:race_ethnicity.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:race_ethnicity.json"
+      }
+    ],
+    "name": "bbq_subject:race_ethnicity"
+  },
+  {
+    "title": "subject: race_x_SES",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20race_x_SES&runSpecs=%5B%22bbq%3Asubject%3Drace_x_SES%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:race_x_SES.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:race_x_SES.json"
+      }
+    ],
+    "name": "bbq_subject:race_x_SES"
+  },
+  {
+    "title": "subject: race_x_gender",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20race_x_gender&runSpecs=%5B%22bbq%3Asubject%3Drace_x_gender%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:race_x_gender.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:race_x_gender.json"
+      }
+    ],
+    "name": "bbq_subject:race_x_gender"
+  },
+  {
+    "title": "subject: religion",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20religion&runSpecs=%5B%22bbq%3Asubject%3Dreligion%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:religion.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:religion.json"
+      }
+    ],
+    "name": "bbq_subject:religion"
+  },
+  {
+    "title": "subject: sexual_orientation",
+    "header": [
+      {
+        "value": "Model/adapter",
+        "markdown": false,
+        "metadata": {}
+      },
+      {
+        "value": "EM",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nQuasi-exact match: Fraction of instances that the predicted output matches a correct reference up to light processing.",
+        "markdown": false,
+        "lower_is_better": false,
+        "metadata": {
+          "metric": "EM",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (ambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (ambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on ambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (ambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "BBQ (unambiguous)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nBBQ (unambiguous): Metric of [Parrish et al. (2022)](https://aclanthology.org/2022.findings-acl.165/) for BBQ on unambiguous examples.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "BBQ (unambiguous)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "Denoised inference time (s)",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\nDenoised inference runtime (s): Average time to process a request to the model minus performance contention by using profiled runtimes from multiple trials of SyntheticEfficiencyScenario.",
+        "markdown": false,
+        "lower_is_better": true,
+        "metadata": {
+          "metric": "Denoised inference time (s)",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# eval",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# eval: Number of evaluation instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# eval",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# train",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# train: Number of training instances (e.g., in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "# train",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "truncated",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\ntruncated: Fraction of instances where the prompt itself was truncated (implies that there were no in-context examples).",
+        "markdown": false,
+        "metadata": {
+          "metric": "truncated",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# prompt tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# prompt tokens: Number of tokens in the prompt.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# prompt tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# output tokens",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# output tokens: Actual number of output tokens.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# output tokens",
+          "run_group": "BBQ"
+        }
+      },
+      {
+        "value": "# trials",
+        "description": "The Bias Benchmark for Question Answering (BBQ) for measuring social bias in question answering in ambiguous and unambigous context [(Parrish et al., 2022)](https://aclanthology.org/2022.findings-acl.165/).\n\n# trials: Number of trials, where in each trial we choose an independent, random set of training instances.",
+        "markdown": false,
+        "metadata": {
+          "metric": "# trials",
+          "run_group": "BBQ"
+        }
+      }
+    ],
+    "rows": [
+      [
+        {
+          "value": "SantaCoder (1.1B)",
+          "description": "",
+          "href": "?group=bbq&subgroup=subject%3A%20sexual_orientation&runSpecs=%5B%22bbq%3Asubject%3Dsexual_orientation%2Cmethod%3Dmultiple_choice_joint%2Cmodel%3Dbigcode_santacoder%22%5D",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        },
+        {
+          "description": "1 matching runs, but no matching metrics",
+          "markdown": false
+        }
+      ]
+    ],
+    "links": [
+      {
+        "text": "LaTeX",
+        "href": "benchmark_output/runs/paper/groups/latex/bbq_bbq_subject:sexual_orientation.tex"
+      },
+      {
+        "text": "JSON",
+        "href": "benchmark_output/runs/paper/groups/json/bbq_bbq_subject:sexual_orientation.json"
+      }
+    ],
+    "name": "bbq_subject:sexual_orientation"
+  }
+]

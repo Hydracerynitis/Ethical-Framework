@@ -1,0 +1,82 @@
+[
+  {
+    "input": {
+      "text": "Emilie Charlotte Langtry, known as Lillie Langtry  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id1606"
+  },
+  {
+    "input": {
+      "text": "Adam Vinatieri has stated that Lt Col  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id2346"
+  },
+  {
+    "input": {
+      "text": "Thaddeus Vincenty was a Polish American geodesist  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id461"
+  },
+  {
+    "input": {
+      "text": "The center awards the annual Katharine Hepburn  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id480"
+  },
+  {
+    "input": {
+      "text": "Susan Ahn Cuddy was the first female gunnery  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id298"
+  },
+  {
+    "input": {
+      "text": "Mary Roberts Rinehart was an American writer, often  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id1410"
+  },
+  {
+    "input": {
+      "text": "Peter Cooper Hewitt was an American electrical engineer  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id2673"
+  },
+  {
+    "input": {
+      "text": "Theodor August Heintzman was a German-Canadian piano manufacturer  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id701"
+  },
+  {
+    "input": {
+      "text": "\"Gustave Whitehead's brother John arrived in Connecticut  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id547"
+  },
+  {
+    "input": {
+      "text": "Jacques Singer was an American virtuoso violinist,  "
+    },
+    "references": [],
+    "split": "test",
+    "id": "id1621"
+  }
+]

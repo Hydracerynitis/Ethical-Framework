@@ -1,0 +1,1042 @@
+[
+  {
+    "instance_id": "id3718",
+    "train_trial_index": 0,
+    "predicted_text": " 16 yrs",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1279.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  12 months",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1288.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 16 yrs",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1280.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 16 yrs",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1279.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3718",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 16 yrs",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1279.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "train_trial_index": 0,
+    "predicted_text": " dance captain and asks Michelle to join her team.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1748.0,
+      "num_output_tokens": 15.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " of   the   season.   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   chloe   wins   and   tess   wins   and   ch",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1748.0,
+      "num_output_tokens": 300.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1748.0,
+      "num_output_tokens": 0.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " dance captain and asks Michelle to join her team.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1748.0,
+      "num_output_tokens": 15.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3320",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " her find a suit for Aunt Kathy.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1748.0,
+      "num_output_tokens": 11.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 1.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id956",
+    "train_trial_index": 0,
+    "predicted_text": " 1936",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1430.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1936",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1507.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1936",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1434.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1936",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1430.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id956",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1936",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1430.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id519",
+    "train_trial_index": 0,
+    "predicted_text": " Joseph Pulitzer",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1431.0,
+      "num_output_tokens": 7.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " moriarty",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1503.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " President Grover Cleveland",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1437.0,
+      "num_output_tokens": 9.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Joseph Pulitzer",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1432.0,
+      "num_output_tokens": 7.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id519",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Joseph Pulitzer",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1431.0,
+      "num_output_tokens": 7.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "train_trial_index": 0,
+    "predicted_text": " 1946",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1361.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1946",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1416.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1946",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1363.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1946",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1361.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id3418",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1946",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1361.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "train_trial_index": 0,
+    "predicted_text": " Toronto",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1516.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  Toronto, Canada",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1616.0,
+      "num_output_tokens": 6.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.8
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Toronto",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1523.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Toronto",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1516.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id2114",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Toronto",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1516.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "train_trial_index": 0,
+    "predicted_text": " Orlando",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1276.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.3333333333333333
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 2017",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1298.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Orlando",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1278.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.3333333333333333
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Orlando",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1276.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.3333333333333333
+    }
+  },
+  {
+    "instance_id": "id4120",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Orlando",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1276.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.3333333333333333
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "train_trial_index": 0,
+    "predicted_text": " Charlene Holt",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1247.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 1.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " charlene",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1254.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.6666666666666666
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Charlene Holt",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1247.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 1.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Charlene Holt",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1247.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 1.0
+    }
+  },
+  {
+    "instance_id": "id2726",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Charlene Holt",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1247.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 1.0
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "train_trial_index": 0,
+    "predicted_text": " 1890",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1372.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1890",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1442.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1890",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1375.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1890",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1372.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id3928",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1890",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1372.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.5
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "train_trial_index": 0,
+    "predicted_text": " Here and Now",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1361.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " 1876",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1425.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Hea",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1366.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Here and Now",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1361.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id2032",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Here and Now",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1363.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 4.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  }
+]

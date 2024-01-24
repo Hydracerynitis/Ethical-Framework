@@ -1,0 +1,1042 @@
+[
+  {
+    "instance_id": "id1413",
+    "train_trial_index": 0,
+    "predicted_text": " Mrs. Griffith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1377.0,
+      "num_output_tokens": 6.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " brandon",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1793.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs. Griffith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1424.0,
+      "num_output_tokens": 6.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs. Griffith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1378.0,
+      "num_output_tokens": 6.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1413",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs. Griffith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1385.0,
+      "num_output_tokens": 6.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "train_trial_index": 0,
+    "predicted_text": " The same as the previous question, but with the book's name changed to \"Indefer Jones\" instead of \"Indefer Jones's Book\".",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1205.0,
+      "num_output_tokens": 31.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  The  brodrick  is  related  to  indefer   jones.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1551.0,
+      "num_output_tokens": 19.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.2
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The same as the book, but with a different chapter.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1234.0,
+      "num_output_tokens": 12.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The same as the previous question, but with the book's author's name instead of the book's title.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1207.0,
+      "num_output_tokens": 22.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1332",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The same as the previous question, but with the book's name changed to \"Indefer Jones\" instead of \"Indefer Jones's Book\".",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1205.0,
+      "num_output_tokens": 31.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "train_trial_index": 0,
+    "predicted_text": " The language is a language that is not a language that is not a language.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1148.0,
+      "num_output_tokens": 16.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  the  old   language   sound  compared  with   the  new language.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1476.0,
+      "num_output_tokens": 18.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Yes",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1169.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The language is a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language that is not a language",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1151.0,
+      "num_output_tokens": 100.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1123",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The language is a language that is not a language that is not a language.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1148.0,
+      "num_output_tokens": 16.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "train_trial_index": 0,
+    "predicted_text": " Mrs Wilson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1356.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " mrs wilson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1767.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs Wilson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1396.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs Wilson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1359.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1514",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mrs Wilson",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1359.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "train_trial_index": 0,
+    "predicted_text": " Tarzan",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1586.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " opar",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1738.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.18181818181818182
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Tarzan",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1603.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Tarzan",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1586.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1340",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Tarzan",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1586.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "train_trial_index": 0,
+    "predicted_text": " Millamant",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1504.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The plot",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1888.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Yes",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1543.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Millamant",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1504.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1281",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Millamant",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1504.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "train_trial_index": 0,
+    "predicted_text": " Culverton Smith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1195.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.18181818181818182
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " morton",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1544.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Culverton Smith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1223.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.18181818181818182
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Culverton Smith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1196.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.18181818181818182
+    }
+  },
+  {
+    "instance_id": "id1234",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Culverton Smith",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1196.0,
+      "num_output_tokens": 5.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.18181818181818182
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "train_trial_index": 0,
+    "predicted_text": " Ginger",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1660.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " ginger",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1789.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 0.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Ginger",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1692.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Ginger",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1662.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1237",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Ginger",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1660.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "train_trial_index": 0,
+    "predicted_text": " Mother Firefly",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1259.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " mary",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1619.0,
+      "num_output_tokens": 2.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mother Firefly",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1287.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mother Firefly",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1259.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id1173",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Mother Firefly",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1259.0,
+      "num_output_tokens": 4.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.4
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "train_trial_index": 0,
+    "predicted_text": " The house is a giant house, and the giant house is a giant house.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1801.0,
+      "num_output_tokens": 19.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    },
+    "train_trial_index": 0,
+    "predicted_text": "  blackmail",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1295.0,
+      "num_output_tokens": 3.0,
+      "num_train_instances": 1.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    },
+    "train_trial_index": 0,
+    "predicted_text": " Yes",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1828.0,
+      "num_output_tokens": 1.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The house is a giant house, and the giant house is a giant house.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1801.0,
+      "num_output_tokens": 19.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  {
+    "instance_id": "id1483",
+    "perturbation": {
+      "name": "person_name",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "race=white_american",
+      "target_class": "race=black_american",
+      "name_file_path": "benchmark_output/perturbations/person_name/data/person_names.txt",
+      "person_name_type": "first_name",
+      "preserve_gender": true
+    },
+    "train_trial_index": 0,
+    "predicted_text": " The house is a giant house, and the giant house is a giant house.",
+    "stats": {
+      "num_train_trials": 1.0,
+      "num_prompt_tokens": 1806.0,
+      "num_output_tokens": 19.0,
+      "num_train_instances": 2.0,
+      "prompt_truncated": 0.0,
+      "f1_score": 0.0
+    }
+  }
+]

@@ -1,0 +1,972 @@
+[
+  {
+    "input": {
+      "text": "How long did the democrats control the house and senate?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "57 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "35 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3718"
+  },
+  {
+    "input": {
+      "text": "how   long did  the democrats control   the   house   and senate?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "57 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "35 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3718",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "How long did da democrats control da house and senate?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "57 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "35 yrs"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3718",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "When is the next step season 3 coming out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "March 16, 2015"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3320"
+  },
+  {
+    "input": {
+      "text": "when's the  enxt step season 3 coming   out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "March 16, 2015"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3320",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "When is da next step season 3 comin out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "March 16, 2015"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3320",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "When did beryl markham fly across the atlantic?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "4 September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id956"
+  },
+  {
+    "input": {
+      "text": "when did  beryl markham  fly across   the atlantic?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "4 September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id956",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "When did beryl markham fly across da atlantic?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "4 September 1936"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id956",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "Who was the actor that played ben stone on law and order?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Michael Moriarty"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id519"
+  },
+  {
+    "input": {
+      "text": "who  was   the   actor   that  played  ben   stone  on  law  and   order?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Michael Moriarty"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id519",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "Who was da actor dat played ben stone on law and order?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Michael Moriarty"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id519",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "When were birth certificates first issued in the united states?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "1900"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "1902"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "From 1900 to 1946"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3418"
+  },
+  {
+    "input": {
+      "text": "when  were birth   certificates   firts  issued   in   the united states?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "1900"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "1902"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "From 1900 to 1946"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3418",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "When were birth certificates first issued in da united states?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "1900"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "1902"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "From 1900 to 1946"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3418",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "Where was thomas and the magic railroad filmed?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Toronto, Ontario, Canada"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "the Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on the Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2114"
+  },
+  {
+    "input": {
+      "text": "where   was thomas  and  the magic   railroad  filmed?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Toronto, Ontario, Canada"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "the Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on the Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2114",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "Where was thomas and da magic railroad filmed?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States)"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Toronto, Ontario, Canada"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "the Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Strasburg Rail Road in Strasburg, Pennsylvania (United States), as well as in Toronto, Ontario, Canada and on da Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Isle of Man"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2114",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "Where's the pro bowl going to be this year?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Camping World Stadium, Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id4120"
+  },
+  {
+    "input": {
+      "text": "where's   the pro   bowl   going  to be   this   year?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Camping World Stadium, Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id4120",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "Where's da pro bowl goin to b this year?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Camping World Stadium, Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando, Florida"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "Camping World Stadium in Orlando"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id4120",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "Who played maudie in the movie el dorado?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Charlene Holt"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2726"
+  },
+  {
+    "input": {
+      "text": "who played   maudie  in the movie  el   dorado?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Charlene Holt"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2726",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "Who played maudie in da movie el dorado?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "Charlene Holt"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2726",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "When did the ouija board first come out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "July 1, 1890"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3928"
+  },
+  {
+    "input": {
+      "text": "wehn  did  the  ouija   board   first  come out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "July 1, 1890"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3928",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "When did da ouija board first cum out?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "July 1, 1890"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id3928",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "In the song i drive your truck who is he talking about?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "his brother"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "his brother, who died in action in the United States Army"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2032"
+  },
+  {
+    "input": {
+      "text": "in the   song  i   drive   your   truck  who's he talking  about?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "his brother"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "his brother, who died in action in the United States Army"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2032",
+    "perturbation": {
+      "name": "mild_mix",
+      "robustness": true,
+      "fairness": false,
+      "computed_on": "perturbed"
+    }
+  },
+  {
+    "input": {
+      "text": "In da song i drive ur truck who is he tlkin about?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "his brother"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "his homeboy, who died in action in da United States Army"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2032",
+    "perturbation": {
+      "name": "dialect",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "prob": 1.0,
+      "source_class": "SAE",
+      "target_class": "AAVE",
+      "mapping_file_path": "benchmark_output/perturbations/dialect/SAE_to_AAVE_mapping.json"
+    }
+  },
+  {
+    "input": {
+      "text": "In the song i drive your truck who is she talking about?"
+    },
+    "references": [
+      {
+        "output": {
+          "text": "his brother"
+        },
+        "tags": [
+          "correct"
+        ]
+      },
+      {
+        "output": {
+          "text": "his brother, who died in action in the United States Army"
+        },
+        "tags": [
+          "correct"
+        ]
+      }
+    ],
+    "split": "valid",
+    "id": "id2032",
+    "perturbation": {
+      "name": "gender",
+      "robustness": false,
+      "fairness": true,
+      "computed_on": "perturbed",
+      "mode": "pronouns",
+      "prob": 1.0,
+      "source_class": "male",
+      "target_class": "female",
+      "bidirectional": false
+    }
+  }
+]

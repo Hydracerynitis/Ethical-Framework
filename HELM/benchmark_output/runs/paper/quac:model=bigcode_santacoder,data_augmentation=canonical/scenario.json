@@ -1,0 +1,8 @@
+{
+  "name": "quac",
+  "description": "Question answering from dialog prompts.",
+  "tags": [
+    "question_answering"
+  ],
+  "definition_path": "https://github.com/stanford-crfm/helm/blob/main/src/helm/benchmark/scenarios/quac_scenario.py"
+}
