@@ -1,0 +1,6 @@
+helm-run --conf-paths santacoder_spec.conf --suite paper --max-eval-instances 10 
+
+--enable-huggingface-models bigscience/bloom
+
+python format_run_spec.py
+
