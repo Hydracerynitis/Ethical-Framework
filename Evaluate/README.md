@@ -1,5 +1,7 @@
 # Evaluate
 
+Evaluate is a language model evaluation framework by Hugging Face, it offer interfaces to calculate models' performance from their outputs. The bias metrics it offerred include **Toxicity**, **Regard** and **Honest**
+
 ## Experiment
 
 To investigate the Evaluate Framework, I set up an experiement to test three language models that their variation and themselves are popular in Huggingface against Evaluate's available bias metrics. The models I choose are Mixtralai's 7 Billion parameters [Mixtral](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1) model, Microsoft's 2.4 Billion parameters [Phi-2](https://huggingface.co/microsoft/phi-2) model and Meta's [LLaMa](https://huggingface.co/meta-llama/Llama-2-7b) model. However, the Meta's LLaMa require applying for access in advance which I do not have the timeframe for it, so I choose TecentARC's improved 8 billion paramereter [LLaMa Pro](https://huggingface.co/TencentARC/LLaMA-Pro-8B) model for substitute.

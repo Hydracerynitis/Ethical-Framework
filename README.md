@@ -6,6 +6,8 @@ This is the repository for my summer scholarship research, which test currently 
 
 AI Fairness 360 Toolkit (AIF360) is a bias evaluation and bias mitigation framework for tabular data. It offers bias mitigation methods from research knowledge sphere as well as bias evaluation functionality.
 
+It is the baseline framework for comparison during this research.
+
 ## Experiment
 
 The experiment with AIF360 is conducted with Natania Thomas as a research project. The experiment is to examine the performance of its bias mitigation implementation in the case of Kaggle datasets rather than standard UCI datasets. The datasets we use is [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data) and [College](https://www.kaggle.com/datasets/saddamazyazy/go-to-college-dataset).
@@ -49,3 +51,13 @@ Fairpy (designed for language model, not to confuse with the framework with same
 
 Assuming those problems of the framework are fixed, it will be a serious contender for bias evaluation in language models. The bias metrics measurement, such as WEAT and SEAT, are not present in other available frameworks for lanaguage models, like Evaluate.
 The Bias Evaluation features and Bias Mitigation features are aggregated into two main class **BiasDetectionMetrics** and **BiasMitigationMethods**, making accessing to them simple and straightforward. However, it can enjoy some improvements. It can be made as a Python packages with its dependency clearly stated, or at least have a readily available installation instruction. There also should be more guidance resource for new partitioners to interprete and understand the bias metrics.
+
+# HELM
+
+(CRFM) HELM is a large scale automatic benchmark framework with its operation mainly focused on console and use a localy hosted webpage to deliver benchmark result. It supports 48 scenarios (datasets) to benchmark large language model (LLM) with core scenarios representing possible downstream applications of LLM, and yargeted evaluations designed to evaluate LLMs' skills and risk. In the paper introducing the framework, it has benchmarked 36 state-of-art LLM. It also offers some of the LLM models for partitioners to set up their own benchmark experiment. However, I am unable to replicate its result to a satisfactory degree to facilitate a benchmark experiment with it. 
+
+## Potential and Limitation
+
+HELM has the capacity to perform an indsutry-wide audit of LLMs with its in-depth range of scenarios (datasets) and large range of state-of-art large language models (LLM) it has aggregated. It is noted that it require a dedicate Linux server with large storage space for large scale benchmarking. In addtion, currently it only support custom HuggingFace models while custom scenarios and custom local models are developing.
+
+However, it may not be effective as a bias evaluation framework due to its main focus is not on evaluting bias. As a result, it has limited numbers of metrics relevant to bias or fairness, which are pertubated accuracy regarding demographic (pertubated accuracy for short), demographic representation, stereotypical associations, and toxicity fraction. In addition, most scenarios do not calucate those metrics. Pertubated accuracy seems disconnected with other metrics, as it is usally not calculated with others at the same time. Furthermore, Demographic representation and stereotypical associations are count-based metrics, which is "brittle in several ways in general".

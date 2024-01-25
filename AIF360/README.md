@@ -1,5 +1,7 @@
 # AI Fariness 360
 
+AI Fairness 360 Toolkit (AIF360) is a bias evaluation and bias mitigation framework for tabular data. It offers bias mitigation methods from research knowledge sphere as well as bias evaluation functionality.
+
 ## Experiment
 
 In my previous research, we use the toolkit to benchmark its bias mitgation implementations against three datasets we gathered in Kaggle, [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data) and [College](https://www.kaggle.com/datasets/saddamazyazy/go-to-college-dataset). Those datasets are binary classification problems representing a real-life machine learning task with gender as the protected class. In addition, they are very varied in terms of their data size, gender representaion and label distribution regarding gender. 
@@ -41,7 +43,7 @@ One thing important is that in the case of Bank dataset, where the training data
 - The learning resources include:
     - A demo notebooks with each bias mitgation methods
     - Several tutorial of using the toolkits
-- Its methods and interfaces are well documented for the purpose of the parameter, and it has provided detail documentation on the website https://aif360.readthedocs.io/en/stable/index.html
+- Its methods and interfaces are well documented for the purpose of the parameter, and it has provided detail [documentation](https://aif360.readthedocs.io/en/stable/index.html)
 - It has provided mathematical definition of each supported bias metrics on the documentation website
 - It also provides example datasets for new partitioners to experiment with
 

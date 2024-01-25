@@ -1,7 +1,11 @@
 # Fairpy (LLM)
 
+Fairpy (designed for language model, not to confuse with the framework with same name targeting tabular models) is a framework that has gathered state-of-art language model bias evaluation methods and bias mitigation methods. 
+
 ## Experiment
 I have tried using Python 3.11 and 3.10 to set up the toolkit. In the end, I switch to version 3.9 to satisfy its dependencies requirements. Considering three out of four experiments in *demo.py* failed to replicate the result of the toolkit repository, I forfeit setting up an experiment with this toolkit.
+
+The experiment I plan to do is to run WEAT, SEAT and StereoSet tests on models popular on HuggingFace and GPT-2 as comparison. Then I will use the WEAT, SEAT and StereoSet scores to analyze which exhibit most bias in the models' word embeddings.
 
 ## Comment
 
