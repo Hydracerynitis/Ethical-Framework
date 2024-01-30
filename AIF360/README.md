@@ -32,6 +32,7 @@ One thing important is that in the case of Bank dataset, where the training data
 
 ### Stability/Reliability
 
+- The installation all dependencies of the framework requires installation of R. However, not all of its functionality require dependencies that relies on R.
 - Here's several bugs/problems I encountered during my prior research:
     - The conversion method from **Dataframe** to **StandardDataset** can break when given a dataframe instances that have 130 columns.
     - The bias mitigation implementation of **Reweight** and **RejectOptionClassifier** have problems when running.
