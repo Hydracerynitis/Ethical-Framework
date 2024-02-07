@@ -1,4 +1,4 @@
-# Ethical Framework
+# Ethical Framework Evaluation Research Project
 
 This is the repository for my summer scholarship research, which test currently available Bias Evaluation Frameworks by setting up an experiments with the frameworks and examine its adavantage and limitation in the role of a machine learning partitioners. The expected outcome of my research will be a report detialing the capability of current rolls of Bias Evaluation Frameworks and the knowledge gap where those tools can be improved upon.
 
@@ -10,7 +10,7 @@ It is the baseline framework for comparison during this research.
 
 ## Experiment
 
-The experiment with AIF360 is conducted with Natania Thomas as a research project. The experiment is to examine the performance of its bias mitigation implementation in the case of Kaggle datasets rather than standard UCI datasets. The datasets we use is [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data) and [College](https://www.kaggle.com/datasets/saddamazyazy/go-to-college-dataset).
+The experiment with AIF360 is conducted with Natania Thomas as a research project. The experiment is to examine the performance of its bias mitigation implementation in the case of Kaggle datasets rather than standard UCI datasets. The datasets we use are [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data) and [College](https://www.kaggle.com/datasets/saddamazyazy/go-to-college-dataset).
 
 The bias mitigation implementation we accessed in the experiment includes 2 pre-process methods, 2 in-process methods and 2 post-process methods:
     - [Reweighting](http://doi.org/10.1007/s10115-011-0463-8) and [DisparateImpactRemover](https://doi.org/10.1145/2783258.2783311)
@@ -24,6 +24,24 @@ The main finding of our experiment is that the fair-accuracy tradeoff is depende
 AIF360 has the great of advantage of having the large amount of tutorial material for new partitioners to utilise tool, as well as offering state-of-art bias mitigation implementation for them to improve their models. It also accepts custom models and custom datasets for bias evaluation and bias mitigation (other than in-processing methods).
 
 However AIF360's use of **StandardDataset** rather than **Dataframe** for its operation meanse that it require some rework to be done to integerate it into an exisingt machine learning workflow. In addition, **StandardDataset** lack the flexibility that **Dataframe** offers, making some machine learning workflow incompatible with AIF360. AIF360 also suffer from lack of bias metrics that based on predicited outcome, similarity measures and casual reasoning. AIF360 may be less compatitive in terms of bias mitigation due to it foucs on in-processing methods which due to its nature replace partitioners' model rather than improve their model.
+
+# Fairness Indicator
+
+Fairness Indicator is an additional library of tensorflow which provide bias evalution feature. It is built on tensorflow model analysis library while also packaging with What-If tool, another standalone framework that allowing partitioner to edit nodes in the model and present its consequence to the model's prediction.
+
+## Experiment
+
+The experiment for fairness indicator is to investigate the impact of AIF360's [Disparate Impact Remover](https://doi.org/10.1145/2783258.2783311) implementation on scikit-learn's fairness unaware models, which include Random Forest, Multi-Layered Neural Network, and Gradient Boosting. The datasets we use are [Adult](https://archive.ics.uci.edu/dataset/2/adult), [OULAD](https://analyse.kmi.open.ac.uk/open_dataset), [Job](https://www.kaggle.com/datasets/ayushtankha/70k-job-applicants-data-human-resource), and [Bank](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset/data). I only use repair level 0.75 as the metaparameters for Disparate Impact Remover throughout the experiment.
+
+The main finding of our experiment is that Disparate Impact Remover work best in datasets that have imbalanced label distribution like OULAD and Bank. It work better when the dataset has balanced protected attribute distribution. However, the fairness indicator only offer bias metrics based on the correctness of the model's prediction across protected and privilleged groups while Disparate Impact Remover is inended to reducreduceing the difference of positive prediction between them. The findings of the experiment can be misleading.
+
+## Potential and Limitation
+
+Since I was unable to learn and fully understand how to create and train a tensorflow model during the timeframe of the project, I can only evaluate Fairness Indicator's strength and weakness on non-tensorflow models. From what I can gather on the framework's infomation and its tutorial, I can only assume that it can provide better in-depth analysis as well as better integration into tensorflow workflow.
+
+Fairness Indicator only needs model's prediction and the correspounding ground truth and protected attribute to calculate model's bias metrics. It also offer partitioner an interface to customize the framework's output through config file (or writing config data in codes). It means that it can be integrated easily into the model evaluation phase of the machine learning workflow and can be customized catering to partitioner's requirements
+
+However, its bias metrics are very limited as it only focus on visualing and comparing bias metrics between protected groups and privilleged groups from a single prediction of a single model. To facilitate tasks comparing mulitple predictions such as cross validation, paritioners have to write extra methods to extract data from the framework and process those data themselves. In addition, the bias metrics it offers are very narrow. As mentioned in the limitation of the experiment, it only offer metrics which definition based on predicition and ground truth, making the framework meaningless in situation where such deifinition of fairness does not apply.
 
 # Evaluate
 
