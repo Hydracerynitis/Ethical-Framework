@@ -19,7 +19,7 @@ The experiment I plan to set up is to benchmarking models on HuggingFace and mod
     - The logs are filled with warning message like *Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation* making it unreadable.
 - However, those problems I encountered may be attributed to having older version of CUDA driver than HELM expected (11.6 rather than 12.0). 
 
-### Generality
+### Generalizability
 
 - Currently, the framework only accepting custom models that are published on Huggingface for benchmarking. It does not accept custom models in local storage.
     - However, since HELM is ruinng with Python 3.8 and using an old version of **Transformers** package. Models that built on newer version of **Transformers** are not compatible with HELM (e.g. **microsoft/phi-2**)
@@ -40,7 +40,7 @@ The experiment I plan to set up is to benchmarking models on HuggingFace and mod
         - This can be solved by using "model=text" to indicate running all text models with those scenarios and use --models-to-run flag to indicate the framework that only models specified in the flag are used in the benchmark. However, such methods do not support custom models from HuggingFace.
 - It also has a lightweight variation called HELM Lite. Currently there is no documentation about utilizing it, but it is a top priority issue for future development.
  
-## Advantage and Limitation
+### Robustness
 
 - HELM has a capacibility to support a large-scale benchmarking of current available LLM as shown in its paper.Its in-depth selection of scenarios is able to support thourough evaluation of effectiveness of LLMs. It also help aggregate API accesses of state-of-art LLMs into one place for an efficiet industry-wide accessment.
     - When custom LLM and custom scenario feature are developed, it can provide greate reference points for evaluating newly developed LLM as well as initiate an industry-wide evaluation when a new accessment scenario is developed.

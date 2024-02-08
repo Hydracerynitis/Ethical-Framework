@@ -19,7 +19,14 @@ One thing important is that in the case of Bank dataset, where the training data
 
 ## Comment
 
-### Generality
+### Reliability
+
+- The installation all dependencies of the framework requires installation of R. However, not all of its functionality require dependencies that relies on R.
+- Here's several bugs/problems I encountered during my prior research:
+    - The conversion method from **Dataframe** to **StandardDataset** can break when given a dataframe instances that have 130 columns.
+    - The bias mitigation implementation of **Reweight** and **RejectOptionClassifier** have problems when running.
+
+### Generalizability
 
 - Both bias detection and bias mitigation feature only accept the toolkit's only data structure **StandardDataset**
 - However, the toolkit provide conversion methods to convert **DataFrame** class to **StandardDataset**
@@ -29,13 +36,6 @@ One thing important is that in the case of Bank dataset, where the training data
 - However, **StandardDataset** lack the flexibility and modifiability the **Dataframe** class provides. 
     - For example, you can split a **Dataframe** into five equal size folds, and contact four folds to form the training sets for cross validation. This can not be performed with **StandardDataset** because it does not provide interfaces to combine different instances of **StandardDataset** together
 - Bias metrics evaluation and bias mitigation implements can accpet custom Machine Learning model, to evaluate its bias metrics and mitigate its bias (except for in-process bias mitgation methods due to intefering training process directly)
-
-### Stability/Reliability
-
-- The installation all dependencies of the framework requires installation of R. However, not all of its functionality require dependencies that relies on R.
-- Here's several bugs/problems I encountered during my prior research:
-    - The conversion method from **Dataframe** to **StandardDataset** can break when given a dataframe instances that have 130 columns.
-    - The bias mitigation implementation of **Reweight** and **RejectOptionClassifier** have problems when running.
 
 ### Guidance
 
@@ -48,7 +48,7 @@ One thing important is that in the case of Bank dataset, where the training data
 - It has provided mathematical definition of each supported bias metrics on the documentation website
 - It also provides example datasets for new partitioners to experiment with
 
-## Advantage and Limitation
+### Robustness
 
 - The framework use **StandardDataset** class as its data struture provides convenience like automating basic data pre-process tasks like transforming categorical features and categorize privillege groups. 
     - However, it is less flexible than panda's **Dataframe** class to query its content and perform various transformation operations, making it harder to debug if encountered problems when using the framework.

@@ -30,7 +30,7 @@ One thing has to be pointed out is that Disparate Impact Remover is intended to 
 
 ## Comment
 
-### Stability/Reliability
+### Reliability
 
 - The Fairness Indicator is built upon Tensorflow Model Analysis, which is only available in Python 3.8 and 3.9. This installation preequisite is not mention on either the github page or tutorials.
 - There are several instances of installing fairness indicators both on Window and Linux:
@@ -44,7 +44,7 @@ One thing has to be pointed out is that Disparate Impact Remover is intended to 
     - Affected implementations includes **AdversialDebiasing**, **GridSearchReduction**
 - The framework will output string "NaN" when calculating the metrics when the model only make positive predictions or negative predictions. It will become error if the evalution pipeline does not take this into accounts.
 
-### Generality
+### Generalizability
 
 - A small thing to note is that the visualization of the framework assume the IDE theme partitioner are using has white background. This has forced me to switch my IDE theme from black background to white background to be able to see the results.
 - To produce a report of models' bias metric, it only needs its prediction and the correspounding ground truth and protected attribute values. The partitioner can use a config file (or write configuration in code) to specify the columns of **DataFrame** to retrieve protected attribute, ground truth and models' prediction as well as the metrics it will calculate from them.
@@ -55,7 +55,7 @@ One thing has to be pointed out is that Disparate Impact Remover is intended to 
 - It provides Colab notebooks tutorial to provide guidance for new partitioners. However, the notebook is run on Python version 3.10. As Fairness-Indicators's preequisite is Python version 3.8 and 3.9, those notbooks tutorial are not currently working.
     - I have encountered a problem with the framework that can be attribute to dependecy version conflict, where the framework exihibit different behaviour that resulting in an error.
 
-## Advantage and Limitation
+### Robustness
 
 - One thing to note is that I only evaluate the framework's performance regarding non-tensorflow models.Since I was unable to learn and fully understand how to create and train a tensorflow model during the timeframe of the project. 
     - Since the framework is built on tensorflow libary, I assume that it could provide a more in-depth and better analysis of tensorflow model than non-tensorflow model as well as better integration into tensorflow model workflow.

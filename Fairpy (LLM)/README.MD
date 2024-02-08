@@ -27,7 +27,7 @@ The experiment I plan to do is to run WEAT, SEAT and StereoSet tests on models p
     - The CausalLMBiasMitigation algorithm breaks due to **ValueError: too many values to unpack (expected 3)**
 - When I test the toolkit with the code provided in its Github page, three of the four experiments encounter problems within the toolkits. The exact problem is recorded in *demo.py* file
 
-### Generality
+### Generalizability
 
 - From what I can understand with the toolkit's code:
     - The toolkit is capable of taking custom language model and its tokenizer as input to evaluate its bias and help mitigate those bias.
@@ -39,7 +39,7 @@ The experiment I plan to do is to run WEAT, SEAT and StereoSet tests on models p
 - The toolkit's modular structure is simplistic and straightforward, as available bias metric evaluation and bias mitigation implementation all grouped together under class **BiasDetectionMetrics** and **BiasMitigationMethods**.
 - The result of the evaluation methods consists of disconnected jargon. It is diffcult for new partitioner to understand and interpret the result.
 
-## Advantage and Limitation
+### Robustness
 
 - Relying on past technology without any forwardcapability, it is very difficulty to integrate this framework into modern day language model workflow. It's incompatibility with Jupyter Notebook is more concerning, since it is the standard way of communication within the machine learning field.
 - However, it is the currently only framework that provide language model bias metrics like *WEAT*, and provide bias mitigation methods to fine tune their models.
