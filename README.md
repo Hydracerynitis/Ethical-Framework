@@ -9,8 +9,8 @@ Nowadys since machine learning mdoels are increasingly applyed to scenarios wher
 Bias Evaluation Frameworks are tools developed to offer paritioners the ability to calculate bias metrics of their models and understand the fairness of the model's prediction. In this project, I will examine two sets of frameworks, ones suited for tabular data models and ones suited for large language model. The analysis of the framework revolves aorund Reliability, Generalizability, Guidance and Robustness.
 
 - Reliability means how far the framework can run without encoutering any problem. Here I record any errors or bugs I have encountered in my experience with the framework, including installing the framework, learning how to use it and running the experiment.
-- Generalizability means how many other workflows can the frame be applied to. It means that how much customization the framework allows the partitioners to have for the calculation tasks. In other words, here I record whether it allows user to use custom models, custom datasets, or even custom metrics.
-- Guidance meanse how easy the framework is for new partitioners to learn. Here I record the availablity of the framework's tutorial and any difficulty I have encountered when learning the framework
+- Generalizability means how many other workflows can the frame be applied to. It means that how much customization the framework allows the users to have for the calculation tasks. In other words, here I record whether it allows user to use custom models, custom datasets, or even custom metrics.
+- Guidance meanse how easy the framework is for new users to learn. Here I record the availablity of the framework's tutorial and any difficulty I have encountered when learning the framework
 - Robustness meanse how good the framework is at evaluating the bias present in the model. Here I examine the capability of the framework. In other words, I examine the framework's roster of available bias metrics as well as the delievery and visualisation of framework's result to identify its strength and limitation.
 
 ## Survey Result
@@ -38,13 +38,13 @@ The main finding of our experiment is that the fair-accuracy tradeoff is depende
 
 #### Potential and Limitation
 
-AIF360 has the great of advantage of having the large amount of tutorial material for new partitioners to utilise tool, as well as offering state-of-art bias mitigation implementation for them to improve their models. It also accepts custom models and custom datasets for bias evaluation and bias mitigation (other than in-processing methods).
+AIF360 has the great of advantage of having the large amount of tutorial material for new users to utilise tool, as well as offering state-of-art bias mitigation implementation for them to improve their models. It also accepts custom models and custom datasets for bias evaluation and bias mitigation (other than in-processing methods).
 
-However AIF360's use of **StandardDataset** rather than **Dataframe** for its operation meanse that it require some rework to be done to integerate it into an exisingt machine learning workflow. In addition, **StandardDataset** lack the flexibility that **Dataframe** offers, making some machine learning workflow incompatible with AIF360. AIF360 also suffer from lack of bias metrics that based on predicited outcome, similarity measures and casual reasoning. AIF360 may be less compatitive in terms of bias mitigation due to it foucs on in-processing methods which due to its nature replace partitioners' model rather than improve their model.
+However AIF360's use of **StandardDataset** rather than **Dataframe** for its operation meanse that it require some rework to be done to integerate it into an exisingt machine learning workflow. In addition, **StandardDataset** lack the flexibility that **Dataframe** offers, making some machine learning workflow incompatible with AIF360. AIF360 also suffer from lack of bias metrics that based on predicited outcome, similarity measures and casual reasoning. AIF360 may be less compatitive in terms of bias mitigation due to it foucs on in-processing methods which due to its nature replace users' model rather than improve their model.
 
 ### Fairness Indicator
 
-Fairness Indicator is an additional library of tensorflow which provide bias evalution feature. It is built on tensorflow model analysis library while also packaging with What-If tool, another standalone framework that allowing partitioner to edit nodes in the model and present its consequence to the model's prediction.
+Fairness Indicator is an additional library of tensorflow which provide bias evalution feature. It is built on tensorflow model analysis library while also packaging with What-If tool, another standalone framework that allowing user to edit nodes in the model and present its consequence to the model's prediction.
 
 #### Experiment
 
@@ -56,7 +56,7 @@ The main finding of our experiment is that Disparate Impact Remover work best in
 
 Since I was unable to learn and fully understand how to create and train a tensorflow model during the timeframe of the project, I can only evaluate Fairness Indicator's strength and weakness on non-tensorflow models. From what I can gather on the framework's infomation and its tutorial, I can only assume that it can provide better in-depth analysis as well as better integration into tensorflow workflow.
 
-Fairness Indicator only needs model's prediction and the correspounding ground truth and protected attribute to calculate model's bias metrics. It also offer partitioner an interface to customize the framework's output through config file (or writing config data in codes). It means that it can be integrated easily into the model evaluation phase of the machine learning workflow and can be customized catering to partitioner's requirements
+Fairness Indicator only needs model's prediction and the correspounding ground truth and protected attribute to calculate model's bias metrics. It also offer user an interface to customize the framework's output through config file (or writing config data in codes). It means that it can be integrated easily into the model evaluation phase of the machine learning workflow and can be customized catering to user's requirements
 
 However, its bias metrics are very limited as it only focus on visualing and comparing bias metrics between protected groups and privilleged groups from a single prediction of a single model. To facilitate tasks comparing mulitple predictions such as cross validation, paritioners have to write extra methods to extract data from the framework and process those data themselves. In addition, the bias metrics it offers are very narrow. As mentioned in the limitation of the experiment, it only offer metrics which definition based on predicition and ground truth, making the framework meaningless in situation where such deifinition of fairness does not apply.
 
@@ -87,11 +87,11 @@ Fairpy (designed for language model, not to confuse with the framework with same
 #### Potential and Limitation
 
 Assuming those problems of the framework are fixed, it will be a serious contender for bias evaluation in language models. The bias metrics measurement, such as WEAT and SEAT, are not present in other available frameworks for lanaguage models, like Evaluate.
-The Bias Evaluation features and Bias Mitigation features are aggregated into two main class **BiasDetectionMetrics** and **BiasMitigationMethods**, making accessing to them simple and straightforward. However, it can enjoy some improvements. It can be made as a Python packages with its dependency clearly stated, or at least have a readily available installation instruction. There also should be more guidance resource for new partitioners to interprete and understand the bias metrics.
+The Bias Evaluation features and Bias Mitigation features are aggregated into two main class **BiasDetectionMetrics** and **BiasMitigationMethods**, making accessing to them simple and straightforward. However, it can enjoy some improvements. It can be made as a Python packages with its dependency clearly stated, or at least have a readily available installation instruction. There also should be more guidance resource for new users to interprete and understand the bias metrics.
 
 ### HELM
 
-(CRFM) HELM is a large scale automatic benchmark framework with its operation mainly focused on console and use a localy hosted webpage to deliver benchmark result. It supports 48 scenarios (datasets) to benchmark large language model (LLM) with core scenarios representing possible downstream applications of LLM, and yargeted evaluations designed to evaluate LLMs' skills and risk. In the paper introducing the framework, it has benchmarked 36 state-of-art LLM. It also offers some of the LLM models for partitioners to set up their own benchmark experiment. However, I am unable to replicate its result to a satisfactory degree to facilitate a benchmark experiment with it. 
+(CRFM) HELM is a large scale automatic benchmark framework with its operation mainly focused on console and use a localy hosted webpage to deliver benchmark result. It supports 48 scenarios (datasets) to benchmark large language model (LLM) with core scenarios representing possible downstream applications of LLM, and yargeted evaluations designed to evaluate LLMs' skills and risk. In the paper introducing the framework, it has benchmarked 36 state-of-art LLM. It also offers some of the LLM models for users to set up their own benchmark experiment. However, I am unable to replicate its result to a satisfactory degree to facilitate a benchmark experiment with it. 
 
 #### Potential and Limitation
 

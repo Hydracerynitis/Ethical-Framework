@@ -1,6 +1,6 @@
 # CRFM HELM
 
-(CRFM) HELM is a large scale automatic benchmark framework with its operation mainly focused on console and use a localy hosted webpage to deliver benchmark result. It supports 48 scenarios (datasets) to benchmark large language model (LLM) with core scenarios representing possible downstream applications of LLM, and yargeted evaluations designed to evaluate LLMs' skills and risk. In the paper introducing the framework, it has benchmarked 36 state-of-art LLM. It also offers some of those models for partitioners to set up their own benchmark experiment.
+(CRFM) HELM is a large scale automatic benchmark framework with its operation mainly focused on console and use a localy hosted webpage to deliver benchmark result. It supports 48 scenarios (datasets) to benchmark large language model (LLM) with core scenarios representing possible downstream applications of LLM, and yargeted evaluations designed to evaluate LLMs' skills and risk. In the paper introducing the framework, it has benchmarked 36 state-of-art LLM. It also offers some of those models for users to set up their own benchmark experiment.
 
 ## Experiment
 I am able to set up the framework with Python 3.8 at Linux server. However, I am only able to run some of its scenario with example models **openai/gpt2** and **bigcode/santacoder** and only get part of metrics that it could produce. In addition, all of the metrics I am able to retrieve from HELM are not related to any topics like bias and fairness. As a result, I choose to forfeit setting up experiment with it until I have the time to figure out the problems in future.
@@ -9,7 +9,7 @@ The experiment I plan to set up is to benchmarking models on HuggingFace and mod
 
 ## Comment
 
-### Stability/Reliability
+### Reliability
 
 - During my experience with the HELM, I have encountered problems with HELM that reuslting in:
     - Some of my scenarios specified in my run_spec.conf does not executed during benchmarking
@@ -44,7 +44,7 @@ The experiment I plan to set up is to benchmarking models on HuggingFace and mod
 
 - HELM has a capacibility to support a large-scale benchmarking of current available LLM as shown in its paper.Its in-depth selection of scenarios is able to support thourough evaluation of effectiveness of LLMs. It also help aggregate API accesses of state-of-art LLMs into one place for an efficiet industry-wide accessment.
     - When custom LLM and custom scenario feature are developed, it can provide greate reference points for evaluating newly developed LLM as well as initiate an industry-wide evaluation when a new accessment scenario is developed.
-- As HELM requires a Linux system with large storage space, partitioners usually requires to gain access a dedicated server to run benchmark with it. It can be a potential barrier preventing people from engaging a large-scale benchmarking with the framework. 
+- As HELM requires a Linux system with large storage space, users usually requires to gain access a dedicated server to run benchmark with it. It can be a potential barrier preventing people from engaging a large-scale benchmarking with the framework. 
 - However, most of its metrics are irrelevant to bias and fairness, making it a less effective framework as a bias evaluation framework.
     - The metrics that are relevant to bias and fairness are: pertubated accuracy regarding demographic  (pertubated accuracy for short), demographic representation, stereotypical associations, and toxicity fraction.
     - However, pertubated accuracy is not connected with the other three metrics. According to the paper's result, most of the scenarios where pertubated accuracy is recorded do not calculate the other three metrics.

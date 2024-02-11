@@ -46,21 +46,21 @@ One thing has to be pointed out is that Disparate Impact Remover is intended to 
 
 ### Generalizability
 
-- A small thing to note is that the visualization of the framework assume the IDE theme partitioner are using has white background. This has forced me to switch my IDE theme from black background to white background to be able to see the results.
-- To produce a report of models' bias metric, it only needs its prediction and the correspounding ground truth and protected attribute values. The partitioner can use a config file (or write configuration in code) to specify the columns of **DataFrame** to retrieve protected attribute, ground truth and models' prediction as well as the metrics it will calculate from them.
+- A small thing to note is that the visualization of the framework assume the IDE theme user are using has white background. This has forced me to switch my IDE theme from black background to white background to be able to see the results.
+- To produce a report of models' bias metric, it only needs its prediction and the correspounding ground truth and protected attribute values. The user can use a config file (or write configuration in code) to specify the columns of **DataFrame** to retrieve protected attribute, ground truth and models' prediction as well as the metrics it will calculate from them.
 
 
 ### Guidance
 
-- It provides Colab notebooks tutorial to provide guidance for new partitioners. However, the notebook is run on Python version 3.10. As Fairness-Indicators's preequisite is Python version 3.8 and 3.9, those notbooks tutorial are not currently working.
+- It provides Colab notebooks tutorial to provide guidance for new users. However, the notebook is run on Python version 3.10. As Fairness-Indicators's preequisite is Python version 3.8 and 3.9, those notbooks tutorial are not currently working.
     - I have encountered a problem with the framework that can be attribute to dependecy version conflict, where the framework exihibit different behaviour that resulting in an error.
 
 ### Robustness
 
 - One thing to note is that I only evaluate the framework's performance regarding non-tensorflow models.Since I was unable to learn and fully understand how to create and train a tensorflow model during the timeframe of the project. 
     - Since the framework is built on tensorflow libary, I assume that it could provide a more in-depth and better analysis of tensorflow model than non-tensorflow model as well as better integration into tensorflow model workflow.
-- Fairness Indicator framework can be integrated easily into the model evaluation phase of the machine learning workflow and can be customized catering to partitioner's requirements.
+- Fairness Indicator framework can be integrated easily into the model evaluation phase of the machine learning workflow and can be customized catering to user's requirements.
 - However The framework is built for comparison between performance of privilleged groups and protected groups from a single prediction of single model. It also lack the capability to calculate metrics of model's overall performance
-    - It's very difficult to extract data from the framework for further analysis, extra methods reuqired for partitioner for processing cross-validation results and multiple model comparison
+    - It's very difficult to extract data from the framework for further analysis, extra methods reuqired for user for processing cross-validation results and multiple model comparison
 - The definitions of available metrics consist of only those based on predicted outcomes and ground truth. The framework also present its data in form of comparisons between privilleged groups and protected groups.
     - This make framework much weaker in situations where ensuring the model achieve equal accuracy or other metrics is not ideal or even not possible. (i.e. Disaparate Impact)

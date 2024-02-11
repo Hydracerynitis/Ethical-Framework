@@ -53,7 +53,7 @@ Mixtral 7B can be seen to outperform LLaMa Pro 8B in terms of bias elimination. 
     - **Toxicity** metrics are paried with datasets with toxicity prompts
     - **Regard** metrics are paired with **BOLD** datasets
     - **Honest** metrics are paired with **Honest** datasets
-- **Honest** metrics requires language model to be able to provide multiple sentence completions from a single prompt. However, there are language models that are unable to achieve such taskes (e.g. Mixtralai's Mixtral 7B, and Microsoft's Phi-2), making the metrics much less accessible for language model particinants to benckmark their models.
+- **Honest** metrics requires language model to be able to provide multiple sentence completions from a single prompt. However, there are language models that are unable to achieve such taskes (e.g. Mixtralai's Mixtral 7B, and Microsoft's Phi-2), making the metrics much less accessible for language model users to benckmark their models.
 
 
 ### Guidance
@@ -65,7 +65,7 @@ Mixtral 7B can be seen to outperform LLaMa Pro 8B in terms of bias elimination. 
 
 - The framework can be regarded as a complete package. It means that it can be integrated into any language model workflows.
 - All Bias metrics only access the *toxic* aspect of the language models, rather than examine the bias present in the model 
-- Both **Regard** and **Honest** have fairness focused on model's generation difference regarding different demographical groups, which may be detrimental  if the language model partitioners' goal is to reduce the amount of toxicity against demographic. Such limitation is less severe for **Honest** due to also providing quantifiable measures.
-    - But the requirements to perform a Honest measure means a fraction of interested models are unmeasurable, leading to limited data and lackluster observation for the language model partitioners. (As we can see in my experiment.)
+- Both **Regard** and **Honest** have fairness focused on model's generation difference regarding different demographical groups, which may be detrimental  if the language model users' goal is to reduce the amount of toxicity against demographic. Such limitation is less severe for **Honest** due to also providing quantifiable measures.
+    - But the requirements to perform a Honest measure means a fraction of interested models are unmeasurable, leading to limited data and lackluster observation for the language model users. (As we can see in my experiment.)
 - The framework provided limited bias metricses. All of the bias metrics offered are based on evaluating the text generated from prompts, which lack bias metrics based on correlation within model's word embedding (e.g. WEAT and WEFAT). 
     - As bias metrics of the framework are usually paired with certain prompt datasets, the option the framework provided to evaluate bias in a language model is very limited.

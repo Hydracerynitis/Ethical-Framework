@@ -9,7 +9,7 @@ The experiment I plan to do is to run WEAT, SEAT and StereoSet tests on models p
 
 ## Comment
 
-### Stability/Reliability
+### Reliability
 
 - There is no install information on the github repository and published paper. This toolkit is not published to a Python package. In order to utilize the toolkit, you need to download the whole repository, extract *BIasDetection* and *BiasMitigation* modules and put it besides your project files.
     - The toolkit is highly dependent on deprecated feature of its dependencies, thus it is not compatible with latest version of its dependency.
@@ -37,7 +37,7 @@ The experiment I plan to do is to run WEAT, SEAT and StereoSet tests on models p
 
 - There is no external guidance for utilizing the toolkits.
 - The toolkit's modular structure is simplistic and straightforward, as available bias metric evaluation and bias mitigation implementation all grouped together under class **BiasDetectionMetrics** and **BiasMitigationMethods**.
-- The result of the evaluation methods consists of disconnected jargon. It is diffcult for new partitioner to understand and interpret the result.
+- The result of the evaluation methods consists of disconnected jargon. It is diffcult for new user to understand and interpret the result.
 
 ### Robustness
 
