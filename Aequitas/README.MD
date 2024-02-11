@@ -15,10 +15,7 @@ Aequitas is an open-source bias auditing and Fair Machine Learning toolkit. The 
 - Due to how Aequitas import bias mitigation modules, you need to download and compile [**LightGBM.dll**](https://github.com/microsoft/LightGBM/releases) Libary and put it in the virtual environment's library folders. There is no mention of it in its installation information.
     - Likewise, its automated benchmark feature also require dependency of either pyarrow or fastparquet for parquet support, which is missing from the instalation information.
     - Despite of that, you still need to install **lightgbm** and **torch** (preferably with cuda support) yourself to use the lightgbm provided as its base estimator. These are not included in its dependency and will not be installed with **pip install aequitas** command
-A suitable version of pyarrow or fastparquet is required for parquet support.
-Trying to import the above resulted in these errors:
- - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
- - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+- When reading the result of an automated benchmark experiment, Aequitas will assume it's reading from Linux system and do not account for Window system. As a result, it will throw an error when try to anlysis the result of an automated benchmark run, making it unusable. 
 - When replicating tutorial's codes, I found that the post-processing methods **BalancedGroupThreshold** change nothing after executions. It is unclear to me what is the causes of this problem.
 
 ### Generalizability
