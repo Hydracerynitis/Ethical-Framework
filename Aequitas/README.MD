@@ -1,6 +1,6 @@
 # Aequitas
 
-Aequitas is an open-source bias auditing and Fair Machine Learning toolkit. The objective of this package is to provide an easy-to-use and transparent tool for auditing machine learning models, allowing user to correct model with bias mitigation methods, as well as an automated benchmark system for systematic evaluation.
+Aequitas is an open-source bias auditing and Fair Machine Learning toolkit. The objective of this package is to provide an easy-to-use and transparent tool for auditing machine learning models, allowing user to correct model with bias mitigation methods, as well as an automated benchmark system to find the models with the best performance-fairness tradeoff.
 
 ## Experiment
 
@@ -20,7 +20,8 @@ Aequitas is an open-source bias auditing and Fair Machine Learning toolkit. The 
 
 ### Generalizability
 
-- User can use *yaml* files to config an experiment 
+- To produce a report of models' bias metric, it only needs its prediction and the correspounding ground truth and protected attribute values. The user can specify a reference group when calculating the disparity of fairness metrics with other groups
+- User can use *yaml* files to plan a benchmark 
 
 ### Guidance
 
