@@ -1,49 +1,25 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.neural_network import MLPClassifier
-from aif360.datasets import StandardDataset
-from aif360.algorithms.preprocessing.disparate_impact_remover import DisparateImpactRemover
+from aequitas.flow.methods.inprocessing.fairgbm import FairGBM
+from aequitas.flow.methods.inprocessing.fairlearn_classifier import FairlearnClassifier
+from fairlearn.reductions import ExponentiatedGradient, FalsePositiveRateParity
+from lightgbm import LGBMClassifier
 
 def get_feautures(dataset,label_column):
-    if type(dataset) is pd.DataFrame:
-        feature=dataset.loc[:,dataset.columns!=label_column]
-        label=dataset[label_column]
-    if type(dataset) is StandardDataset:
-        feature=dataset.features
-        label=dataset.labels.ravel()
+    feature=dataset.loc[:,dataset.columns!=label_column]
+    label=dataset[label_column]
     return feature,label
 
-def get_index(dataset):
-    if type(dataset) is StandardDataset:
-        return [int(i) for i in dataset.instance_names]
-    if type(dataset) is pd.DataFrame:
-        return dataset.index
-
-def RandomForest(train_set, test_set,label_column):
+def RandomForest(train_set, test_set,eval):
     #Training
     model=RandomForestClassifier()
-    train_X,train_Y=get_feautures(train_set,label_column)
-    model.fit(train_X,train_Y)
-    #Testing
-    test_X,test_Y=get_feautures(test_set,label_column)
-    pred=model.predict(test_X)
-    return test_Y, pred
-
-def NeuralNetwork(train_set,test_set,eval):
-    #Training
-    model=MLPClassifier(
-        hidden_layer_sizes= 20,
-        solver="sgd",
-        learning_rate_init=0.01,
-        early_stopping=False,
-        alpha=1
-    )
     train_X,train_Y=get_feautures(train_set,eval.lc)
     model.fit(train_X,train_Y)
     #Testing
     test_X,test_Y=get_feautures(test_set,eval.lc)
     pred=model.predict(test_X)
     return test_Y, pred
+
 
 def GradientBoost(train_set,test_set,eval):
     #Training
@@ -55,44 +31,44 @@ def GradientBoost(train_set,test_set,eval):
     pred=model.predict(test_X)
     return test_Y, pred
 
-def DI_RandomForest(train_set,test_set,eval):
+def Fairgbm(train_set,test_set,eval):
     #Training
-    di = DisparateImpactRemover(repair_level=0.75,sensitive_attribute=eval.gc)
-    train_di = di.fit_transform(train_set.copy(deepcopy=True))
-    test_di = di.fit_transform(test_set.copy(deepcopy=True))
-
-    di_model=RandomForestClassifier()
-    di_model.fit(train_di.features,train_di.labels.ravel(),sample_weight=train_di.instance_weights)
-    #Testing
-    pred=di_model.predict(test_di.features)
-    return pd.Series(test_set.labels.ravel(),index=get_index(test_set)),pred
-
-def DI_NeuralNetwork(train_set,test_set,eval):
-    #Training
-    di = DisparateImpactRemover(repair_level=0.75,sensitive_attribute=eval.gc)
-    train_di = di.fit_transform(train_set.copy(deepcopy=True))
-    test_di = di.fit_transform(test_set.copy(deepcopy=True))
-
-    di_model=MLPClassifier(
-        hidden_layer_sizes= 20,
-        solver="sgd",
-        learning_rate_init=0.01,
-        early_stopping=False,
-        alpha=1
+    model=FairGBM(
+        global_constraint_type="FPR,FNR",
+        global_target_fpr=0.05,
+        global_target_fnr=0.5,
+        constraint_type='fpr',
+        multiplier_learning_rate=0.1,
+        constraint_stepwise_proxy="cross_entropy",
+        boosting_type="dart",
+        enable_bundle=False,
+        num_leaves=10,
+        n_estimators=100,
+        min_child_samples=50,
+        learning_rate=0.01
     )
-    di_model.fit(train_di.features,train_di.labels.ravel())
+    train_X,train_Y=get_feautures(train_set,eval.lc)
+    model.fit(train_X,train_Y,train_X[eval.gc])
     #Testing
-    pred=di_model.predict(test_di.features)
-    return pd.Series(test_set.labels.ravel(),index=get_index(test_set)),pred
+    test_X,test_Y=get_feautures(test_set,eval.lc)
+    pred=model.predict_proba(test_X,test_X[eval.gc])
+    return test_Y, pred
 
-def DI_GradientBoost(train_set,test_set,eval):
-    #Training
-    di = DisparateImpactRemover(repair_level=0.75,sensitive_attribute=eval.gc)
-    train_di = di.fit_transform(train_set.copy(deepcopy=True))
-    test_di = di.fit_transform(test_set.copy(deepcopy=True))
-
-    di_model=GradientBoostingClassifier()
-    di_model.fit(train_di.features,train_di.labels.ravel())
+def Fairlearn(train_set,test_set,eval):
+    model=FairlearnClassifier(ExponentiatedGradient,LGBMClassifier,FalsePositiveRateParity,
+        eps=0.05,
+        max_iter=10,
+        model__boosting_type="dart",
+        model__enable_bundle=False,
+        model__n_estimators=100,
+        model__num_leaves=10,
+        model__min_child_samples=50,
+        model__learning_rate=0.01,
+        model__n_jobs=1
+    )
+    train_X,train_Y=get_feautures(train_set,eval.lc)
+    model.fit(train_X,train_Y,train_X[eval.gc])
     #Testing
-    pred=di_model.predict(test_di.features)
-    return pd.Series(test_set.labels.ravel(),index=get_index(test_set)),pred
+    test_X,test_Y=get_feautures(test_set,eval.lc)
+    pred=model.predict_proba(test_X,test_X[eval.gc])
+    return test_Y, pred

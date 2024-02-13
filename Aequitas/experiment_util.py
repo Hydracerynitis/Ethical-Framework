@@ -1,12 +1,9 @@
-import os
-import numpy as np
 import pandas as pd
-from aif360.datasets import StandardDataset
-import shutil
-#Global values
+from aequitas.audit import Audit
 
-column=["Accuracy Difference",	"FPR Difference", "FNR Difference","TPR Difference","TNR Difference","PR Difference",
-         "NR Difference",	"FDR Difference", "FOR Difference", "Precision Difference","Recall Difference"]
+column=["Accuracy","False Omissin Rate Disparity","False Discover Rate Disparity","Predicted Positive Ratio Disparity","Predicted Prevalance Disparity"]
+aequitas_metrics=["fpr_disparity","for_disparity","ppr_disparity","pprev_disparity"]
+
 
 #normalizing dataframe numeric value
 def min_max_noramlize(column):
@@ -28,7 +25,7 @@ def preporcess_transform(df):
 #append a Series to an exisitng Dataframe
 def append_Series(dataframe, series):
     df_name=dataframe.columns.name
-    new_df=pd.concat([dataframe,pd.DataFrame(series).T])
+    new_df=pd.concat([dataframe,pd.DataFrame([series.to_list()],index=[series.name],columns=column)])
     new_df.columns.name=df_name
     return new_df
 
@@ -47,15 +44,13 @@ class evaluation:
     def get_train_test(self,dataset,fold_index):
         test_fold=self.folds[fold_index]
         train_index=pd.Index([])
-        for f in self.folds:
-            if f is not test_fold:
+        for f in [f for f in self.folds if f is not test_fold]:
+            if len(train_index)<=0:
+                train_index=f
+            else:
                 train_index=train_index.append(f)
-        if type(dataset) is pd.DataFrame:
-            train_set=dataset.loc[train_index]
-            test_set=dataset.loc[test_fold]
-        if type(dataset) is StandardDataset:
-            train_set=dataset.subset(train_index)
-            test_set=dataset.subset(test_fold)
+        train_set=dataset.loc[train_index]
+        test_set=dataset.loc[test_fold]
         return train_set,test_set
 
     # Cross vailidation and return the average result
@@ -75,5 +70,10 @@ class evaluation:
     def framework_evaluate(self,ground_truth,prediction):
         pred=pd.Series(prediction,index=ground_truth.index,name="pred")
         result=pd.concat([self.df.loc[ground_truth.index,[self.gc]],ground_truth,pred],axis=1)
-        result.columns=["gender","label","prediction"]
-        pass
+        result.columns=["gender","label_value","score"]
+        audit=Audit(result,label_column="label_value",sensitive_attribute_column=["gender"],reference_groups={'gender':self.pg})
+        audit.audit()
+        audit_dip=audit.disparity_df
+        disparity=audit_dip.loc[audit_dip["attribute_value"]!=self.pg,aequitas_metrics].squeeze()
+        accuracy=pd.Series([get_accuracy(result,"score","label_value")],index=["Accuracy"])
+        return pd.concat([accuracy,disparity])
