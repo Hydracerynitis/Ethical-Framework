@@ -1,12 +1,6 @@
 import os
 import numpy as np
 import pandas as pd
-from aif360.datasets import StandardDataset
-import shutil
-#Global values
-
-column=["Accuracy Difference",	"FPR Difference", "FNR Difference","TPR Difference","TNR Difference","PR Difference",
-         "NR Difference",	"FDR Difference", "FOR Difference", "Precision Difference","Recall Difference"]
 
 #normalizing dataframe numeric value
 def min_max_noramlize(column):
@@ -50,12 +44,8 @@ class evaluation:
         for f in self.folds:
             if f is not test_fold:
                 train_index=train_index.append(f)
-        if type(dataset) is pd.DataFrame:
-            train_set=dataset.loc[train_index]
-            test_set=dataset.loc[test_fold]
-        if type(dataset) is StandardDataset:
-            train_set=dataset.subset(train_index)
-            test_set=dataset.subset(test_fold)
+        train_set=dataset.loc[train_index]
+        test_set=dataset.loc[test_fold]
         return train_set,test_set
 
     # Cross vailidation and return the average result

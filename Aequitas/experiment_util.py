@@ -68,6 +68,7 @@ class evaluation:
     
     #Evaluate with Fairness indicator
     def framework_evaluate(self,ground_truth,prediction):
+        prediction=[0 if p <0.5 else 1 for p in prediction]
         pred=pd.Series(prediction,index=ground_truth.index,name="pred")
         result=pd.concat([self.df.loc[ground_truth.index,[self.gc]],ground_truth,pred],axis=1)
         result.columns=["gender","label_value","score"]
