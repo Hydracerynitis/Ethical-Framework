@@ -2,7 +2,7 @@ import pandas as pd
 from aequitas.audit import Audit
 
 column=["Accuracy","False Omissin Rate Disparity","False Discover Rate Disparity","Predicted Positive Ratio Disparity","Predicted Prevalance Disparity"]
-aequitas_metrics=["fpr_disparity","for_disparity","ppr_disparity","pprev_disparity"]
+aequitas_metrics=["for_disparity","fdr_disparity","ppr_disparity","pprev_disparity"]
 
 
 #normalizing dataframe numeric value
